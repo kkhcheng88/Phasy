@@ -1,0 +1,40 @@
+﻿warped FMA13358 right latissimus dorsi 29667 verts 45594 faces
+warped FMA13359 left latissimus dorsi 29826 verts 45572 faces
+warped FMA22348 right quadratus lumborum 3637 verts 5676 faces
+warped FMA22349 left quadratus lumborum 3447 verts 5612 faces
+warped FMA22878 right multifidus 16634 verts 14796 faces
+warped FMA22879 left multifidus 14629 verts 14224 faces
+warped FMA13377 right rectus abdominis 25972 verts 41920 faces
+warped FMA13378 left rectus abdominis 23639 verts 41406 faces
+warped FMA13892 right internal oblique 40543 verts 58408 faces
+warped FMA13893 left internal oblique 37744 verts 57920 faces
+warped FMA22344 right transversus abdominis 39204 verts 68682 faces
+warped FMA22345 left transversus abdominis 38634 verts 68592 faces
+warped FMA49001 superficial part of right masseter 1524 verts 2016 faces
+warped FMA49002 superficial part of left masseter 1373 verts 2006 faces
+warped FMA49004 deep part of right masseter 2173 verts 2830 faces
+warped FMA49005 deep part of left masseter 2093 verts 2822 faces
+warped FMA49007 right temporalis 14634 verts 21250 faces
+warped FMA49008 left temporalis 13785 verts 21270 faces
+landmark                                                   muscle           x       y       z  gap to warped 3.0 mm
+12th rib, lowest point                                     QL           -84.2   -59.0  1011.3                  24.1
+iliac crest, highest point                                 QL          -101.3   -58.7   957.9                  40.6
+iliac crest, posterior top                                 LD           -73.7   -38.2   949.3                   3.2
+L1 right transverse process tip                            QL           -35.8   -56.9  1051.3                   2.4
+L1 spinous process tip                                     multifidus    -1.0   -29.2  1030.0                  14.0
+L2 right transverse process tip                            QL           -40.4   -59.2  1023.7                   7.1
+L2 spinous process tip                                     multifidus     0.7   -34.3   997.8                  12.4
+L3 right transverse process tip                            QL           -40.2   -65.0   994.9                   5.9
+L3 spinous process tip                                     multifidus     0.1   -29.5   974.3                  16.4
+L4 right transverse process tip                            QL           -42.8   -61.2   970.9                  10.2
+L4 spinous process tip                                     multifidus    -1.2   -26.2   954.6                  12.2
+L5 spinous process tip                                     multifidus    -0.4   -18.2   928.7                  15.2
+T7 spinous process tip                                     LD            -0.7    -0.7  1187.1                   0.9
+T8 spinous process tip                                     LD            -0.3    -0.9  1162.8                   1.6
+T9 spinous process tip                                     LD            -0.2    -6.2  1134.7                   0.8
+T10 spinous process tip                                    LD            -3.9    -7.8  1105.5                   2.1
+T11 spinous process tip                                    LD            -1.4   -13.0  1084.0                   0.8
+T12 spinous process tip                                    LD             0.3   -22.6  1061.5                   2.8
+sacrum, most dorsal point                                  multifidus   -11.1     7.3   844.8                   8.3
+scapula inferior angle                                     LD           -94.4    -5.3  1184.0                   3.1
+humerus, front of upper shaft (near intertubercular groove) LD          -164.9  -100.2  1314.5                  43.1

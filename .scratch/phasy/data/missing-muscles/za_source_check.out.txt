@@ -1,0 +1,10 @@
+﻿fit Z-Anatomy -> 3.0: scale 0.9685 (Z-Anatomy is 1.0325x larger), rotation 0.04 deg
+muscle                  ZA->3.0 median mm    p90  3.0->ZA median    p90
+latissimus dorsi                     0.18   0.75            0.43   1.81
+quadratus lumborum                   0.15   0.69            0.38   1.43
+multifidus                           2.88  11.46            2.89   8.66
+rectus abdominis                     0.20   0.46            0.31   1.03
+internal oblique                     0.21   0.52            0.31   1.03
+transversus abdominis                0.21   0.59            0.38   1.20
+masseter                             0.16   0.45            0.24   0.76
+temporalis                           0.22   0.40            0.28   0.75

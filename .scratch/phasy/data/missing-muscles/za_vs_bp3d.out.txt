@@ -1,0 +1,70 @@
+﻿fit_to_4.0 scale 0.9593 rot 1.89 t [np.float64(0.2), np.float64(-59.2), np.float64(-11.9)] missing []
+   Hip bone.r                   median/p90 mm [4.62, 10.75]
+   Hip bone.l                   median/p90 mm [4.81, 10.78]
+   Twelfth rib.r                median/p90 mm [3.02, 8.53]
+   Twelfth rib.l                median/p90 mm [2.97, 8.47]
+   Scapula.r                    median/p90 mm [1.8, 3.98]
+   Scapula.l                    median/p90 mm [1.9, 3.96]
+   Humerus.r                    median/p90 mm [2.61, 6.97]
+   Humerus.l                    median/p90 mm [2.85, 7.13]
+   Mandible                     median/p90 mm [4.24, 9.62]
+   Sacrum                       median/p90 mm [2.9, 4.79]
+   Psoas major.r                median/p90 mm [3.39, 10.55]
+   Psoas major.l                median/p90 mm [3.47, 10.67]
+   Infraspinatus muscle.r       median/p90 mm [6.21, 12.67]
+   Infraspinatus muscle.l       median/p90 mm [6.27, 12.71]
+   Teres major muscle.r         median/p90 mm [4.66, 7.84]
+   Teres major muscle.l         median/p90 mm [4.66, 7.67]
+   Gluteus maximus muscle.r     median/p90 mm [5.04, 11.35]
+   Gluteus maximus muscle.l     median/p90 mm [5.03, 11.29]
+fit_to_3.0 scale 0.9685 rot 0.04 t [np.float64(-0.1), np.float64(-97.7), np.float64(-13.3)] missing []
+   Hip bone.r                   median/p90 mm [0.26, 5.06]
+   Hip bone.l                   median/p90 mm [2.5, 5.92]
+   Twelfth rib.r                median/p90 mm [0.12, 0.13]
+   Twelfth rib.l                median/p90 mm [1.16, 3.7]
+   Scapula.r                    median/p90 mm [0.15, 0.19]
+   Scapula.l                    median/p90 mm [0.36, 1.12]
+   Humerus.r                    median/p90 mm [1.0, 2.66]
+   Humerus.l                    median/p90 mm [1.36, 3.64]
+   Mandible                     median/p90 mm [3.94, 7.82]
+   Sacrum                       median/p90 mm [1.86, 4.74]
+   Psoas major.r                median/p90 mm [0.21, 0.69]
+   Psoas major.l                median/p90 mm [0.68, 1.99]
+   Infraspinatus muscle.r       median/p90 mm [0.18, 0.77]
+   Infraspinatus muscle.l       median/p90 mm [0.68, 1.92]
+   Teres major muscle.r         median/p90 mm [3.49, 7.36]
+   Teres major muscle.l         median/p90 mm [3.67, 7.4]
+   Gluteus maximus muscle.r     median/p90 mm [0.26, 1.08]
+   Gluteus maximus muscle.l     median/p90 mm [1.06, 3.38]
+latissimus dorsi       za 10796v/21580f  bp30 29667v/45594f  za-vs-3.0warped median 2.8 p90 5.1
+     Z-Anatomy (fitted)   {'humerus': 3.1, 'hip bone': 3.5, 'T7-T12': 1.6, 'scapula': 7.1}
+     3.0 shifted          {'humerus': 2.4, 'hip bone': 3.1, 'T7-T12': 1.8, 'scapula': 3.3}
+     3.0 warped           {'humerus': 2.5, 'hip bone': 2.6, 'T7-T12': 1.8, 'scapula': 2.3}
+quadratus lumborum     za 1416v/2832f  bp30 3637v/5676f  za-vs-3.0warped median 2.1 p90 4.2
+     Z-Anatomy (fitted)   {'twelfth rib': 0.9, 'hip bone': 2.8, 'L1-L5': 1.6}
+     3.0 shifted          {'twelfth rib': 1.1, 'hip bone': 4.7, 'L1-L5': 0.8}
+     3.0 warped           {'twelfth rib': 0.6, 'hip bone': 2.7, 'L1-L5': 0.6}
+multifidus             za 4096v/8112f  bp30 16634v/14796f  za-vs-3.0warped median 4.3 p90 15.8
+     Z-Anatomy (fitted)   {'sacrum': 23.7, 'L1-L5': 0.9, 'T7-T12': 1.2}
+     3.0 shifted          {'sacrum': 1.6, 'L1-L5': 0.8, 'T7-T12': 1.3}
+     3.0 warped           {'sacrum': 1.4, 'L1-L5': 0.8, 'T7-T12': 1.0}
+rectus abdominis       za 10304v/20604f  bp30 25972v/41920f  za-vs-3.0warped median 3.3 p90 5.6
+     Z-Anatomy (fitted)   {'hip bone': 18.2}
+     3.0 shifted          {'hip bone': 22.6}
+     3.0 warped           {'hip bone': 16.9}
+internal oblique       za 14411v/28869f  bp30 40543v/58408f  za-vs-3.0warped median 3.3 p90 5.7
+     Z-Anatomy (fitted)   {'hip bone': 7.3, 'twelfth rib': 4.4}
+     3.0 shifted          {'hip bone': 10.6, 'twelfth rib': 2.7}
+     3.0 warped           {'hip bone': 1.8, 'twelfth rib': 3.4}
+transversus abdominis  za 17164v/34328f  bp30 39204v/68682f  za-vs-3.0warped median 2.9 p90 5.5
+     Z-Anatomy (fitted)   {'hip bone': 3.8}
+     3.0 shifted          {'hip bone': 7.2}
+     3.0 warped           {'hip bone': 2.5}
+masseter               za 1199v/2398f  bp30 3697v/4846f  za-vs-3.0warped median 3.2 p90 13.6
+     Z-Anatomy (fitted)   {'mandible': 1.0}
+     3.0 shifted          {'mandible': 0.9}
+     3.0 warped           {'mandible': 1.0}
+temporalis             za 5126v/10260f  bp30 14634v/21250f  za-vs-3.0warped median 4.3 p90 14.2
+     Z-Anatomy (fitted)   {'mandible': 1.6}
+     3.0 shifted          {'mandible': 0.6}
+     3.0 warped           {'mandible': 1.0}

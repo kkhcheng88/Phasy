@@ -1,0 +1,1176 @@
+{
+  "version": "2026-09-24",
+  "sources": {
+    "travell3": "Donnelly et al., Travell, Simons & Simons' Myofascial Pain and Dysfunction: The Trigger Point Manual, 3rd ed. (2019)",
+    "cupping2026": "Phasy research note on vacuum cupping (2026-09-24, .scratch/phasy/research/vacuum-cupping.md): Trofa et al. 2020, JAAOS Glob Res Rev 4(1); Mohamed, Zhang & Jan 2023, J Back Musculoskelet Rehabil 36(1):3-19; placement and frequency from cupping safety guides"
+  },
+  "pressureLevels": [
+    { "id": "light", "name": "輕", "force": "約 1 公斤", "howToLearn": "把廚房磅放在桌上，用拇指慢慢按到約 1 公斤，記住那種力度：皮膚微微下陷，不會痛。",
+      "note": "Borrowed calibration force: 1 kg is the book's jaw-muscle (TMD) examination criterion, not a dose for neck trigger points.",
+      "source": { "ref": "travell3", "page": "484", "adapted": true } },
+    { "id": "standard", "name": "標準", "force": "約 4 公斤", "howToLearn": "在廚房磅上用拇指按到約 4 公斤，記住那種力度。按人時拇指指腹放平，慢慢加力。",
+      "note": "Borrowed calibration force: 4 kg/cm² is the book's fibromyalgia tender-point examination force, not a dose for neck trigger points.",
+      "source": { "ref": "travell3", "page": "1230", "adapted": true } },
+    { "id": "deep", "name": "深", "force": "約 6 公斤", "howToLearn": "在廚房磅上用拇指按到約 6 公斤。只用於肌肉厚、下面有骨承托的位置，而且要慢慢加上去。",
+      "note": "Estimate. The book gives no 6 kg figure; chosen as a step above the standard 4 kg.",
+      "source": { "ref": "travell3", "page": "not found", "adapted": true } }
+  ],
+  "zones": [
+    { "id": "z-head-top", "name": "頭頂", "region": "head", "sided": false },
+    { "id": "z-forehead", "name": "前額", "region": "head", "sided": true },
+    { "id": "z-temple", "name": "太陽穴", "region": "head", "sided": true },
+    { "id": "z-behind-eye", "name": "眼眶及眼後", "region": "head", "sided": true },
+    { "id": "z-back-of-head", "name": "後腦", "region": "head", "sided": true },
+    { "id": "z-behind-ear", "name": "耳後及耳內", "region": "head", "sided": true },
+    { "id": "z-cheek-jaw", "name": "臉頰與下顎", "region": "head", "sided": true },
+    { "id": "z-neck-back-upper", "name": "頸後上段（頭顱底下）", "region": "neck", "sided": true },
+    { "id": "z-neck-back-lower", "name": "頸後下段", "region": "neck", "sided": true },
+    { "id": "z-neck-midline", "name": "頸後正中（頸椎骨上）", "region": "neck", "sided": false },
+    { "id": "z-neck-side", "name": "頸側", "region": "neck", "sided": true },
+    { "id": "z-neck-angle", "name": "頸肩交界", "region": "neck", "sided": true },
+    { "id": "z-shoulder-top", "name": "肩頂", "region": "shoulder", "sided": true },
+    { "id": "z-shoulder-outer", "name": "肩膊外側及後面", "region": "shoulder", "sided": true },
+    { "id": "z-scapula-top", "name": "肩胛骨上半部", "region": "upper-back", "sided": true },
+    { "id": "z-scapula-inner-edge", "name": "肩胛骨內側邊", "region": "upper-back", "sided": true },
+    { "id": "z-between-scapula", "name": "兩塊肩胛骨之間", "region": "upper-back", "sided": true },
+    { "id": "z-upper-arm", "name": "上臂", "region": "arm", "sided": true },
+    { "id": "z-elbow-outer", "name": "手肘外側", "region": "arm", "sided": true },
+    { "id": "z-forearm-hand", "name": "前臂拇指一側至拇指、食指", "region": "arm", "sided": true }
+  ],
+  "situations": [
+    {
+      "id": "s-phone-head-down", "name": "低頭看手機或看書", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，慢慢低頭至下巴近胸口，停三秒，再回正。",
+      "loads": ["m-splenius-capitis", "m-splenius-cervicis", "m-posterior-cervical", "m-suboccipital"],
+      "zones": ["z-neck-back-upper", "z-neck-back-lower", "z-back-of-head"]
+    },
+    {
+      "id": "s-computer-screen", "name": "長時間用電腦", "kind": "posture",
+      "onTheSpot": false, "testMovement": false, "testHowTo": null,
+      "loads": ["m-trap-upper", "m-trap-middle", "m-levator-scapulae", "m-splenius-capitis", "m-suboccipital", "m-scalenes", "m-rhomboids"],
+      "zones": ["z-neck-back-lower", "z-shoulder-top", "z-neck-angle", "z-between-scapula"]
+    },
+    {
+      "id": "s-slouch-forward-head", "name": "彎腰駝背地坐、頭向前伸", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐下後讓上背放軟、頭向前伸，保持一分鐘，留意平時那種不適有沒有出現，然後坐直。",
+      "loads": ["m-trap-middle", "m-trap-lower", "m-rhomboids", "m-posterior-cervical", "m-suboccipital", "m-scm"],
+      "zones": ["z-neck-back-upper", "z-between-scapula", "z-scapula-inner-edge"]
+    },
+    {
+      "id": "s-driving", "name": "長時間駕駛或乘車", "kind": "posture",
+      "onTheSpot": false, "testMovement": false, "testHowTo": null,
+      "loads": ["m-trap-middle", "m-trap-upper", "m-posterior-cervical"],
+      "zones": ["z-between-scapula", "z-shoulder-top", "z-neck-back-lower"]
+    },
+    {
+      "id": "s-sleep-pillow", "name": "睡醒時頸痛（枕頭或睡姿）", "kind": "posture",
+      "onTheSpot": false, "testMovement": false, "testHowTo": null,
+      "loads": ["m-trap-upper", "m-levator-scapulae", "m-splenius-capitis", "m-splenius-cervicis", "m-posterior-cervical", "m-suboccipital", "m-scm", "m-scalenes"],
+      "zones": ["z-neck-back-upper", "z-neck-angle", "z-neck-side", "z-back-of-head"]
+    },
+    {
+      "id": "s-bag-one-shoulder", "name": "單肩揹袋或背囊", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "把平時用的袋掛在不適的一邊肩上，站立一分鐘，然後除下。",
+      "loads": ["m-trap-upper", "m-trap-middle", "m-scalenes"],
+      "zones": ["z-shoulder-top", "z-neck-side"]
+    },
+    {
+      "id": "s-carry-heavy", "name": "手提重物（手垂在身旁）", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "不適的一邊手垂直提起約兩公斤的東西（例如一大瓶水），停十秒，再放下。",
+      "loads": ["m-supraspinatus", "m-trap-upper", "m-scalenes"],
+      "zones": ["z-shoulder-outer", "z-shoulder-top", "z-upper-arm"]
+    },
+    {
+      "id": "s-look-up", "name": "抬頭望高處", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，慢慢抬頭望向天花板，停三秒，再回正。如感到頭暈、眼前發黑、手麻，即時停止並慢慢回正。",
+      "loads": ["m-scm", "m-splenius-capitis", "m-splenius-cervicis", "m-suboccipital"],
+      "zones": ["z-neck-back-upper", "z-back-of-head", "z-neck-side"]
+    },
+    {
+      "id": "s-turn-head", "name": "轉頭（例如倒車、望後面）", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，慢慢把頭轉向一邊到盡頭，停三秒，回正，再轉向另一邊。如感到頭暈、眼前發黑、手麻，即時停止並慢慢回正。",
+      "loads": ["m-levator-scapulae", "m-trap-upper", "m-splenius-capitis", "m-splenius-cervicis", "m-suboccipital"],
+      "zones": ["z-neck-angle", "z-neck-side", "z-neck-back-lower"]
+    },
+    {
+      "id": "s-side-bend", "name": "側頭（耳朵向肩膊）", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，雙手放大腿上，慢慢把耳朵側向一邊肩膊，停三秒，回正，再做另一邊。",
+      "loads": ["m-trap-upper", "m-levator-scapulae", "m-scalenes"],
+      "zones": ["z-neck-side", "z-shoulder-top", "z-neck-angle"]
+    },
+    {
+      "id": "s-shrug-tension", "name": "肩膊不自覺聳起", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，把兩邊肩膊向耳朵聳起，停十秒，再慢慢放下。",
+      "loads": ["m-trap-upper", "m-levator-scapulae"],
+      "zones": ["z-shoulder-top", "z-neck-angle", "z-neck-side"]
+    },
+    {
+      "id": "s-stress", "name": "精神緊張或壓力大", "kind": "posture",
+      "onTheSpot": false, "testMovement": false, "testHowTo": null,
+      "loads": ["m-trap-upper", "m-levator-scapulae"],
+      "zones": ["z-shoulder-top", "z-neck-angle", "z-back-of-head"]
+    },
+    {
+      "id": "s-reach-overhead", "name": "舉手過頭（晾衣服、拿高處東西、梳頭）", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "站直，慢慢把不適的一邊手向上舉高過頭，停三秒，再放下。",
+      "loads": ["m-supraspinatus", "m-rhomboids", "m-levator-scapulae"],
+      "zones": ["z-shoulder-outer", "z-shoulder-top", "z-scapula-inner-edge"]
+    },
+    {
+      "id": "s-phone-cradle", "name": "用肩膊夾住電話", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "把頭側向一邊、肩膊微微提起，像夾住電話一樣，停十秒，再回正。",
+      "loads": ["m-trap-upper", "m-levator-scapulae", "m-scm", "m-scalenes"],
+      "zones": ["z-neck-side", "z-neck-angle", "z-shoulder-top"]
+    },
+    {
+      "id": "s-backrest-press", "name": "上背靠住椅背時痛（例如坐巴士）", "kind": "posture",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐在有靠背的椅上，上背貼緊椅背，停三十秒，留意平時那種痛有沒有出現。",
+      "loads": ["m-rhomboids", "m-trap-middle", "m-trap-lower"],
+      "zones": ["z-between-scapula", "z-scapula-inner-edge"]
+    },
+    {
+      "id": "s-cough-deep-breath", "name": "咳嗽或用力吸氣", "kind": "movement",
+      "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，用鼻子慢慢深吸一口氣，停兩秒，再慢慢呼出。",
+      "loads": ["m-scalenes", "m-scm"],
+      "zones": ["z-neck-side", "z-scapula-inner-edge"]
+    }
+  ],
+  "muscles": [
+    {
+      "id": "m-trap-upper",
+      "nameZh": "斜方肌上部", "nameEn": "descending (upper) trapezius",
+      "bp3d": { "L": "FJ1521M", "R": "FJ1521" },
+      "action": "提起肩膊，並協助頭頸側向同一邊、臉轉向另一邊。",
+      "attachments": "由後腦骨下緣及頸後中線的筋膜，斜向下外，止於鎖骨外側三分之一的後緣。",
+      "depth": "surface",
+      "cuppingSuits": true,
+      "triggerPoints": [
+        {
+          "id": "tp-trap-upper-1", "at": "z-shoulder-top", "name": "斜方肌上部 1 號點（前緣）",
+          "landmark": "肩頂肌肉的前緣，約在頸根與肩膊頂端的中間。頭微微側向同一邊令肌肉放鬆，用拇指和其餘手指把整條肩頂肌肉捏起，在前緣摸出一條較硬的肌肉帶，再在上面找最硬、最痛的一點。",
+          "referral": ["z-neck-side", "z-behind-ear", "z-temple", "z-behind-eye", "z-cheek-jaw", "z-back-of-head"],
+          "source": { "ref": "travell3", "page": "249, 257" }
+        },
+        {
+          "id": "tp-trap-upper-2", "at": "z-neck-back-lower", "name": "斜方肌上部 2 號點（後緣）",
+          "landmark": "頸根後面，頸椎兩旁肩頂肌肉的後緣，即由頸椎橫向出去的那一條較硬的肌肉帶。俯臥或坐着，同樣捏起；肌肉較實時改用手指平按。",
+          "referral": ["z-neck-back-lower", "z-neck-back-upper", "z-back-of-head"],
+          "source": { "ref": "travell3", "page": "250, 258" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-trap-upper-pinch", "kind": "press", "target": "tp-trap-upper-1",
+          "receiverPosition": "仰臥最好，肌肉最放鬆；也可坐直，雙手放大腿上。頭微微側向要檢查的一邊。",
+          "helperMethod": "捏的力度以受助者的感覺為準，廚房磅量不到捏力。用拇指與食指、中指捏起肩頂前緣的肌肉，在指間慢慢來回滾動，找出一條較硬的肌肉帶，再在上面找最痛的一點。慢慢加力，到受助者感覺約 4–6 / 10 的明顯酸痛就停，問受助者：這是不是平時那種痛？痛有沒有走到頸側、耳後或太陽穴？",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "用另一隻手的拇指和四指捏起肩頂前緣的肌肉，慢慢加力，留意痛會否走到頸側或頭側。",
+          "source": { "ref": "travell3", "page": "257" }
+        },
+        {
+          "id": "c-trap-upper-sidebend", "kind": "movement", "target": "m-trap-upper",
+          "receiverPosition": "坐直，雙手放大腿上。",
+          "helperMethod": "請受助者慢慢把耳朵側向另一邊肩膊，回正後再把臉轉向另一邊到盡頭。側向另一邊時明顯受限，或臉轉到另一邊盡頭時肩頂痛，都指向這條肌肉。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己對着鏡子照做，比較兩邊能側到多遠，留意哪一個角度引出平時那種痛。",
+          "source": { "ref": "travell3", "page": "254-255" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-trap-upper-seated", "name": "坐姿側頭伸展", "targets": ["m-trap-upper"],
+          "startPosition": "坐在椅上，背挺直。要伸展那一邊的手抓住椅邊，令那邊肩膊不會提起。",
+          "steps": [
+            "慢慢把頭側向另一邊，耳朵向另一邊肩膊。",
+            "臉稍稍轉向要伸展的一邊，並微微低頭，找出肩頂至頸側拉得最緊的角度。",
+            "另一隻手可輕放頭側，只用手的重量，不要用力拉。",
+            "停住，慢慢吸氣；呼氣時讓頭自然再下沉少許。",
+            "做完先把頭慢慢回正，才放開椅邊。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：肩頂至頸側被拉長，緊但舒服。",
+            "time": "每次停 6 至 10 秒，配合一次慢呼吸。",
+            "right": "肩頂至頸側有拉長和微酸的感覺，放鬆後覺得輕鬆。",
+            "wrong": "尖銳的痛、頭暈、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每邊 3 至 5 次。",
+          "source": { "ref": "travell3", "page": "240, 254-255, 1880-1881", "adapted": true }
+        },
+        {
+          "id": "st-trap-upper-helper", "name": "幫手按肩側頭伸展", "targets": ["m-trap-upper"],
+          "startPosition": "受助者坐在椅上，背挺直。幫手站在受助者後面。",
+          "steps": [
+            "幫手把一隻手掌平放在要伸展那一邊的肩頂外側，只是按住肩膊不讓它提起，不要向下壓。",
+            "受助者自己慢慢把頭側向另一邊，臉稍稍轉向要伸展的一邊。",
+            "幫手不推頭、不拉頭；頭的動作全部由受助者自己控制。",
+            "停住，受助者慢慢吸氣；呼氣時自己讓頭再下沉少許。",
+            "受助者先把頭回正，幫手才放手。"
+          ],
+          "helper": true,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：肩頂至頸側被拉長，緊但舒服。",
+            "time": "每次停 6 至 10 秒，配合一次慢呼吸。",
+            "right": "肩頂至頸側有拉長和微酸的感覺，放鬆後覺得輕鬆。",
+            "wrong": "尖銳的痛、頭暈、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每邊 3 至 5 次。",
+          "source": { "ref": "travell3", "page": "1916-1917, 1880-1881", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-trap-upper-hold", "name": "肩頂持續捏壓", "kind": "持續捏壓", "target": "tp-trap-upper-1",
+          "steps": [
+            "受助者仰臥，頭微微側向要處理的一邊。",
+            "幫手用拇指與食指、中指捏起肩頂前緣的肌肉，找到最痛的一點。",
+            "捏的力度以受助者的感覺為準：慢慢加力，到受助者感覺約 2–4 / 10、有壓力和微酸但不痛，就停在這個力度。",
+            "等手下的硬塊慢慢變軟，再輕輕多捏一點，跟着肌肉放鬆的方向走。",
+            "時間到後慢慢放手，請受助者慢慢轉動頸部幾次。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。捏的力度以這個感覺為準，不用公斤數。",
+            "time": "每點約 90 秒；每一節只處理三至五條肌肉。",
+            "right": "酸痛慢慢減退，硬塊變軟；平時那種痛可以短暫出現，然後轉淡。",
+            "wrong": "痛越來越強、麻痺、觸電感、刺痛放射到手臂、頭暈或作嘔。"
+          },
+          "source": { "ref": "travell3", "page": "257, 1878-1879, 1886-1887" }
+        }
+      ],
+      "cupping": [
+        {
+          "id": "cp-trap-upper", "name": "肩頂固定拔罐",
+          "position": "肩頂肌肉最厚的地方，約在頸根與肩膊頂端的中間。杯口不可壓到鎖骨、肩胛骨的骨脊或頸椎骨，也不可放在頸前或頸側。服用抗凝血藥（薄血藥）、容易瘀傷或流血不止、皮膚很薄（例如長者或長期用類固醇）、懷孕、皮膚有傷口或發炎、發燒時不要拔罐。",
+          "cupSize": "小至中號（口徑約 4 至 5 厘米）",
+          "method": "static",
+          "rightAmount": {
+            "strength": "吸力輕：皮膚微微被吸起，受助者感覺 2–4 / 10 的拉扯，不痛。",
+            "time": "5 至 10 分鐘，最長 15 分鐘；同一位置每星期不多於一次。",
+            "right": "皮膚被拉起、溫暖、放鬆；除罐後留下圓形紅紫印，數日至兩星期內自然消退。",
+            "wrong": "痛多於輕微不適、起水泡、皮膚灼熱刺痛、麻痺、觸電感、刺痛放射到手臂、頭暈。"
+          },
+          "source": { "ref": "cupping2026", "page": "vacuum-cupping.md §2–§4" }
+        }
+      ]
+    },
+    {
+      "id": "m-trap-middle",
+      "nameZh": "斜方肌中部", "nameEn": "transverse (middle) trapezius",
+      "bp3d": { "L": "FJ1554M", "R": "FJ1554" },
+      "action": "把肩胛骨拉向脊骨，令肩膊向後收。",
+      "attachments": "由第七頸椎至上段胸椎脊骨中間突起的骨，橫向外，止於肩峰內緣及肩胛骨骨脊上緣。",
+      "depth": "surface",
+      "cuppingSuits": true,
+      "triggerPoints": [
+        {
+          "id": "tp-trap-middle-1", "at": "z-between-scapula", "name": "斜方肌中部 1 號點（肌肉中段）",
+          "landmark": "肩胛骨內側邊與脊骨之間的中段，約在肩胛骨上角至骨脊內端的高度。肌肉橫向走，手指橫過肌肉，把它壓向下面的肋骨來回滾動。",
+          "referral": ["z-between-scapula"],
+          "source": { "ref": "travell3", "page": "251-252, 258" }
+        },
+        {
+          "id": "tp-trap-middle-2", "at": "z-shoulder-top", "name": "斜方肌中部 2 號點（外端）",
+          "landmark": "肩胛骨骨脊外段的上緣，接近肩膊頂端骨頭（肩峰）的內側。用手指平按。",
+          "referral": ["z-shoulder-top"],
+          "source": { "ref": "travell3", "page": "251, 253, 258" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-trap-middle-press", "kind": "press", "target": "tp-trap-middle-1",
+          "receiverPosition": "俯臥，雙手放身旁；或坐着，雙手交叉抱在胸前，上背微微向前彎。",
+          "helperMethod": "用拇指指腹平放在肩胛骨內側邊與脊骨之間，橫過肌肉慢慢來回推，把肌肉壓向下面的肋骨，找出一條較硬的肌肉帶和最痛的一點。慢慢加到標準力度，問受助者：這是不是平時那種痛？兩塊肩胛骨之間有沒有灼熱的感覺？",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "背靠牆，把一個網球放在肩胛骨內側邊與脊骨之間，慢慢把身體靠向網球，上下移動找最痛的一點。",
+          "source": { "ref": "travell3", "page": "258, 266" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-trap-middle-floor", "name": "仰臥肩胛骨活動練習", "targets": ["m-trap-middle", "m-trap-lower"],
+          "startPosition": "仰臥在地墊上，屈膝，腳掌踏地。整個練習腰背都貼住地墊，不讓腰部離地。",
+          "steps": [
+            "這是活動練習，不是拉筋：目的是讓兩塊肩胛骨在背後順暢地滑動，動作慢而順就夠。",
+            "雙臂向天花板伸直，再慢慢經頭頂兩旁放向地面，只去到舒服的位置。",
+            "手背輕貼地面，雙臂像扇一樣沿地面慢慢掃回身旁；途中感覺兩塊肩胛骨向中間收。",
+            "雙臂回到身旁後放鬆，呼吸兩三次，再開始下一輪。",
+            "某個角度肩膊卡住或痛，就把動作收細，不要硬壓向地面。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：肩胛骨周圍有活動和輕微拉開的感覺，不用勉強。",
+            "time": "每一輪慢慢做，約 20 至 30 秒。",
+            "right": "兩塊肩胛骨之間和胸前有鬆開的感覺，動作越做越順。",
+            "wrong": "尖銳的痛、肩膊卡住、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "連續做 3 至 5 輪。",
+          "source": { "ref": "travell3", "page": "263, 265-266", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-trap-middle-hold", "name": "肩胛骨之間持續按壓", "kind": "持續按壓", "target": "tp-trap-middle-1",
+          "steps": [
+            "受助者俯臥，雙手放身旁，肩膊放鬆。",
+            "幫手用拇指指腹平放在找到的最痛點上，壓向下面的肋骨。",
+            "慢慢加力，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛，停在這個力度。",
+            "等硬塊慢慢變軟，再輕輕多壓一點。",
+            "時間到後慢慢放手，請受助者把肩膊向前向後慢慢轉幾圈，之後可熱敷上背。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。",
+            "time": "每點約 90 秒。",
+            "right": "酸痛慢慢減退，硬塊變軟，兩塊肩胛骨之間的灼熱感減輕。",
+            "wrong": "痛越來越強、呼吸時胸口痛、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "266, 1878-1879" }
+        }
+      ],
+      "cupping": [
+        {
+          "id": "cp-trap-middle", "name": "肩胛骨之間固定拔罐",
+          "position": "肩胛骨內側邊與脊骨之間的肌肉上，約在肩胛骨上半部的高度。受助者先讓雙臂向前垂下（例如坐着抱枕頭伏在桌上），令這裏的空間較闊。杯口要完全落在肌肉上，不可壓到脊骨或肩胛骨邊緣。服用抗凝血藥（薄血藥）、容易瘀傷或流血不止、皮膚很薄（例如長者或長期用類固醇）、懷孕、皮膚有傷口或發炎、發燒時不要拔罐。",
+          "cupSize": "小號（口徑約 4 厘米）",
+          "method": "static",
+          "rightAmount": {
+            "strength": "吸力輕：皮膚微微被吸起，受助者感覺 2–4 / 10 的拉扯，不痛。",
+            "time": "5 至 10 分鐘，最長 15 分鐘；同一位置每星期不多於一次。",
+            "right": "皮膚被拉起、溫暖、放鬆；除罐後留下圓形紅紫印，數日至兩星期內自然消退。",
+            "wrong": "痛多於輕微不適、起水泡、皮膚灼熱刺痛、呼吸時胸口痛、麻痺、觸電感、刺痛放射到手臂、頭暈。"
+          },
+          "source": { "ref": "cupping2026", "page": "vacuum-cupping.md §2–§4" }
+        }
+      ]
+    },
+    {
+      "id": "m-trap-lower",
+      "nameZh": "斜方肌下部", "nameEn": "ascending (lower) trapezius",
+      "bp3d": { "L": "FJ1520M", "R": "FJ1520" },
+      "action": "把肩胛骨向下、向內拉，並協助肩胛骨向上轉，讓手臂舉高。",
+      "attachments": "由中段至下段胸椎脊骨中間突起的骨，斜向上外，止於肩胛骨骨脊內端。",
+      "depth": "surface",
+      "cuppingSuits": true,
+      "triggerPoints": [
+        {
+          "id": "tp-trap-lower-1", "at": "z-scapula-inner-edge", "name": "斜方肌下部 1 號點（肩胛骨內側邊）",
+          "landmark": "肩胛骨內側邊的下半段，肌肉斜向上外越過肩胛骨邊的位置，有時在肩胛骨下角的高度或再低一點。受助者俯臥，手指橫過肌肉平按。",
+          "referral": ["z-neck-back-upper", "z-shoulder-top", "z-scapula-top"],
+          "source": { "ref": "travell3", "page": "253, 259" }
+        },
+        {
+          "id": "tp-trap-lower-2", "at": "z-scapula-inner-edge", "name": "斜方肌下部 2 號點（骨脊內端）",
+          "landmark": "肩胛骨骨脊靠近脊骨那一端的下方，肌肉連到骨頭的位置，摸起來像一條較粗的帶。",
+          "referral": ["z-scapula-inner-edge"],
+          "source": { "ref": "travell3", "page": "252-253, 259" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-trap-lower-press", "kind": "press", "target": "tp-trap-lower-1",
+          "receiverPosition": "俯臥，雙手放身旁；或坐着，雙手交叉抱在胸前。",
+          "helperMethod": "用拇指指腹平放在肩胛骨內側邊下半段，橫過斜向上外的肌肉慢慢來回推，找出一條較硬的肌肉帶和最痛的一點。慢慢加到標準力度，問受助者：頸後上段、肩頂或肩胛骨上方有沒有出現平時那種痛？",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "仰臥在地上，把一個網球放在肩胛骨內側邊下半段下面，慢慢把身體重量放在網球上，微微移動找最痛的一點。",
+          "source": { "ref": "travell3", "page": "258-259, 268" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-trap-lower-doorway", "name": "門口前傾伸展", "targets": ["m-trap-lower"],
+          "startPosition": "站在門口正中，一隻腳向前踏半步。",
+          "steps": [
+            "這個伸展拉開的是胸前肌肉：胸前放鬆後，肩膊不再向前捲，背部的斜方肌下部就不用長期被拉住。",
+            "把兩邊前臂貼在門框上，手肘大約與肩膊同高；手放鬆，不用抓。",
+            "重心慢慢移向前腳，讓胸口向前穿過門口，直到胸前有拉開的感覺。",
+            "頸部保持自然，不要把頭伸向前。",
+            "停住，正常呼吸，然後把重心移回後腳。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：胸前被拉開，舒服。",
+            "time": "每次停約 30 秒。",
+            "right": "胸前和肩膊前面拉開，之後上背較容易挺直。",
+            "wrong": "肩膊前面尖銳的痛、手臂或手指麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "268, 991-992", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-trap-lower-hold", "name": "肩胛骨內側下段持續按壓", "kind": "持續按壓", "target": "tp-trap-lower-1",
+          "steps": [
+            "受助者俯臥，雙手放身旁，肩膊放鬆。",
+            "幫手用拇指指腹平放在找到的最痛點上。",
+            "慢慢加力，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛，停在這個力度。",
+            "等硬塊慢慢變軟，再輕輕多壓一點。",
+            "時間到後慢慢放手，請受助者慢慢活動肩膊，之後可熱敷上背中間。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。",
+            "time": "每點約 90 秒。",
+            "right": "酸痛慢慢減退，硬塊變軟，肩胛骨內側邊的灼熱感減輕。",
+            "wrong": "痛越來越強、呼吸時胸口痛、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "268-269, 1878-1879" }
+        }
+      ],
+      "cupping": [
+        {
+          "id": "cp-trap-lower", "name": "肩胛骨內側下段滑動拔罐",
+          "position": "肩胛骨內側邊下半段與脊骨之間的肌肉上。先塗按摩油，由肩胛骨下角內側一隻手指寬以外開始，與脊骨平行慢慢向上推，再推回來；杯邊保持離開肩胛骨邊緣及脊骨各一隻手指寬。服用抗凝血藥（薄血藥）、容易瘀傷或流血不止、皮膚很薄（例如長者或長期用類固醇）、懷孕、皮膚有傷口或發炎、發燒時不要拔罐。",
+          "cupSize": "中號（口徑約 5 厘米）",
+          "method": "sliding",
+          "rightAmount": {
+            "strength": "吸力輕：只要杯能貼住皮膚滑動，受助者感覺 2–4 / 10，不痛。",
+            "time": "全程 5 至 10 分鐘；同一位置每星期不多於一次。",
+            "right": "皮膚微紅溫暖，肌肉放鬆；留下的紅印數日至兩星期內消退。",
+            "wrong": "痛多於輕微不適、杯推不動仍然硬推、起水泡、麻痺、觸電感、刺痛放射到手臂、頭暈。"
+          },
+          "source": { "ref": "cupping2026", "page": "vacuum-cupping.md §2–§4" }
+        }
+      ]
+    },
+    {
+      "id": "m-levator-scapulae",
+      "nameZh": "提肩胛肌", "nameEn": "levator scapulae",
+      "bp3d": { "L": "FJ1532M", "R": "FJ1532" },
+      "action": "提起肩胛骨的上角，並協助頸部向同一邊轉動和側彎。",
+      "attachments": "由第一至第四節頸骨的兩側，向下止於肩胛骨內側邊上段（上角至骨脊之間）。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-levator-1", "at": "z-neck-angle", "name": "提肩胛肌 1 號點（頸肩交界）",
+          "landmark": "頸肩交界的轉角位，肌肉從肩頂肌肉前緣下面鑽出來的地方。受助者手肘放在扶手上令肩頂放鬆，把肩頂肌肉輕輕推向後，在下面摸一條斜向下的肌肉。",
+          "referral": ["z-neck-angle", "z-scapula-inner-edge", "z-shoulder-outer"],
+          "source": { "ref": "travell3", "page": "517, 520" }
+        },
+        {
+          "id": "tp-levator-2", "at": "z-scapula-top", "name": "提肩胛肌 2 號點（肩胛骨上角）",
+          "landmark": "肩胛骨上角（肩胛骨最高那隻角）的正上方，隔着肩頂肌肉按。這個位置通常很敏感。",
+          "referral": ["z-neck-angle", "z-scapula-inner-edge", "z-shoulder-outer"],
+          "source": { "ref": "travell3", "page": "517-518, 521" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-levator-press", "kind": "press", "target": "tp-levator-2",
+          "receiverPosition": "側臥，要檢查的一邊向上，頭用枕頭承托；或坐着，雙手手肘放在扶手上。",
+          "helperMethod": "先摸到肩胛骨上角，在它正上方用拇指平按，橫過肌肉慢慢來回推。這裏通常很敏感，由輕力開始。問受助者：這是不是平時那種痛？痛有沒有走到頸肩交界？",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "用另一隻手越過胸前，食指和中指按在肩胛骨上角正上方，慢慢加力。",
+          "source": { "ref": "travell3", "page": "520-521" }
+        },
+        {
+          "id": "c-levator-turn", "kind": "movement", "target": "m-levator-scapulae",
+          "receiverPosition": "坐直，雙手放大腿上。",
+          "helperMethod": "請受助者慢慢把頭轉向不適的一邊，再轉向另一邊。轉向不適的一邊時特別受限，或頸肩交界痛，指向這條肌肉。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己照做，比較兩邊能轉到多遠。",
+          "source": { "ref": "travell3", "page": "518-519" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-levator-seated", "name": "轉頭低頭望腋下伸展", "targets": ["m-levator-scapulae"],
+          "startPosition": "坐在椅上，背挺直。要伸展那一邊的手抓住椅邊，令那邊肩胛骨留在低位。",
+          "steps": [
+            "這條肌肉由頸上段連到肩胛骨上角；要拉長它，肩胛骨要留在下面，頭要向前、向另一邊走。",
+            "臉轉向另一邊約一半，然後低頭，令鼻子朝向另一邊腋下的方向。",
+            "另一隻手輕放後腦，只幫忙承托頭的重量，不要拉。",
+            "在頸肩交界拉得最緊的角度停住，慢慢吸一口氣；呼氣時讓頭的重量帶頭部再低少許。",
+            "完成後雙手扶頭，慢慢抬頭回正，才放開椅邊。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：頸肩交界至肩胛骨上角被拉長。",
+            "time": "每次停約 5 至 10 秒，配合一次慢呼吸。",
+            "right": "頸肩交界有拉長、微酸，做完頭較易轉向不適的一邊。",
+            "wrong": "尖銳的痛、頭暈、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "525-526", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-levator-hold", "name": "肩胛骨上角持續按壓", "kind": "持續按壓", "target": "tp-levator-2",
+          "steps": [
+            "受助者側臥，要處理的一邊向上，頭用枕頭承托。",
+            "幫手先摸到肩胛骨上角，用拇指在它正上方平按。",
+            "由輕力開始，慢慢加力，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛。",
+            "停在這個力度，等硬塊變軟再輕輕多壓一點。",
+            "時間到後慢慢放手，請受助者慢慢轉頭幾次。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。這個位置很敏感，寧可輕一點。",
+            "time": "每點約 90 秒。",
+            "right": "酸痛慢慢減退，頸肩交界變鬆，轉頭較順。",
+            "wrong": "痛越來越強、麻痺、觸電感、刺痛放射到手臂、頭暈。"
+          },
+          "source": { "ref": "travell3", "page": "521, 1878-1879" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-splenius-capitis",
+      "nameZh": "頭夾肌", "nameEn": "splenius capitis",
+      "bp3d": { "L": "FJ1545M", "R": "FJ1545" },
+      "action": "令頭頸向後仰，並把臉轉向同一邊。",
+      "attachments": "由第七頸椎至上段胸椎脊骨中間突起的骨及頸後中線的筋膜，斜向上外，止於耳後骨（乳突）及後腦骨外側。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-splenius-capitis-1", "at": "z-neck-back-upper", "name": "頭夾肌激痛點",
+          "landmark": "頸後上段、耳後骨（乳突）下方稍後：在胸鎖乳突肌（頸側由耳後斜落胸骨頂的那條粗肌肉）的後面、肩頂肌肉上緣之前的小凹位，約與耳垂同高。手指向頸後中線方向按；不可按耳垂正下方或下顎角後面的凹位。請受助者把臉轉向同一邊並輕輕把頭向後壓，手指下可感到斜向的肌肉收緊。",
+          "referral": ["z-head-top"],
+          "source": { "ref": "travell3", "page": "433-434, 436" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-splenius-capitis-press", "kind": "press", "target": "tp-splenius-capitis-1",
+          "receiverPosition": "仰臥或半躺，頭用枕頭承托，頸部放鬆。",
+          "helperMethod": "先摸到耳後骨，再向下向後移，越過胸鎖乳突肌（頸側由耳後斜落胸骨頂的那條粗肌肉）的後緣，到它後面的小凹位，約與耳垂同高。手指橫過肌肉平按，力向頸後中線方向，慢慢加到輕的力度。不可按耳垂正下方或下顎角後面的凹位。問受助者：頭頂同一邊有沒有出現平時那種痛？",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "用同一邊手的食指和中指，放在耳後骨下方稍後、頸側那條粗肌肉的後面（約與耳垂同高），向頸後中線方向輕輕平按，留意頭頂有沒有反應。不可按耳垂正下方或下顎角後面的凹位。",
+          "source": { "ref": "travell3", "page": "436" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-splenius-capitis-seated", "name": "收下巴低頭轉臉伸展", "targets": ["m-splenius-capitis"],
+          "startPosition": "坐直，雙腳平放地上，肩膊放鬆。",
+          "steps": [
+            "先輕輕收下巴，像點頭一樣。",
+            "再慢慢低頭，下巴向胸口。",
+            "低頭後把臉稍稍轉向另一邊，直到頸後同一邊有拉長的感覺。",
+            "雙手可輕放後腦，只用手的重量，不要用力按。",
+            "停住慢慢呼吸，然後慢慢抬頭回正。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：頸後被拉長，緊但舒服。",
+            "time": "每次停 6 至 10 秒，配合一次慢呼吸。",
+            "right": "頸後至耳後下方有拉長和微酸的感覺。",
+            "wrong": "尖銳的痛、頭暈、視力模糊、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每邊 3 次。",
+          "source": { "ref": "travell3", "page": "435, 437", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-splenius-capitis-hold", "name": "頭顱底外側、頸後上段持續按壓", "kind": "持續按壓", "target": "tp-splenius-capitis-1",
+          "steps": [
+            "受助者仰臥，頭用枕頭承托。",
+            "幫手坐在受助者頭的一側，先找到胸鎖乳突肌（頸側由耳後斜落胸骨頂的那條粗肌肉），再把兩隻手指移到它後面、約與耳垂同高的小凹位，向頸後中線方向平按。不可按耳垂正下方或下顎角後面的凹位。",
+            "慢慢加力，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛，停在這個力度。",
+            "等硬塊變軟，再輕輕多按一點。",
+            "時間到後慢慢放手。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。",
+            "time": "每點約 90 秒。",
+            "right": "酸痛慢慢減退，頭頂的痛變淡。",
+            "wrong": "痛越來越強、頭暈、視力模糊、作嘔、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "436, 1878-1879" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-splenius-cervicis",
+      "nameZh": "頸夾肌", "nameEn": "splenius cervicis",
+      "bp3d": { "L": "FJ1546M", "R": "FJ1546" },
+      "action": "令頸部向後仰，並把頸部轉向同一邊。",
+      "attachments": "由第三至第六胸椎脊骨中間突起的骨，向上止於第一至第三節頸骨的兩側。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-splenius-cervicis-1", "at": "z-neck-back-lower", "name": "頸夾肌激痛點（頸根）",
+          "landmark": "頸根後面：低頭時頸後最凸那節骨（第七頸椎）的高度，脊骨旁約一至兩隻手指寬，剛好在頸肩交界轉角之上。它在肩頂肌肉下面，要較深地按。",
+          "referral": ["z-neck-angle", "z-neck-back-lower"],
+          "source": { "ref": "travell3", "page": "435, 437" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-splenius-cervicis-press", "kind": "press", "target": "tp-splenius-cervicis-1",
+          "receiverPosition": "坐着，雙手手肘放在扶手或桌上承托，頭微微低下。",
+          "helperMethod": "先摸到低頭時頸後最凸那節骨，在它旁邊約一至兩隻手指寬平按，慢慢加到標準力度。再請受助者多低頭少許：痛點更敏感的話，較可能來自這條肌肉。問受助者是不是平時那種痛。",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "用另一隻手越過胸前，中指按在頸後最凸那節骨旁約一至兩隻手指寬，慢慢加力，再低頭比較。",
+          "source": { "ref": "travell3", "page": "437" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-splenius-cervicis-seated", "name": "彎頸低頭轉臉伸展", "targets": ["m-splenius-cervicis"],
+          "startPosition": "坐直，雙腳平放地上，肩膊放鬆。",
+          "steps": [
+            "慢慢低頭，下巴向胸口，讓整條頸向前彎。",
+            "低頭後把臉稍稍轉向另一邊，直到頸根同一邊有拉長的感覺。",
+            "雙手可輕放後腦，只用手的重量，不要用力按。",
+            "停住慢慢呼吸，然後慢慢抬頭回正。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：頸根被拉長，緊但舒服。",
+            "time": "每次停 6 至 10 秒，配合一次慢呼吸。",
+            "right": "頸根至頸肩交界有拉長和微酸的感覺。",
+            "wrong": "尖銳的痛、頭暈、視力模糊、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每邊 3 次。",
+          "source": { "ref": "travell3", "page": "435, 437", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-splenius-cervicis-hold", "name": "頸根脊骨旁持續按壓", "kind": "持續按壓", "target": "tp-splenius-cervicis-1",
+          "steps": [
+            "受助者側臥，要處理的一邊向上，頭用枕頭承托至頸部平直。",
+            "幫手用拇指指腹按在頸後最凸那節骨旁約一至兩隻手指寬，力向脊骨方向。",
+            "慢慢加力，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛，停在這個力度。",
+            "等硬塊變軟，再輕輕多按一點。",
+            "時間到後慢慢放手，請受助者慢慢轉頭幾次。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。",
+            "time": "每點約 90 秒。",
+            "right": "酸痛慢慢減退，頸根變鬆，轉頭較順。",
+            "wrong": "痛越來越強、頭暈、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "437, 1878-1879" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-posterior-cervical",
+      "nameZh": "頸後深層伸肌（頭半棘肌、頸半棘肌、多裂肌）", "nameEn": "posterior cervical muscles (semispinalis capitis, semispinalis cervicis, multifidus)",
+      "bp3d": { "L": "FJ1538M", "R": "FJ1538" },
+      "action": "令頭頸向後仰，撐住向前傾的頭；最深層的多裂肌亦協助頸椎轉動和穩定。",
+      "attachments": "頭半棘肌由上段胸椎及下段頸椎向上止於後腦骨；頸半棘肌和多裂肌在頸椎之間，一節連一節。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-semispinalis-capitis-1", "at": "z-neck-back-upper", "name": "頭半棘肌激痛點（頭顱底）",
+          "landmark": "後腦骨下緣，中線旁約一隻手指寬。這一點較深，需要較實的力才有反應。",
+          "referral": ["z-back-of-head", "z-temple", "z-behind-eye"],
+          "source": { "ref": "travell3", "page": "452, 455-456" }
+        },
+        {
+          "id": "tp-semispinalis-cervicis-1", "at": "z-neck-back-lower", "name": "頸半棘肌激痛點（頸中段）",
+          "landmark": "頸後中段，約在頭顱底與頸根的中間（第四、五頸椎的高度），頸椎骨突旁約一隻手指寬。",
+          "referral": ["z-back-of-head"],
+          "source": { "ref": "travell3", "page": "454, 456" }
+        },
+        {
+          "id": "tp-multifidus-1", "at": "z-neck-back-lower", "name": "頸多裂肌激痛點",
+          "landmark": "緊貼頸椎骨突外側的凹槽，約一隻手指寬之內，由頸中段向下任何一節都可能有；這是最深的一層。",
+          "referral": ["z-neck-back-upper", "z-neck-back-lower", "z-neck-midline", "z-scapula-inner-edge"],
+          "source": { "ref": "travell3", "page": "454, 457" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-posterior-cervical-press", "kind": "press", "target": "tp-semispinalis-capitis-1",
+          "receiverPosition": "坐着，雙前臂放在桌上承托，頭微微低下；或側臥，頭用枕頭承托。",
+          "helperMethod": "在後腦骨下緣、中線旁約一隻手指寬，手指橫過直向的肌肉平按，慢慢加到標準力度。微微低頭會令痛點更明顯。問受助者：後腦、太陽穴或眼眶有沒有出現平時那種痛？",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "雙手手指放在後腦骨下緣、中線兩旁，慢慢向前向上按，再微微低頭比較。",
+          "source": { "ref": "travell3", "page": "455-456" }
+        },
+        {
+          "id": "c-posterior-cervical-flex", "kind": "movement", "target": "m-posterior-cervical",
+          "receiverPosition": "坐直，雙手放大腿上。",
+          "helperMethod": "請受助者慢慢低頭，下巴向胸口。下巴離胸口還有約五厘米已經停住，或頸後痛，指向頸後深層伸肌。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己慢慢低頭，用手指量下巴與胸口之間還有多少距離。",
+          "source": { "ref": "travell3", "page": "455" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-posterior-cervical-flex", "name": "坐姿低頭伸展", "targets": ["m-posterior-cervical"],
+          "startPosition": "坐直，雙腳平放地上，肩膊放鬆。",
+          "steps": [
+            "先輕輕收下巴，眼望前方。",
+            "慢慢低頭，下巴向胸口，讓頸後由上至下慢慢拉長。",
+            "雙手可輕放後腦，只用手的重量，不要用力按。",
+            "停住慢慢呼吸，呼氣時讓頭自然再下沉少許。",
+            "慢慢抬頭回正，然後左右慢慢轉頭幾次。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：頸後被拉長，緊但舒服。",
+            "time": "每次停 6 至 10 秒，配合一次慢呼吸。",
+            "right": "頸後由頭顱底至頸根有拉長、微酸的感覺。",
+            "wrong": "尖銳的痛、頭暈、頭皮發麻或灼痛、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "455", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-posterior-cervical-glide", "name": "頸後沿肌肉慢推", "kind": "沿肌肉慢推", "target": "m-posterior-cervical",
+          "steps": [
+            "受助者仰臥，頭放在薄枕上。",
+            "幫手坐在受助者頭頂的一方，雙手手指屈曲放在頸後，指腹貼在頸椎骨突兩旁約一隻手指寬。",
+            "由頸根開始，指腹輕輕向上推，慢慢推到後腦骨下緣；每次由頸根推到頭顱底約 10 至 20 秒，越慢越好。",
+            "遇到痛點就放慢，停留至酸痛減退才繼續。",
+            "推完放鬆手指，由頸根重新開始。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：有壓力和微酸，不痛。",
+            "time": "每次由頸根推到頭顱底約 10 至 20 秒；推 3 至 5 次，連在痛點停留的時間，全程約 2 至 3 分鐘。",
+            "right": "頸後肌肉變暖變軟，低頭較容易。",
+            "wrong": "尖銳的痛、頭暈、作嘔、視力模糊、頭皮或手臂麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "455-457, 1886-1887, 1890-1891" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-suboccipital",
+      "nameZh": "枕下肌群", "nameEn": "suboccipital muscles (rectus capitis posterior major and minor, obliquus capitis superior and inferior)",
+      "bp3d": { "L": "FJ1567", "R": "FJ1589" },
+      "action": "微調頭部：令頭在頸頂向後仰和轉動，並穩定最上面兩節頸椎。",
+      "attachments": "四條小肌肉，連接後腦骨與第一、第二頸椎。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-suboccipital-1", "at": "z-neck-back-upper", "name": "枕下肌群激痛點",
+          "landmark": "後腦骨下緣正下方的凹位，中線旁約一隻手指寬，在頸後表層肌肉下面。受助者仰臥時，幫手指尖放在這裏，讓頭的重量壓下來即可。這是全身最敏感的位置之一。",
+          "referral": ["z-back-of-head", "z-temple", "z-behind-eye", "z-forehead", "z-neck-back-upper"],
+          "source": { "ref": "travell3", "page": "471-472, 474-475" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-suboccipital-press", "kind": "press", "target": "tp-suboccipital-1",
+          "receiverPosition": "仰臥，頭放在薄枕上，頸部放鬆。",
+          "helperMethod": "幫手坐在受助者頭頂的一方，雙手指尖向上屈曲，放在後腦骨下緣正下方、中線兩旁約一隻手指寬。手不用出力，只讓受助者頭的重量壓在指尖上。問受助者：後腦、太陽穴、眼眶或前額有沒有出現平時那種痛？",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "仰臥，雙手手指放在後腦骨下緣正下方，讓頭的重量輕輕壓在指尖上；或坐着用指尖輕按同一位置。",
+          "source": { "ref": "travell3", "page": "472, 474-475" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-suboccipital-nod", "name": "頭顱底小點頭伸展", "targets": ["m-suboccipital"],
+          "startPosition": "坐直，肩膊放鬆，眼望前方。",
+          "steps": [
+            "目的是拉長頭顱底與頸頂之間那幾條小肌肉，所以動作只發生在頭顱底，頸的其他部分保持不動。",
+            "想像頭頂被一條線輕輕向上吊，頸後拉長。",
+            "下巴向後收少許，做一個很小的點頭；雙手指尖可輕放頭顱底兩旁，隨點頭輕輕把後腦向上帶，不用出力。",
+            "停住慢慢呼吸，再慢慢抬回。",
+            "也可以先把臉轉向左或右少許再點頭，兩邊都試；一次只做一個方向，不要轉圈。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：頭顱底有輕微拉開的感覺。",
+            "time": "每次停約 5 至 10 秒；動作要慢，不要急速或彈動。",
+            "right": "頭顱底鬆開，頭部較輕，眼後的壓力減輕。",
+            "wrong": "尖銳的痛、頭暈、視力模糊、作嘔、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每輪 3 至 5 次；一天可做數輪。",
+          "source": { "ref": "travell3", "page": "478-479", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-suboccipital-rest", "name": "後腦骨下承托放鬆", "kind": "承托放鬆", "target": "tp-suboccipital-1",
+          "steps": [
+            "受助者仰臥，頭放在薄枕上，閉眼放鬆。",
+            "幫手坐在受助者頭頂的一方，雙手掌心向上，指尖屈曲，放在後腦骨下緣正下方的凹位、中線兩旁。",
+            "手不用向上推，只讓頭的重量慢慢沉在指尖上。",
+            "等頭顱底的肌肉慢慢變軟，指尖會自然陷入多一點。",
+            "時間到後先把頭輕輕放回枕上，再慢慢抽出手。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：只有頭的重量，不應痛。",
+            "time": "約 90 秒。",
+            "right": "頭顱底變鬆、變暖，頭痛或眼後的壓力減輕。",
+            "wrong": "頭暈、視力模糊、作嘔、說話或吞嚥不順、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "474-475, 1878-1879" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-scm",
+      "nameZh": "胸鎖乳突肌", "nameEn": "sternocleidomastoid",
+      "bp3d": { "L": "FJ1573", "R": "FJ1595" },
+      "action": "一邊收縮時頭側向同一邊、臉轉向另一邊；兩邊一起收縮時低頭。",
+      "attachments": "胸骨頭由胸骨頂、鎖骨頭由鎖骨內側三分之一，向上合成一條，止於耳後骨（乳突）及後腦骨外側。",
+      "depth": "surface",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-scm-sternal-mid", "at": "z-neck-side", "noPress": true, "name": "胸鎖乳突肌胸骨頭中段",
+          "landmark": "頸側前方由胸骨頂斜向上至耳後骨的那條肌肉（胸骨頭）的中段。受助者頭微微側向同一邊、臉稍轉向另一邊令肌肉放鬆；用拇指與食指把整條肌肉輕輕捏起，只捏肌肉，不要按入頸部。",
+          "referral": ["z-cheek-jaw", "z-forehead", "z-behind-eye"],
+          "source": { "ref": "travell3", "page": "280, 284-285" }
+        },
+        {
+          "id": "tp-scm-sternal-upper", "at": "z-neck-side", "noPress": true, "name": "胸鎖乳突肌胸骨頭上段",
+          "landmark": "同一條肌肉接近耳後骨（乳突）的上段。同樣輕輕捏起，不要向內按。",
+          "referral": ["z-back-of-head", "z-head-top"],
+          "source": { "ref": "travell3", "page": "280-281, 284-285" }
+        },
+        {
+          "id": "tp-scm-clavicular", "at": "z-neck-side", "noPress": true, "name": "胸鎖乳突肌鎖骨頭",
+          "landmark": "胸骨頭後面較深的一條（鎖骨頭），由鎖骨內側向上。受助者頭側向同一邊，讓手指可以伸到肌肉後面把它捏起。",
+          "referral": ["z-forehead", "z-behind-ear"],
+          "source": { "ref": "travell3", "page": "281, 284-285" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-scm-pinch", "kind": "press", "target": "tp-scm-sternal-mid",
+          "receiverPosition": "仰臥最好；頭微微側向要檢查的一邊，臉稍轉向另一邊。",
+          "helperMethod": "捏的力度以受助者的感覺為準，最多約 2–3 / 10，廚房磅量不到捏力。一次只檢查一邊。用拇指與食指把頸側前方那條肌肉輕輕捏起，令它離開下面的頸部；手指只夾住肌肉，不可向頸內按，也不可按在摸到脈搏跳動的地方。沿肌肉由下至上輕輕捏，問受助者：臉頰、前額、眼眶或耳後有沒有出現平時那種痛？有沒有頭暈？",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "頭微微側向同一邊，用另一隻手的拇指與食指輕輕捏起自己頸側前方的肌肉，只捏肌肉，不要按入頸部。感到頭暈即停。",
+          "source": { "ref": "travell3", "page": "284-285" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-scm-seated", "name": "轉頭收下巴伸展", "targets": ["m-scm"],
+          "startPosition": "坐直，肩膊放鬆，眼望前方。",
+          "steps": [
+            "頭保持水平，把臉慢慢轉向要伸展的一邊。",
+            "轉好後收下巴，令頭部平平向後移，像做雙下巴一樣；需要時用另一隻手的指尖輕輕幫下巴向後。",
+            "頸側前方有輕微拉長就停住，慢慢呼吸；不要把頭仰後。",
+            "放手，慢慢回正。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：頸側前方輕微拉長。",
+            "time": "每次停 5 至 10 秒。",
+            "right": "頸側前方有輕微拉長感，轉頭較順。",
+            "wrong": "頭暈、視力模糊、作嘔、尖銳的痛、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "每邊 3 次；一次只做一邊，動作要慢。",
+          "source": { "ref": "travell3", "page": "292", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-scm-pinch-hold", "name": "頸側前方輕捏", "kind": "輕捏持續", "target": "tp-scm-sternal-mid",
+          "steps": [
+            "受助者仰臥，頭微微側向要處理的一邊，臉稍轉向另一邊。",
+            "一次只處理一邊。幫手用拇指與食指輕輕捏起頸側前方的肌肉，只捏肌肉，不可向頸內按，不可按在摸到脈搏的地方。",
+            "找到最痛的一點後，以受助者的感覺為準（約 2–4 / 10）輕輕捏住不動。",
+            "等肌肉變軟再輕輕多捏一點；受助者感到頭暈即時放手。",
+            "時間到後慢慢放手。請受助者先側身，再慢慢坐起，不要急速轉頭或起身。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：輕微酸痛。這條肌肉只用輕力，捏的力度以這個感覺為準，不用公斤數。",
+            "time": "每點最多約 90 秒；感到頭暈即停。",
+            "right": "酸痛慢慢減退，臉頰、前額或眼眶的痛變淡。",
+            "wrong": "頭暈、視力模糊、作嘔、心跳不適、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "284-285, 1878" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-scalenes",
+      "nameZh": "斜角肌群（前、中、後斜角肌）", "nameEn": "scalene muscles (scalenus anterior, medius, posterior)",
+      "bp3d": { "L": "FJ1571", "R": "FJ1593" },
+      "action": "令頸部側向同一邊；用力吸氣時提起第一、第二條肋骨。",
+      "attachments": "由第二至第七節頸骨的兩側，向下止於第一及第二條肋骨；前、中斜角肌之間有通往手臂的神經和血管。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-scalenes-1", "at": "z-neck-side", "noPress": true, "name": "斜角肌激痛點",
+          "landmark": "頸側下段、鎖骨上方凹位之上，在胸鎖乳突肌（頸側由耳後斜落胸骨頂的那條粗肌肉）後緣的後面、肩頂肌肉前緣的前面。用鼻子急吸一口氣時，這裏的肌肉會收緊。這裏有通往手臂的神經和血管，只作認位，不要用力按。",
+          "referral": ["z-scapula-inner-edge", "z-between-scapula", "z-upper-arm", "z-forearm-hand"],
+          "source": { "ref": "travell3", "page": "537-538, 543-547" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-scalenes-cramp", "kind": "movement", "target": "m-scalenes",
+          "receiverPosition": "坐直，雙手放大腿上。",
+          "helperMethod": "如果受助者此刻已經很痛，先做前臂放前額的檢查，不做這一項。請受助者把頭轉向不適的一邊到盡頭，再低頭，令下巴向同一邊鎖骨上方的凹位靠，最多停 10 秒。頸側出現抽緊的痛，或痛走到肩胛骨內側、手臂或拇指食指，指向斜角肌。一出現麻痺即停。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己照做，最多停 10 秒；一出現麻痺即停。",
+          "source": { "ref": "travell3", "page": "540-541" }
+        },
+        {
+          "id": "c-scalenes-relief", "kind": "position", "target": "m-scalenes",
+          "receiverPosition": "坐着，背挺直。",
+          "helperMethod": "這個姿勢令頸側的斜角肌變短、放鬆，壓在手臂神經上的張力隨之減少。請受助者舉起不適那一邊的手，把前臂搭在自己額頭上，肩膊自然跟着提高。保持這個姿勢一段時間：如手臂或肩胛骨的痛漸漸減輕，指向斜角肌。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己照做，保持一段時間，留意手臂或肩胛骨的痛會否減輕。",
+          "source": { "ref": "travell3", "page": "541-542", "adapted": true }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-scalenes-supine", "name": "仰臥抓床邊側頭伸展", "targets": ["m-scalenes"],
+          "startPosition": "仰臥在床上，頭下放薄枕。可先用暖毛巾敷頸側一會。",
+          "steps": [
+            "目的是拉長頸側：那邊肩膊留在低位，頭慢慢側向另一邊。",
+            "要伸展那一邊的手抓住床邊，把那邊肩膊留在低位。",
+            "讓頭慢慢側向另一邊，耳朵向另一邊肩膊；另一隻手可輕扶頭側陪着頭走，不要拉。",
+            "試把臉稍稍轉向左、向右或望天花板，找頸側拉得最明顯的角度，就停在那裏；慢慢吸氣，呼氣時讓頭自然再側少許。",
+            "完成後用手扶頭回正，休息一下；先做不痛的一邊，再做痛的一邊。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：頸側輕微拉長。",
+            "time": "每次停約 5 至 10 秒，配合一次慢呼吸。",
+            "right": "頸側有輕微拉長感，手臂或肩胛骨的痛減輕。",
+            "wrong": "手臂或手指麻痺、觸電感、刺痛放射到手臂、頭暈、尖銳的痛。"
+          },
+          "reps": "每邊 2 至 3 次。",
+          "source": { "ref": "travell3", "page": "553-554", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-scalenes-breath", "name": "側臥呼吸配合放鬆", "kind": "呼吸配合放鬆", "target": "m-scalenes",
+          "steps": [
+            "目的是讓頭的重量和呼氣時的放鬆，慢慢拉長頸側；幫手只是陪伴，全程不在頸側用手指按壓。",
+            "受助者側臥，要處理的一邊向上，頭下不放枕或只放很薄的枕，讓頭自然垂向床面。",
+            "幫手把手掌輕放在受助者上面那一邊的頭側（耳朵上方），不加力，也不碰頸部。",
+            "受助者慢慢吸一口氣，輕輕屏住數秒；然後呼氣放鬆，讓頭自己向床面沉少許，幫手的手只是跟着。",
+            "做三次左右。完成後受助者先轉身，再慢慢坐起。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–3 / 10：只有輕微拉長；幫手不加壓。",
+            "time": "每次屏氣數秒，然後慢慢呼氣。",
+            "right": "頸側鬆開，呼吸較順，手臂的痛減輕。",
+            "wrong": "手臂或手指麻痺、觸電感、刺痛放射到手臂、頭暈、尖銳的痛。"
+          },
+          "source": { "ref": "travell3", "page": "554", "adapted": true }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-supraspinatus",
+      "nameZh": "棘上肌", "nameEn": "supraspinatus",
+      "bp3d": { "L": "FJ1506M", "R": "FJ1506" },
+      "action": "開始把手臂向外舉起，並把上臂骨頭穩定在肩關節內。",
+      "attachments": "由肩胛骨骨脊上方的凹位，經肩峰下面，止於上臂骨頂部外側。",
+      "depth": "deep",
+      "cuppingSuits": false,
+      "triggerPoints": [
+        {
+          "id": "tp-supraspinatus-1", "at": "z-scapula-top", "name": "棘上肌激痛點",
+          "landmark": "肩胛骨背面那條橫向骨脊上方的凹位中段，隔着肩頂肌肉向下按；整個凹位都可能有痛點。",
+          "referral": ["z-shoulder-outer", "z-upper-arm", "z-elbow-outer"],
+          "source": { "ref": "travell3", "page": "564-565, 568" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-supraspinatus-press", "kind": "press", "target": "tp-supraspinatus-1",
+          "receiverPosition": "坐着，手臂放鬆垂在身旁；或側臥，不適的一邊向上，手臂貼住身體。",
+          "helperMethod": "先摸到肩胛骨背面的橫向骨脊，在骨脊上方的凹位，用拇指指腹隔着肩頂肌肉向下按，橫過肌肉慢慢來回推。這條肌肉較深，可以慢慢加到深的力度。問受助者：肩膊外側或手臂有沒有出現平時那種痛？",
+          "pressure": "deep",
+          "alone": true,
+          "aloneMethod": "用另一隻手越過胸前，四指勾在肩胛骨骨脊上方的凹位，向下按並慢慢來回推。",
+          "source": { "ref": "travell3", "page": "568" }
+        },
+        {
+          "id": "c-supraspinatus-reach", "kind": "movement", "target": "m-supraspinatus",
+          "receiverPosition": "站立或坐直。",
+          "helperMethod": "手繞到背後時，上臂向內收、向內轉，會把這條肌肉拉到最長。請受助者把不適那一邊的手繞到背後，手背貼着背，沿脊骨盡量向上爬，再用另一邊做一次比較。不適那一邊明顯爬得較低（例如只到腰），或肩膊外側痛，指向這條肌肉。",
+          "pressure": "light",
+          "alone": true,
+          "aloneMethod": "自己照做，對着鏡子看指尖能伸到背部哪個高度，兩邊比較。",
+          "source": { "ref": "travell3", "page": "566", "adapted": true }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-supraspinatus-behind-back", "name": "背後拉手伸展", "targets": ["m-supraspinatus"],
+          "startPosition": "站立或坐直，肩膊放鬆。",
+          "steps": [
+            "兩隻手都放到背後，另一隻手握住要伸展那一邊的手腕。",
+            "把握住的手腕輕輕帶向另一邊並向上，直到肩膊外側和後面有拉長感。",
+            "停住慢慢呼吸，再慢慢放下；不要急拉或彈動。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：肩膊外側和後面被拉長。",
+            "time": "每次停 6 至 10 秒，配合慢呼吸。",
+            "right": "肩膊外側有拉長感，放下後舉手較輕鬆。",
+            "wrong": "肩關節內尖銳的痛、卡住的感覺、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "573", "adapted": true }
+        },
+        {
+          "id": "st-supraspinatus-across", "name": "手肘橫過胸前伸展", "targets": ["m-supraspinatus"],
+          "startPosition": "坐直或站立。手繞不到背後的話，用這個代替。",
+          "steps": [
+            "另一隻手托住要伸展那一邊的手肘。",
+            "把手肘橫向帶過胸前，到肩膊後面開始拉緊就停。",
+            "放鬆肩膊，吸一口氣；呼氣時讓手肘再靠近對側肩膊少許。",
+            "保持兩三次呼吸後慢慢放下。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：肩膊後面和外側被拉長。",
+            "time": "每次拉緊後停約 5 至 10 秒，配合慢呼吸。",
+            "right": "肩膊後面和外側有拉長感，手臂較輕鬆。",
+            "wrong": "肩關節內尖銳的痛、卡住的感覺、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "574", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-supraspinatus-hold", "name": "肩胛骨骨脊上方持續按壓", "kind": "持續按壓", "target": "tp-supraspinatus-1",
+          "steps": [
+            "受助者坐着，手臂放鬆放在身旁或枕頭上，肩膊不要用力。",
+            "幫手站在受助者後面，找到肩胛骨骨脊上方凹位的痛點。",
+            "用拇指指腹隔着肩頂肌肉慢慢向下按，直到受助者感覺約 2–4 / 10、有壓力和微酸但不痛。",
+            "停在這個力度，等硬塊變軟再輕輕多壓一點。",
+            "時間到後慢慢放手。肩膊剛痛不久的話，之後可冷敷數分鐘。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 2–4 / 10：有壓力、微酸，但不痛。",
+            "time": "每點約 90 秒。",
+            "right": "肩膊外側或手臂的痛減輕，舉手較順。",
+            "wrong": "痛越來越強、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "572-573, 1878-1879" }
+        }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-rhomboids",
+      "nameZh": "菱形肌（大菱形肌、小菱形肌）", "nameEn": "rhomboid major and minor",
+      "bp3d": { "L": "FJ1536M", "R": "FJ1536" },
+      "action": "把肩胛骨拉向脊骨並向上提。",
+      "attachments": "由第七頸椎至第五胸椎脊骨中間突起的骨，斜向下外，止於肩胛骨內側邊（由骨脊內端至下角）。",
+      "depth": "deep",
+      "cuppingSuits": true,
+      "triggerPoints": [
+        {
+          "id": "tp-rhomboids-1", "at": "z-between-scapula", "name": "菱形肌激痛點",
+          "landmark": "肩胛骨內側邊與脊骨之間，沿肩胛骨內側邊上下任何位置都可能有；肌肉斜向下外走。受助者俯臥，隔着斜方肌平按。",
+          "referral": ["z-scapula-inner-edge", "z-between-scapula", "z-scapula-top"],
+          "source": { "ref": "travell3", "page": "662, 665-667" }
+        }
+      ],
+      "checks": [
+        {
+          "id": "c-rhomboids-press", "kind": "press", "target": "tp-rhomboids-1",
+          "receiverPosition": "俯臥，雙手放身旁；或坐着，把手背放在腰後，令肩胛骨內側邊翹起。",
+          "helperMethod": "用拇指指腹沿肩胛骨內側邊，橫過斜向下外的肌肉慢慢來回推，找出一條較硬的肌肉帶和最痛的一點。慢慢加到標準力度，問受助者是不是平時那種痛。",
+          "pressure": "standard",
+          "alone": true,
+          "aloneMethod": "背靠牆，把一個網球放在肩胛骨內側邊與脊骨之間，慢慢靠向網球，上下移動找最痛的一點。",
+          "source": { "ref": "travell3", "page": "665-667, 669" }
+        }
+      ],
+      "stretches": [
+        {
+          "id": "st-rhomboids-doorway", "name": "門口前傾伸展", "targets": ["m-rhomboids"],
+          "startPosition": "站在門口正中，一隻腳向前踏半步。",
+          "steps": [
+            "菱形肌本身很少需要拉；這個伸展拉開的是胸前肌肉，令肩膊不再向前捲，背部的菱形肌就不用長期被拉住。",
+            "把兩邊前臂貼在門框上，手肘大約與肩膊同高；手放鬆，不用抓。",
+            "重心慢慢移向前腳，讓胸口向前穿過門口，直到胸前有拉開的感覺。",
+            "頸部保持自然，不要把頭伸向前。",
+            "停住，正常呼吸，然後把重心移回後腳。"
+          ],
+          "helper": false,
+          "rightAmount": {
+            "strength": "受助者感覺 3–5 / 10：胸前被拉開，舒服。",
+            "time": "每次停約 30 秒。",
+            "right": "胸前和肩膊前面拉開，之後上背較容易挺直。",
+            "wrong": "肩膊前面尖銳的痛、手臂或手指麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "reps": "3 至 5 次。",
+          "source": { "ref": "travell3", "page": "669, 991-992", "adapted": true }
+        }
+      ],
+      "manual": [
+        {
+          "id": "mt-rhomboids-hold", "name": "肩胛骨內側邊持續按壓", "kind": "持續按壓", "target": "tp-rhomboids-1",
+          "steps": [
+            "受助者俯臥，雙手放身旁，肩膊放鬆。",
+            "幫手用拇指指腹平放在肩胛骨內側邊找到的最痛點上。",
+            "慢慢加力，直到受助者感覺酸痛但仍然舒服，停在這個力度。",
+            "壓痛減退後慢慢放手，再找下一點。",
+            "完成後請受助者慢慢活動肩膊。"
+          ],
+          "rightAmount": {
+            "strength": "受助者感覺 4–6 / 10：實而酸，不是痛到要忍。",
+            "time": "每點 15 至 30 秒，壓到壓痛減退；需要時可重複。",
+            "right": "肩胛骨內側邊的酸痛減退，上背變鬆。",
+            "wrong": "痛越來越強、呼吸時胸口痛、麻痺、觸電感、刺痛放射到手臂。"
+          },
+          "source": { "ref": "travell3", "page": "669, 1878" }
+        }
+      ],
+      "cupping": [
+        {
+          "id": "cp-rhomboids", "name": "脊骨旁滑動拔罐",
+          "position": "肩胛骨內側邊與脊骨之間的長條肌肉。先塗按摩油，杯口放在脊骨旁約一至兩隻手指寬以外，與脊骨平行上下慢推；不要經過脊骨或肩胛骨邊緣。服用抗凝血藥（薄血藥）、容易瘀傷或流血不止、皮膚很薄（例如長者或長期用類固醇）、懷孕、皮膚有傷口或發炎、發燒時不要拔罐。",
+          "cupSize": "中號（口徑約 5 厘米）",
+          "method": "sliding",
+          "rightAmount": {
+            "strength": "吸力輕：只要杯能貼住皮膚滑動，受助者感覺 2–4 / 10，不痛。",
+            "time": "全程 5 至 10 分鐘；同一位置每星期不多於一次。",
+            "right": "皮膚微紅溫暖，肌肉放鬆；留下的紅印數日至兩星期內消退。",
+            "wrong": "痛多於輕微不適、杯推不動仍然硬推、起水泡、呼吸時胸口痛、麻痺、觸電感、刺痛放射到手臂、頭暈。"
+          },
+          "source": { "ref": "cupping2026", "page": "vacuum-cupping.md §2–§4" }
+        }
+      ]
+    }
+  ]
+}

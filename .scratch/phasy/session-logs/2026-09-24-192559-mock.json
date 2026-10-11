@@ -1,0 +1,534 @@
+{
+  "app": "phasy-session-flow",
+  "libraryFile": "test/library.stub.json",
+  "libraryVersion": "stub-2026-09-24",
+  "startedAt": "2026-09-24T11:25:55.156Z",
+  "receiver": {
+    "slot": "A",
+    "name": "成員 A"
+  },
+  "helper": true,
+  "sides": [
+    "R"
+  ],
+  "zones": [
+    "z-neck-back-upper",
+    "z-neck-back-lower",
+    "z-shoulder-top"
+  ],
+  "kind": "疲累",
+  "description": "開長途車之後，肩頸很攰",
+  "reading": "受助者描述的情況最接近「長時間駕駛」。",
+  "aiSituations": [
+    "s-driving"
+  ],
+  "situations": [
+    "s-driving"
+  ],
+  "test": "s-phone-head-down",
+  "testReason": "這個動作最能測試不適的位置。",
+  "testBefore": 6,
+  "followups": [
+    {
+      "q": "這種攰通常在一天中甚麼時候最明顯？",
+      "a": "下午對着電腦之後最明顯"
+    },
+    {
+      "q": "最近有沒有比平時多用電腦或手機？",
+      "a": null
+    }
+  ],
+  "candidates": [
+    {
+      "muscle": "m-trap-upper",
+      "side": "R",
+      "matched": [
+        "z-shoulder-top",
+        "z-neck-back-upper"
+      ],
+      "matchedAt": [
+        "z-shoulder-top"
+      ],
+      "matchedRef": [
+        "z-neck-back-upper"
+      ],
+      "byLoad": true,
+      "aiAdded": false,
+      "reason": "斜方肌上部的牽涉痛範圍與不適位置相近。",
+      "by": "ai"
+    },
+    {
+      "muscle": "m-levator-scapulae",
+      "side": "R",
+      "matched": [
+        "z-neck-back-lower"
+      ],
+      "matchedAt": [],
+      "matchedRef": [
+        "z-neck-back-lower"
+      ],
+      "byLoad": false,
+      "aiAdded": false,
+      "reason": "提肩胛肌的牽涉痛範圍與不適位置相近。",
+      "by": "ai"
+    },
+    {
+      "muscle": "m-splenius-capitis",
+      "side": "R",
+      "matched": [
+        "z-neck-back-upper"
+      ],
+      "matchedAt": [
+        "z-neck-back-upper"
+      ],
+      "matchedRef": [
+        "z-neck-back-upper"
+      ],
+      "byLoad": false,
+      "aiAdded": false,
+      "reason": "頭夾肌的牽涉痛範圍與不適位置相近。",
+      "by": "ai"
+    },
+    {
+      "muscle": "m-rhomboid",
+      "side": "R",
+      "matched": [],
+      "matchedAt": [],
+      "matchedRef": [],
+      "byLoad": false,
+      "aiAdded": true,
+      "reason": "這條肌肉也常與肩頸攰有關。",
+      "by": "ai"
+    }
+  ],
+  "checks": [
+    {
+      "n": 1,
+      "check": "c-trap-upper-pinch",
+      "muscle": "m-trap-upper",
+      "side": "R",
+      "reason": "斜方肌上部排在最前。",
+      "by": "ai",
+      "score": 7,
+      "familiar": true,
+      "shape": "area",
+      "other": 5
+    },
+    {
+      "n": 2,
+      "check": "c-levator-press",
+      "muscle": "m-levator-scapulae",
+      "side": "R",
+      "reason": "提肩胛肌排在最前。",
+      "by": "ai",
+      "score": 6,
+      "familiar": true,
+      "shape": "along",
+      "other": null
+    }
+  ],
+  "stopReason": "已有兩條肌肉出現平時那種痛，可以開始處理。",
+  "picked": [
+    "m-trap-upper|R",
+    "m-levator-scapulae|R"
+  ],
+  "plan": [
+    {
+      "id": "cp-trap-upper",
+      "kind": "cupping",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合斜方肌上部。",
+      "by": "ai"
+    },
+    {
+      "id": "mt-trap-upper-hold",
+      "kind": "manual",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合斜方肌上部。",
+      "by": "ai"
+    },
+    {
+      "id": "mt-levator-hold",
+      "kind": "manual",
+      "muscle": "m-levator-scapulae",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合提肩胛肌。",
+      "by": "ai"
+    },
+    {
+      "id": "st-trap-upper-seated",
+      "kind": "stretch",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合斜方肌上部。",
+      "by": "ai"
+    },
+    {
+      "id": "st-trap-upper-assisted",
+      "kind": "stretch",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合斜方肌上部。",
+      "by": "ai"
+    },
+    {
+      "id": "st-levator-seated",
+      "kind": "stretch",
+      "muscle": "m-levator-scapulae",
+      "sides": [
+        "R"
+      ],
+      "reason": "這一項適合提肩胛肌。",
+      "by": "ai"
+    }
+  ],
+  "recheck": {
+    "muscles": {
+      "m-trap-upper|R": {
+        "muscle": "m-trap-upper",
+        "side": "R",
+        "check": "c-trap-upper-pinch",
+        "before": 7,
+        "after": 9
+      },
+      "m-levator-scapulae|R": {
+        "muscle": "m-levator-scapulae",
+        "side": "R",
+        "check": "c-levator-press",
+        "before": 6,
+        "after": 7
+      }
+    },
+    "test": {
+      "before": 6,
+      "after": 3
+    }
+  },
+  "summary": "今次找到與平時那種痛有關的肌肉，並做了處理。處理後再檢查，測試動作的分數有變化。下次可以再比較。",
+  "statuses": [
+    {
+      "muscle": "m-trap-upper",
+      "L": 5,
+      "R": 9
+    },
+    {
+      "muscle": "m-levator-scapulae",
+      "L": "unchecked",
+      "R": 7
+    },
+    {
+      "muscle": "m-splenius-capitis",
+      "L": "unchecked",
+      "R": "suspected"
+    },
+    {
+      "muscle": "m-rhomboid",
+      "L": "unchecked",
+      "R": "suspected"
+    }
+  ],
+  "endedAt": "2026-09-24T11:25:59.574Z",
+  "settings": {
+    "base": "http://localhost:8771/mock",
+    "model": "mock-model",
+    "effort": "high",
+    "keySet": true
+  },
+  "llm": [
+    {
+      "task": "map_situation",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:55.709Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"map_situation\",\"instruction\":\"受助者用自己的話說出不適在甚麼情況下出現或加重（data.description）。從 data.situations 選出最吻合的一至兩項，只用 id。再用一句話說出你的理解，讓受助者確認。完全對不上時，situations 回覆空陣列，reading 用一句話說明。\",\"reply_format\":{\"situations\":[\"<situation id>\"],\"reading\":\"<一句話>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"description\":\"開長途車之後，肩頸很攰\",\"situations\":[{\"id\":\"s-driving\",\"name\":\"長時間駕駛\",\"kind\":\"posture\",\"zones\":[\"肩頂\"],\"loads\":[\"斜方肌上部\"]},{\"id\":\"s-phone-head-down\",\"name\":\"低頭看手機\",\"kind\":\"posture\",\"zones\":[\"頸後下段\",\"肩頂\"],\"loads\":[\"斜方肌上部\",\"提肩胛肌\"]},{\"id\":\"s-turn-head\",\"name\":\"轉頭望後面\",\"kind\":\"movement\",\"zones\":[\"頸後上段\",\"頸後下段\"],\"loads\":[\"提肩胛肌\",\"頭夾肌\"]},{\"id\":\"s-carry-bag\",\"name\":\"單肩揹袋\",\"kind\":\"posture\",\"zones\":[\"肩頂\"],\"loads\":[\"斜方肌上部\",\"提肩胛肌\"]}]}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        },
+        "reasoning_effort": "high"
+      },
+      "status": 400,
+      "ms": 14,
+      "error": "{\"error\":{\"message\":\"Unrecognized request argument supplied: reasoning_effort\",\"type\":\"invalid_request_error\",\"param\":\"reasoning_effort\"}}"
+    },
+    {
+      "task": "map_situation",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:55.723Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"map_situation\",\"instruction\":\"受助者用自己的話說出不適在甚麼情況下出現或加重（data.description）。從 data.situations 選出最吻合的一至兩項，只用 id。再用一句話說出你的理解，讓受助者確認。完全對不上時，situations 回覆空陣列，reading 用一句話說明。\",\"reply_format\":{\"situations\":[\"<situation id>\"],\"reading\":\"<一句話>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"description\":\"開長途車之後，肩頸很攰\",\"situations\":[{\"id\":\"s-driving\",\"name\":\"長時間駕駛\",\"kind\":\"posture\",\"zones\":[\"肩頂\"],\"loads\":[\"斜方肌上部\"]},{\"id\":\"s-phone-head-down\",\"name\":\"低頭看手機\",\"kind\":\"posture\",\"zones\":[\"頸後下段\",\"肩頂\"],\"loads\":[\"斜方肌上部\",\"提肩胛肌\"]},{\"id\":\"s-turn-head\",\"name\":\"轉頭望後面\",\"kind\":\"movement\",\"zones\":[\"頸後上段\",\"頸後下段\"],\"loads\":[\"提肩胛肌\",\"頭夾肌\"]},{\"id\":\"s-carry-bag\",\"name\":\"單肩揹袋\",\"kind\":\"posture\",\"zones\":[\"肩頂\"],\"loads\":[\"斜方肌上部\",\"提肩胛肌\"]}]}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 2,
+      "reply": "{\"situations\":[\"s-driving\"],\"reading\":\"受助者描述的情況最接近「長時間駕駛」。\"}"
+    },
+    {
+      "task": "pick_test",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:55.892Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"pick_test\",\"instruction\":\"受助者說的情況不能即場做，或者沒有特定情況。從 data.tests 選一個測試動作，它要最能測試受助者不適的位置（data.complaint.zones）。只用 id，並用一句話說明原因。\",\"reply_format\":{\"test\":\"<situation id>\",\"reason\":\"<一句話>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"tests\":[{\"id\":\"s-phone-head-down\",\"name\":\"低頭看手機\",\"zones\":[\"頸後下段\",\"肩頂\"]},{\"id\":\"s-turn-head\",\"name\":\"轉頭望後面\",\"zones\":[\"頸後上段\",\"頸後下段\"]}]}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 15,
+      "reply": "{\"test\":\"s-phone-head-down\",\"reason\":\"這個動作最能測試不適的位置。\"}"
+    },
+    {
+      "task": "follow_up",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.059Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"follow_up\",\"instruction\":\"你可以再問受助者簡短的問題，幫助判斷 data.candidates 中哪一條肌肉最可疑。一次只問一條，要短，要讓沒有醫學背景的人容易回答。data.asked 是已問過的問題和答案，不要重問。不要問姓名。資料已經足夠時，question 回覆 null。\",\"reply_format\":{\"question\":\"<一條短問題，或 null>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"triggerPointZones\":[\"肩頂\"],\"referral\":[\"頸後上段\",\"太陽穴\",\"後腦\"],\"matchedZones\":[\"肩頂\",\"頸後上段\"],\"loadedBySituation\":true},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸肩交界\"],\"referral\":[\"頸後下段\",\"肩胛骨內側\"],\"matchedZones\":[\"頸後下段\"],\"loadedBySituation\":false},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸後上段\"],\"referral\":[\"後腦\",\"頸後上段\"],\"matchedZones\":[\"頸後上段\"],\"loadedBySituation\":false}],\"asked\":[],\"left\":3}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 13,
+      "reply": "{\"question\":\"這種攰通常在一天中甚麼時候最明顯？\"}"
+    },
+    {
+      "task": "follow_up",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.208Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"follow_up\",\"instruction\":\"你可以再問受助者簡短的問題，幫助判斷 data.candidates 中哪一條肌肉最可疑。一次只問一條，要短，要讓沒有醫學背景的人容易回答。data.asked 是已問過的問題和答案，不要重問。不要問姓名。資料已經足夠時，question 回覆 null。\",\"reply_format\":{\"question\":\"<一條短問題，或 null>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"triggerPointZones\":[\"肩頂\"],\"referral\":[\"頸後上段\",\"太陽穴\",\"後腦\"],\"matchedZones\":[\"肩頂\",\"頸後上段\"],\"loadedBySituation\":true},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸肩交界\"],\"referral\":[\"頸後下段\",\"肩胛骨內側\"],\"matchedZones\":[\"頸後下段\"],\"loadedBySituation\":false},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸後上段\"],\"referral\":[\"後腦\",\"頸後上段\"],\"matchedZones\":[\"頸後上段\"],\"loadedBySituation\":false}],\"asked\":[{\"question\":\"這種攰通常在一天中甚麼時候最明顯？\",\"answer\":\"下午對着電腦之後最明顯\"}],\"left\":2}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 15,
+      "reply": "{\"question\":\"最近有沒有比平時多用電腦或手機？\"}"
+    },
+    {
+      "task": "follow_up",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.341Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"follow_up\",\"instruction\":\"你可以再問受助者簡短的問題，幫助判斷 data.candidates 中哪一條肌肉最可疑。一次只問一條，要短，要讓沒有醫學背景的人容易回答。data.asked 是已問過的問題和答案，不要重問。不要問姓名。資料已經足夠時，question 回覆 null。\",\"reply_format\":{\"question\":\"<一條短問題，或 null>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"triggerPointZones\":[\"肩頂\"],\"referral\":[\"頸後上段\",\"太陽穴\",\"後腦\"],\"matchedZones\":[\"肩頂\",\"頸後上段\"],\"loadedBySituation\":true},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸肩交界\"],\"referral\":[\"頸後下段\",\"肩胛骨內側\"],\"matchedZones\":[\"頸後下段\"],\"loadedBySituation\":false},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸後上段\"],\"referral\":[\"後腦\",\"頸後上段\"],\"matchedZones\":[\"頸後上段\"],\"loadedBySituation\":false}],\"asked\":[{\"question\":\"這種攰通常在一天中甚麼時候最明顯？\",\"answer\":\"下午對着電腦之後最明顯\"},{\"question\":\"最近有沒有比平時多用電腦或手機？\",\"answer\":\"（跳過）\"}],\"left\":1}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 15,
+      "reply": "{\"question\":null}"
+    },
+    {
+      "task": "rank_candidates",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.357Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"rank_candidates\",\"instruction\":\"為 data.candidates 排列可疑程度，最可疑的排最前。每一項用一句話說明原因，例如牽涉痛範圍、受助者說的情況、追問的答案。如果 data.others 中有肌肉也很可能有關，可以加入最多兩條，寫明哪一邊和原因；沒有需要就回覆空陣列。只用 id。\",\"reply_format\":{\"ranking\":[{\"muscle\":\"<muscle id>\",\"side\":\"左 或 右\",\"reason\":\"<一句話>\"}],\"added\":[{\"muscle\":\"<muscle id>\",\"side\":\"左 或 右\",\"reason\":\"<一句話>\"}]},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"answers\":[{\"question\":\"這種攰通常在一天中甚麼時候最明顯？\",\"answer\":\"下午對着電腦之後最明顯\"},{\"question\":\"最近有沒有比平時多用電腦或手機？\",\"answer\":\"（跳過）\"}],\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"triggerPointZones\":[\"肩頂\"],\"referral\":[\"頸後上段\",\"太陽穴\",\"後腦\"],\"matchedZones\":[\"肩頂\",\"頸後上段\"],\"loadedBySituation\":true},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸肩交界\"],\"referral\":[\"頸後下段\",\"肩胛骨內側\"],\"matchedZones\":[\"頸後下段\"],\"loadedBySituation\":false},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"triggerPointZones\":[\"頸後上段\"],\"referral\":[\"後腦\",\"頸後上段\"],\"matchedZones\":[\"頸後上段\"],\"loadedBySituation\":false}],\"others\":[{\"muscle\":\"m-rhomboid\",\"name\":\"菱形肌\",\"action\":\"把肩胛骨拉向脊骨。\",\"triggerPointZones\":[\"肩胛骨之間\"],\"referral\":[\"肩胛骨內側\",\"肩胛骨之間\"]}]}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 3,
+      "reply": "{\"ranking\":[{\"muscle\":\"m-trap-upper\",\"side\":\"右\",\"reason\":\"斜方肌上部的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-levator-scapulae\",\"side\":\"右\",\"reason\":\"提肩胛肌的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-splenius-capitis\",\"side\":\"右\",\"reason\":\"頭夾肌的牽涉痛範圍與不適位置相近。\"}],\"added\":[{\"muscle\":\"m-rhomboid\",\"side\":\"右\",\"reason\":\"這條肌肉也常與肩頸攰有關。\"}]}"
+    },
+    {
+      "task": "next_check",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.499Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"next_check\",\"instruction\":\"從 data.allowed 選下一個要做的檢查，只用 check id 和清單列明的一邊，並用一句話說明為甚麼先查它。data.done 是已做的檢查和結果。如果你認為資料已經足夠，可以停止檢查：stop 回覆 true，reason 寫明原因。\",\"reply_format\":{\"check\":\"<check id，停止時為 null>\",\"side\":\"左 或 右\",\"reason\":\"<一句話>\",\"stop\":false},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"helper\":true,\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"reason\":\"斜方肌上部的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"reason\":\"提肩胛肌的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"reason\":\"頭夾肌的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-rhomboid\",\"name\":\"菱形肌\",\"side\":\"右\",\"reason\":\"這條肌肉也常與肩頸攰有關。\"}],\"done\":[],\"allowed\":[{\"check\":\"c-trap-upper-pinch\",\"side\":\"右\",\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"kind\":\"press\",\"point\":\"上斜方肌 1 號點\",\"pointZone\":\"肩頂\",\"referral\":[\"頸後上段\",\"太陽穴\",\"後腦\"]},{\"check\":\"c-trap-upper-sidebend\",\"side\":\"右\",\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"kind\":\"movement\",\"point\":null,\"pointZone\":null,\"referral\":[]},{\"check\":\"c-levator-press\",\"side\":\"右\",\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"kind\":\"press\",\"point\":\"提肩胛肌 1 號點\",\"pointZone\":\"頸肩交界\",\"referral\":[\"頸後下段\",\"肩胛骨內側\"]},{\"check\":\"c-splenius-press\",\"side\":\"右\",\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"kind\":\"press\",\"point\":\"頭夾肌 1 號點\",\"pointZone\":\"頸後上段\",\"referral\":[\"後腦\",\"頸後上段\"]},{\"check\":\"c-rhomboid-press\",\"side\":\"右\",\"muscle\":\"m-rhomboid\",\"name\":\"菱形肌\",\"kind\":\"press\",\"point\":\"菱形肌 1 號點\",\"pointZone\":\"肩胛骨之間\",\"referral\":[\"肩胛骨內側\",\"肩胛骨之間\"]}],\"checksDone\":0,\"maxChecks\":8}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 7,
+      "reply": "{\"check\":\"c-trap-upper-pinch\",\"side\":\"右\",\"reason\":\"斜方肌上部排在最前。\",\"stop\":false}"
+    },
+    {
+      "task": "next_check",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:56.876Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"next_check\",\"instruction\":\"從 data.allowed 選下一個要做的檢查，只用 check id 和清單列明的一邊，並用一句話說明為甚麼先查它。data.done 是已做的檢查和結果。如果你認為資料已經足夠，可以停止檢查：stop 回覆 true，reason 寫明原因。\",\"reply_format\":{\"check\":\"<check id，停止時為 null>\",\"side\":\"左 或 右\",\"reason\":\"<一句話>\",\"stop\":false},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"test\":{\"name\":\"低頭看手機\",\"score\":6},\"helper\":true,\"candidates\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"reason\":\"斜方肌上部的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"reason\":\"提肩胛肌的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"side\":\"右\",\"reason\":\"頭夾肌的牽涉痛範圍與不適位置相近。\"},{\"muscle\":\"m-rhomboid\",\"name\":\"菱形肌\",\"side\":\"右\",\"reason\":\"這條肌肉也常與肩頸攰有關。\"}],\"done\":[{\"check\":\"c-trap-upper-pinch\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"score\":7,\"familiarPain\":true,\"painShape\":\"一片範圍\",\"otherSideScore\":5}],\"allowed\":[{\"check\":\"c-levator-press\",\"side\":\"右\",\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"kind\":\"press\",\"point\":\"提肩胛肌 1 號點\",\"pointZone\":\"頸肩交界\",\"referral\":[\"頸後下段\",\"肩胛骨內側\"]},{\"check\":\"c-splenius-press\",\"side\":\"右\",\"muscle\":\"m-splenius-capitis\",\"name\":\"頭夾肌\",\"kind\":\"press\",\"point\":\"頭夾肌 1 號點\",\"pointZone\":\"頸後上段\",\"referral\":[\"後腦\",\"頸後上段\"]},{\"check\":\"c-rhomboid-press\",\"side\":\"右\",\"muscle\":\"m-rhomboid\",\"name\":\"菱形肌\",\"kind\":\"press\",\"point\":\"菱形肌 1 號點\",\"pointZone\":\"肩胛骨之間\",\"referral\":[\"肩胛骨內側\",\"肩胛骨之間\"]}],\"checksDone\":1,\"maxChecks\":8}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 13,
+      "reply": "{\"check\":\"c-levator-press\",\"side\":\"右\",\"reason\":\"提肩胛肌排在最前。\",\"stop\":false}"
+    },
+    {
+      "task": "plan",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:57.408Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"plan\",\"instruction\":\"受助者已選了 data.muscles 這些肌肉來處理。從 data.allowed 揀處理項目，只用 id，每項用一句話說明原因。不用全選，揀最合適的；每條肌肉最少要有一個伸展。\",\"reply_format\":{\"items\":[{\"id\":\"<treatment id>\",\"reason\":\"<一句話>\"}]},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"helper\":true,\"muscles\":[{\"muscle\":\"m-trap-upper\",\"name\":\"斜方肌上部\",\"side\":\"右\",\"score\":7,\"familiarPain\":true},{\"muscle\":\"m-levator-scapulae\",\"name\":\"提肩胛肌\",\"side\":\"右\",\"score\":6,\"familiarPain\":true}],\"allowed\":[{\"id\":\"cp-trap-upper\",\"name\":\"肩頂定罐\",\"kind\":\"抽真空拔罐\",\"muscle\":\"斜方肌上部\",\"method\":\"定罐\"},{\"id\":\"mt-trap-upper-hold\",\"name\":\"肩頂持續捏壓\",\"kind\":\"手法\",\"muscle\":\"斜方肌上部\",\"technique\":\"持續按壓\"},{\"id\":\"st-trap-upper-seated\",\"name\":\"坐姿側頭伸展\",\"kind\":\"伸展\",\"muscle\":\"斜方肌上部\",\"targets\":[\"斜方肌上部\"],\"needsHelper\":false},{\"id\":\"st-trap-upper-assisted\",\"name\":\"幫手按肩側頭伸展\",\"kind\":\"伸展\",\"muscle\":\"斜方肌上部\",\"targets\":[\"斜方肌上部\"],\"needsHelper\":true},{\"id\":\"mt-levator-hold\",\"name\":\"頸肩轉角持續按壓\",\"kind\":\"手法\",\"muscle\":\"提肩胛肌\",\"technique\":\"持續按壓\"},{\"id\":\"st-levator-seated\",\"name\":\"坐姿望褲袋伸展\",\"kind\":\"伸展\",\"muscle\":\"提肩胛肌\",\"targets\":[\"提肩胛肌\"],\"needsHelper\":false}]}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 15,
+      "reply": "{\"items\":[{\"id\":\"cp-trap-upper\",\"reason\":\"這一項適合斜方肌上部。\"},{\"id\":\"mt-trap-upper-hold\",\"reason\":\"這一項適合斜方肌上部。\"},{\"id\":\"st-trap-upper-seated\",\"reason\":\"這一項適合斜方肌上部。\"},{\"id\":\"st-trap-upper-assisted\",\"reason\":\"這一項適合斜方肌上部。\"},{\"id\":\"mt-levator-hold\",\"reason\":\"這一項適合提肩胛肌。\"},{\"id\":\"st-levator-seated\",\"reason\":\"這一項適合提肩胛肌。\"}]}"
+    },
+    {
+      "task": "summary",
+      "attempt": 1,
+      "at": "2026-09-24T11:25:59.561Z",
+      "request": {
+        "url": "http://localhost:8771/mock/chat/completions",
+        "model": "mock-model",
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是一位物理治療師，正在與一對沒有醫學背景的夫婦一起推理：一人是「受助者」，另一人可能是幫手。\n你要像物理治療師一樣，一邊想，一邊用簡單的話說出理由。\n\n規則：\n1. 只提供指引，不作診斷。不要說受助者患了甚麼病。\n2. 只用物理治療的角度解釋，例如肌肉、激痛點、牽涉痛、姿勢帶來的負荷。不可使用中醫的概念或用語，例如經絡、穴位、氣。\n3. 用香港書面語的繁體中文，不可用粵語口語。要寫「的、了、在、沒有、不、那個、怎樣、為甚麼」這類書面語。\n4. 句子要短，一句只說一件事。每個原因只用一句。\n5. 知識庫的項目只可以用本次 data 中提供的 id 指稱。不可自創 id，不可選清單以外的項目。原因文字中不要寫 id，要寫中文名稱。\n6. 不可自行說出身體姿勢、按壓位置、力度、時間或次數。這些由程式按知識庫顯示。\n7. 稱呼對方為「受助者」。\n8. 只回覆一個 JSON 物件，形狀完全依照 reply_format，不要加任何其他文字。"
+          },
+          {
+            "role": "user",
+            "content": "{\"task\":\"summary\",\"instruction\":\"用不多於 120 字為這一節寫總結給受助者：找到甚麼、做了甚麼、前後分數有甚麼變化、下次可以留意甚麼。不作診斷，不寫姿勢、力度、時間或次數。\",\"reply_format\":{\"summary\":\"<不多於 120 字>\"},\"data\":{\"complaint\":{\"sides\":[\"右\"],\"zones\":[\"頸後上段\",\"頸後下段\",\"肩頂\"],\"kind\":\"疲累\"},\"situations\":[\"長時間駕駛\"],\"helper\":true,\"test\":{\"name\":\"低頭看手機\",\"before\":6,\"after\":3},\"checks\":[{\"name\":\"斜方肌上部\",\"side\":\"右\",\"score\":7,\"familiarPain\":true},{\"name\":\"斜方肌上部\",\"side\":\"左\",\"score\":5,\"familiarPain\":false},{\"name\":\"提肩胛肌\",\"side\":\"右\",\"score\":6,\"familiarPain\":true}],\"treatments\":[{\"kind\":\"抽真空拔罐\",\"name\":\"肩頂定罐\",\"sides\":[\"右\"]},{\"kind\":\"手法\",\"name\":\"肩頂持續捏壓\",\"sides\":[\"右\"]},{\"kind\":\"手法\",\"name\":\"頸肩轉角持續按壓\",\"sides\":[\"右\"]},{\"kind\":\"伸展\",\"name\":\"坐姿側頭伸展\",\"sides\":[\"右\"]},{\"kind\":\"伸展\",\"name\":\"幫手按肩側頭伸展\",\"sides\":[\"右\"]},{\"kind\":\"伸展\",\"name\":\"坐姿望褲袋伸展\",\"sides\":[\"右\"]}],\"recheck\":[{\"name\":\"斜方肌上部\",\"side\":\"右\",\"before\":7,\"after\":9,\"stopTreating\":true},{\"name\":\"提肩胛肌\",\"side\":\"右\",\"before\":6,\"after\":7,\"stopTreating\":false}],\"stopReason\":\"已有兩條肌肉出現平時那種痛，可以開始處理。\"}}"
+          }
+        ],
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "status": 200,
+      "ms": 13,
+      "reply": "{\"summary\":\"今次找到與平時那種痛有關的肌肉，並做了處理。處理後再檢查，測試動作的分數有變化。下次可以再比較。\"}"
+    }
+  ],
+  "refusals": [],
+  "notes": [
+    {
+      "at": "2026-09-24T11:25:55.723Z",
+      "text": "這個 AI 端點不接受「推理深度」設定，已略過這個設定。"
+    }
+  ]
+}

@@ -1,0 +1,3653 @@
+[
+    {
+        "@id": "#inferior_mesenteric_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "inferior mesenteric artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 23,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#inferior_mesenteric_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib9",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib9"
+        },
+        "renderOption": {
+            "color": "rgb(184,184,170)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 689,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib9_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib8",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib8"
+        },
+        "renderOption": {
+            "color": "rgb(165,165,149)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 688,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib8_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#common_hepatic_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_19_common_hepatic_artery.vtk"
+    },
+    {
+        "@id": "#superior_mesenteric_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "superior mesenteric artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 22,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#superior_mesenteric_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib7",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib7"
+        },
+        "renderOption": {
+            "color": "rgb(144,144,130)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 687,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib7_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib6",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib6"
+        },
+        "renderOption": {
+            "color": "rgb(124,124,110)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 686,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib6_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#T12-T11-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_557_T12-T11-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#gastroduodenal_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_21_gastroduodenal_artery.vtk"
+    },
+    {
+        "@id": "#L1-T12-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_556_L1-T12-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#right_adrenal_gland",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right adrenal gland"
+        },
+        "renderOption": {
+            "color": "rgb(255,223,77)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 111,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_adrenal_gland_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_erector_spinae_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_237_left_erector_spinae_muscle.vtk"
+    },
+    {
+        "@id": "#inferior_mesenteric_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_23_inferior_mesenteric_artery.vtk"
+    },
+    {
+        "@id": "#Lumbar4",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Lumbar4"
+        },
+        "renderOption": {
+            "color": "rgb(117,117,117)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 504,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Lumbar4_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Lumbar5"
+        },
+        "renderOption": {
+            "color": "rgb(188,188,188)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 505,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Lumbar5_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar2",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Lumbar2"
+        },
+        "renderOption": {
+            "color": "rgb(175,170,153)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 502,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Lumbar2_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar3",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Lumbar3"
+        },
+        "renderOption": {
+            "color": "rgb(137,137,137)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 503,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Lumbar3_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#splenic_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_17_splenic_artery.vtk"
+    },
+    {
+        "@id": "#right_erector_spinae_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_137_right_erector_spinae_muscle.vtk"
+    },
+    {
+        "@id": "#right_inferior_epigastric_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_127_right_inferior_epigastric_artery.vtk"
+    },
+    {
+        "@id": "#pancreas",
+        "@type": "Structure",
+        "annotation": {
+            "name": "pancreas"
+        },
+        "renderOption": {
+            "color": "rgb(156,110,54)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 6,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#pancreas_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#__header__",
+        "@type": "Header",
+        "backgroundImage": [
+            "#_bgImageSrc0"
+        ],
+        "root": [
+            "#Skeletal_System",
+            "#Abdominal_Organs",
+            "#Muscles",
+            "#Vascular_System"
+        ],
+        "name": "SPL Abdominal Atlas",
+	"contact": "http://www.spl.harvard.edu/publications/item/view/1266"
+    },
+    {
+        "@id": "#Ribs",
+        "@type": "Group",
+        "annotation": {
+            "name": "Ribs"
+        },
+        "member": [
+            "#Rib9",
+            "#Rib8",
+            "#Rib7",
+            "#Rib6",
+            "#Rib12",
+            "#Rib11",
+            "#Rib10"
+        ],
+        "renderOption": {
+            "color": "rgb(127,127,127)"
+        }
+    },
+    {
+        "@id": "#right_renal_pelvis_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_145_right_renal_pelvis.vtk"
+    },
+    {
+        "@id": "#Skeletal_System",
+        "@type": "Group",
+        "annotation": {
+            "name": "Skeletal System"
+        },
+        "member": [
+            "#Ribs",
+            "#Pelvic_Structures",
+            "#Spine"
+        ],
+        "renderOption": {
+            "color": "rgb(179,179,179)"
+        }
+    },
+    {
+        "@id": "#left_external_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_84_left_external_iliac_vein.vtk"
+    },
+    {
+        "@id": "#liver",
+        "@type": "Structure",
+        "annotation": {
+            "name": "liver"
+        },
+        "renderOption": {
+            "color": "rgb(147,59,0)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 3,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#liver_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#colon_and_ileum",
+        "@type": "Structure",
+        "annotation": {
+            "name": "colon and ileum"
+        },
+        "renderOption": {
+            "color": "rgb(255,244,196)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 9,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#colon_and_ileum_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_kidney",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right kidney"
+        },
+        "renderOption": {
+            "color": "rgb(219,170,119)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 51,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_kidney_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_ureter_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_142_left_ureter.vtk"
+    },
+    {
+        "@id": "#left_renal_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_29_left_renal_artery.vtk"
+    },
+    {
+        "@id": "#left_internal_oblique_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_236_left_internal_oblique_muscle.vtk"
+    },
+    {
+        "@id": "#Lumbar4_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_504_Lumbar4.vtk"
+    },
+    {
+        "@id": "#L5-L4-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_552_L5-L4-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#T11-T10-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_558_T11-T10-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#stomach_and_duodenum",
+        "@type": "Structure",
+        "annotation": {
+            "name": "stomach and duodenum"
+        },
+        "renderOption": {
+            "color": "rgb(209,170,160)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 13,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#stomach_and_duodenum_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_hepatic_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_24_left_hepatic_artery.vtk"
+    },
+    {
+        "@id": "#right_internal_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right internal iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 75,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_internal_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#celiac_trunk",
+        "@type": "Structure",
+        "annotation": {
+            "name": "celiac trunk"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 16,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#celiac_trunk_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_gluteus_medius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_140_right_gluteus_medius_muscle.vtk"
+    },
+    {
+        "@id": "#right_renal_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_126_right_renal_artery.vtk"
+    },
+    {
+        "@id": "#gallbladder",
+        "@type": "Structure",
+        "annotation": {
+            "name": "gallbladder"
+        },
+        "renderOption": {
+            "color": "rgb(0,255,126)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 10,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#gallbladder_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#spleen",
+        "@type": "Structure",
+        "annotation": {
+            "name": "spleen"
+        },
+        "renderOption": {
+            "color": "rgb(140,100,160)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 4,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#spleen_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar5_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_505_Lumbar5.vtk"
+    },
+    {
+        "@id": "#right_hepatic_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_151_right_hepatic_vein.vtk"
+    },
+    {
+        "@id": "#Rib12_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_692_Rib12.vtk"
+    },
+    {
+        "@id": "#right_erector_spinae_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right erector spinae muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 137,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_erector_spinae_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_external_oblique_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right external oblique muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 135,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_external_oblique_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar2_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_502_Lumbar2.vtk"
+    },
+    {
+        "@id": "#portal_vein_and_superior_mesenteric_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "portal vein and superior mesenteric vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 12,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#portal_vein_and_superior_mesenteric_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#aorta_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_7_aorta.vtk"
+    },
+    {
+        "@id": "#right_adrenal_gland_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_111_right_adrenal_gland.vtk"
+    },
+    {
+        "@id": "#right_common_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right common iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 81,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_common_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib7_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_687_Rib7.vtk"
+    },
+    {
+        "@id": "#Sacrum",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Sacrum"
+        },
+        "renderOption": {
+            "color": "rgb(75,68,58)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 600,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Sacrum_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#stomach_and_duodenum_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_13_stomach_and_duodenum.vtk"
+    },
+    {
+        "@id": "#left_quadratus_lumborum_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_233_left_quadratus_lumborum_muscle.vtk"
+    },
+    {
+        "@id": "#portal_vein_and_superior_mesenteric_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_12_portal_vein_and_superior_mesenteric_vein.vtk"
+    },
+    {
+        "@id": "#left_renal_pelvis",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left renal pelvis"
+        },
+        "renderOption": {
+            "color": "rgb(225,149,75)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 146,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_renal_pelvis_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_common_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_72_left_common_iliac_artery.vtk"
+    },
+    {
+        "@id": "#right_external_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right external iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 73,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_external_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_external_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left external iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 84,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_external_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_internal_oblique_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left internal oblique muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 236,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_internal_oblique_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#liver_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_3_liver.vtk"
+    },
+    {
+        "@id": "#Lumbar1",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Lumbar1"
+        },
+        "renderOption": {
+            "color": "rgb(214,207,186)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 501,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Lumbar1_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#L4-L3-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "L4-L3-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(172,168,160)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 553,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#L4-L3-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar1_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_501_Lumbar1.vtk"
+    },
+    {
+        "@id": "#left_iliacus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left iliacus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 238,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_iliacus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#T10-T9-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "T10-T9-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(219,212,198)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 559,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#T10-T9-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#hepatic_artery_proper",
+        "@type": "Structure",
+        "annotation": {
+            "name": "hepatic artery proper"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 20,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#hepatic_artery_proper_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_inferior_epigastric_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right inferior epigastric artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 127,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_inferior_epigastric_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_oblique_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right internal oblique muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 136,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_internal_oblique_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#colon_and_ileum_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_9_colon_and_ileum.vtk"
+    },
+    {
+        "@id": "#left_iliacus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_238_left_iliacus_muscle.vtk"
+    },
+    {
+        "@id": "#celiac_trunk_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_16_celiac_trunk.vtk"
+    },
+    {
+        "@id": "#inferior_vena_cava",
+        "@type": "Structure",
+        "annotation": {
+            "name": "inferior vena cava"
+        },
+        "renderOption": {
+            "color": "rgb(49,20,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 8,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#inferior_vena_cava_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Thoracic9_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_409_Thoracic9.vtk"
+    },
+    {
+        "@id": "#Pelvic_Structures",
+        "@type": "Group",
+        "annotation": {
+            "name": "Pelvic Structures"
+        },
+        "member": [
+            "#Pelvis",
+            "#Sacrum"
+        ],
+        "renderOption": {
+            "color": "rgb(127,127,127)"
+        }
+    },
+    {
+        "@id": "#Thoracic9",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Thoracic9"
+        },
+        "renderOption": {
+            "color": "rgb(214,198,186)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 409,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Thoracic9_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Lumbar3_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_503_Lumbar3.vtk"
+    },
+    {
+        "@id": "#_bgImageSrc0",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "Data/I.nrrd"
+    },
+    {
+        "@id": "#right_hepatic_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right hepatic artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 25,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_hepatic_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_hepatic_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left hepatic vein"
+        },
+        "renderOption": {
+            "color": "rgb(195,202,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 153,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_hepatic_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_ureter_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_141_right_ureter.vtk"
+    },
+    {
+        "@id": "#pancreas_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_6_pancreas.vtk"
+    },
+    {
+        "@id": "#Thoracic11_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_411_Thoracic11.vtk"
+    },
+    {
+        "@id": "#left_kidney",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left kidney"
+        },
+        "renderOption": {
+            "color": "rgb(219,170,119)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 52,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_kidney_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rectus_abdominis_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rectus abdominis muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 32,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rectus_abdominis_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_inferior_epigastric_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_227_left_inferior_epigastric_artery.vtk"
+    },
+    {
+        "@id": "#left_psoas_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left psoas muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 231,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_psoas_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_renal_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_128_left_renal_vein.vtk"
+    },
+    {
+        "@id": "#_urlBase",
+        "@type": "BaseURL",
+        "url": ""
+    },
+    {
+        "@id": "#left_internal_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_86_left_internal_iliac_vein.vtk"
+    },
+    {
+        "@id": "#right_gluteus_minimus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_139_right_gluteus_minimus_muscle.vtk"
+    },
+    {
+        "@id": "#right_kidney_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_51_right_kidney.vtk"
+    },
+    {
+        "@id": "#L1-T12-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "L1-T12-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(172,172,172)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 556,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#L1-T12-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_gluteus_minimus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left gluteus minimus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 239,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_gluteus_minimus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_renal_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right renal vein"
+        },
+        "renderOption": {
+            "color": "rgb(195,202,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 129,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_renal_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Thoracic12_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_412_Thoracic12.vtk"
+    },
+    {
+        "@id": "#right_external_oblique_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_135_right_external_oblique_muscle.vtk"
+    },
+    {
+        "@id": "#Rib11_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_691_Rib11.vtk"
+    },
+    {
+        "@id": "#left_external_oblique_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_235_left_external_oblique_muscle.vtk"
+    },
+    {
+        "@id": "#left_gastric_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_18_left_gastric_artery.vtk"
+    },
+    {
+        "@id": "#right_common_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_81_right_common_iliac_vein.vtk"
+    },
+    {
+        "@id": "#left_internal_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_76_left_internal_iliac_artery.vtk"
+    },
+    {
+        "@id": "#left_adrenal_gland",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left adrenal gland"
+        },
+        "renderOption": {
+            "color": "rgb(255,223,77)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 112,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_adrenal_gland_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Pelvis_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_299_Pelvis.vtk"
+    },
+    {
+        "@id": "#Rib10_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_690_Rib10.vtk"
+    },
+    {
+        "@id": "#rectus_abdominis_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_32_rectus_abdominis_muscle.vtk"
+    },
+    {
+        "@id": "#left_inferior_epigastric_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left inferior epigastric artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 227,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_inferior_epigastric_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib12",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib12"
+        },
+        "renderOption": {
+            "color": "rgb(225,225,209)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 692,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib12_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib11",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib11"
+        },
+        "renderOption": {
+            "color": "rgb(214,214,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 691,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib11_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib10",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Rib10"
+        },
+        "renderOption": {
+            "color": "rgb(205,205,189)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 690,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Rib10_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_hepatic_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right hepatic vein"
+        },
+        "renderOption": {
+            "color": "rgb(195,202,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 151,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_hepatic_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_internal_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left internal iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 86,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_internal_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Abdominal_Organs",
+        "@type": "Group",
+        "annotation": {
+            "name": "Abdominal Organs"
+        },
+        "member": [
+            "#GI",
+            "#spleen",
+            "#GU"
+        ],
+        "renderOption": {
+            "color": "rgb(218,181,168)"
+        }
+    },
+    {
+        "@id": "#right_common_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right common iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 71,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_common_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#superior_mesenteric_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_22_superior_mesenteric_artery.vtk"
+    },
+    {
+        "@id": "#left_quadratus_lumborum_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left quadratus lumborum muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 233,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_quadratus_lumborum_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#GI",
+        "@type": "Group",
+        "annotation": {
+            "name": "GI"
+        },
+        "member": [
+            "#stomach_and_duodenum",
+            "#gallbladder",
+            "#pancreas",
+            "#colon_and_ileum",
+            "#liver"
+        ],
+        "renderOption": {
+            "color": "rgb(218,191,188)"
+        }
+    },
+    {
+        "@id": "#left_gluteus_minimus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_239_left_gluteus_minimus_muscle.vtk"
+    },
+    {
+        "@id": "#right_renal_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right renal artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 126,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_renal_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#_LabelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "Data/seg.nrrd"
+    },
+    {
+        "@id": "#spleen_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_4_spleen.vtk"
+    },
+    {
+        "@id": "#GU",
+        "@type": "Group",
+        "annotation": {
+            "name": "GU"
+        },
+        "member": [
+            "#left_adrenal_gland",
+            "#right_renal_pelvis",
+            "#left_renal_pelvis",
+            "#left_kidney",
+            "#left_ureter",
+            "#right_adrenal_gland",
+            "#right_kidney",
+            "#right_ureter"
+        ],
+        "renderOption": {
+            "color": "rgb(218,165,89)"
+        }
+    },
+    {
+        "@id": "#left_gluteus_maximus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_241_left_gluteus_maximus_muscle.vtk"
+    },
+    {
+        "@id": "#right_common_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_71_right_common_iliac_artery.vtk"
+    },
+    {
+        "@id": "#left_erector_spinae_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left erector spinae muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 237,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_erector_spinae_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#T12-T11-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "T12-T11-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(172,168,160)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 557,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#T12-T11-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_gastric_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left gastric artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 18,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_gastric_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_gluteus_minimus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right gluteus minimus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 139,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_gluteus_minimus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_renal_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left renal vein"
+        },
+        "renderOption": {
+            "color": "rgb(195,202,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 128,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_renal_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_85_right_internal_iliac_vein.vtk"
+    },
+    {
+        "@id": "#gastroduodenal_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "gastroduodenal artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 21,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#gastroduodenal_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_ureter",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left ureter"
+        },
+        "renderOption": {
+            "color": "rgb(225,149,75)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 142,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_ureter_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_hepatic_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_25_right_hepatic_artery.vtk"
+    },
+    {
+        "@id": "#L5-L4-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "L5-L4-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(212,207,195)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 552,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#L5-L4-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#T11-T10-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "T11-T10-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(126,126,126)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 558,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#T11-T10-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_kidney_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_52_left_kidney.vtk"
+    },
+    {
+        "@id": "#left_common_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left common iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 72,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_common_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_external_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_73_right_external_iliac_artery.vtk"
+    },
+    {
+        "@id": "#common_hepatic_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "common hepatic artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 19,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#common_hepatic_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_gluteus_maximus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right gluteus maximus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 143,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_gluteus_maximus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_external_oblique_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left external oblique muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 235,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_external_oblique_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_gluteus_maximus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_143_right_gluteus_maximus_muscle.vtk"
+    },
+    {
+        "@id": "#right_quadratus_lumborum_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right quadratus lumborum muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 133,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_quadratus_lumborum_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Arteries",
+        "@type": "Group",
+        "annotation": {
+            "name": "Arteries"
+        },
+        "member": [
+            "#inferior_mesenteric_artery",
+            "#superior_mesenteric_artery",
+            "#right_inferior_epigastric_artery",
+            "#celiac_trunk",
+            "#right_hepatic_artery",
+            "#left_internal_iliac_artery",
+            "#gastroduodenal_artery",
+            "#hepatic_artery_proper",
+            "#left_hepatic_artery",
+            "#right_renal_artery",
+            "#right_common_iliac_artery",
+            "#common_hepatic_artery",
+            "#left_renal_artery",
+            "#left_gastric_artery",
+            "#right_external_iliac_artery",
+            "#left_common_iliac_artery",
+            "#left_inferior_epigastric_artery",
+            "#aorta",
+            "#left_external_iliac_artery",
+            "#right_internal_iliac_artery",
+            "#splenic_artery"
+        ],
+        "renderOption": {
+            "color": "rgb(133,26,24)"
+        }
+    },
+    {
+        "@id": "#left_gluteus_maximus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left gluteus maximus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 241,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_gluteus_maximus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_external_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_83_right_external_iliac_vein.vtk"
+    },
+    {
+        "@id": "#splenic_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "splenic artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 17,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#splenic_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Sacrum_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_600_Sacrum.vtk"
+    },
+    {
+        "@id": "#right_iliacus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right iliacus muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 138,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_iliacus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_gluteus_medius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left gluteus medius muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 240,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_gluteus_medius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Sacrum-L5-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_551_Sacrum-L5-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#right_iliacus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_138_right_iliacus_muscle.vtk"
+    },
+    {
+        "@id": "#Rib9_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_689_Rib9.vtk"
+    },
+    {
+        "@id": "#right_internal_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right internal iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 85,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_internal_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_psoas_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_131_right_psoas_muscle.vtk"
+    },
+    {
+        "@id": "#inferior_vena_cava_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_8_inferior_vena_cava.vtk"
+    },
+    {
+        "@id": "#Pelvis",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Pelvis"
+        },
+        "renderOption": {
+            "color": "rgb(196,188,177)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 299,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Pelvis_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_75_right_internal_iliac_artery.vtk"
+    },
+    {
+        "@id": "#Thoracic10",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Thoracic10"
+        },
+        "renderOption": {
+            "color": "rgb(175,163,153)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 410,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Thoracic10_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Thoracic11",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Thoracic11"
+        },
+        "renderOption": {
+            "color": "rgb(137,128,119)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 411,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Thoracic11_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Thoracic12",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Thoracic12"
+        },
+        "renderOption": {
+            "color": "rgb(137,133,119)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 412,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Thoracic12_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Vascular_System",
+        "@type": "Group",
+        "annotation": {
+            "name": "Vascular System"
+        },
+        "member": [
+            "#Veins",
+            "#Arteries"
+        ],
+        "renderOption": {
+            "color": "rgb(221,219,249)"
+        }
+    },
+    {
+        "@id": "#right_external_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right external iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 83,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_external_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_psoas_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right psoas muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 131,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_psoas_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_external_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left external iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 74,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_external_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#hepatic_artery_proper_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_20_hepatic_artery_proper.vtk"
+    },
+    {
+        "@id": "#L4-L3-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_553_L4-L3-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#left_common_iliac_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left common iliac vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 82,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_common_iliac_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Sacrum-L5-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "Sacrum-L5-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(121,121,121)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 551,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#Sacrum-L5-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#splenic_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_117_splenic_vein.vtk"
+    },
+    {
+        "@id": "#right_renal_pelvis",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right renal pelvis"
+        },
+        "renderOption": {
+            "color": "rgb(225,149,75)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 145,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_renal_pelvis_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_hepatic_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_153_left_hepatic_vein.vtk"
+    },
+    {
+        "@id": "#T10-T9-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_559_T10-T9-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#left_adrenal_gland_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_112_left_adrenal_gland.vtk"
+    },
+    {
+        "@id": "#left_renal_pelvis_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_146_left_renal_pelvis.vtk"
+    },
+    {
+        "@id": "#left_hepatic_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left hepatic artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 24,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_hepatic_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Veins",
+        "@type": "Group",
+        "annotation": {
+            "name": "Veins"
+        },
+        "member": [
+            "#right_renal_vein",
+            "#inferior_vena_cava",
+            "#right_internal_iliac_vein",
+            "#left_hepatic_vein",
+            "#right_hepatic_vein",
+            "#splenic_vein",
+            "#left_common_iliac_vein",
+            "#right_common_iliac_vein",
+            "#right_external_iliac_vein",
+            "#portal_vein_and_superior_mesenteric_vein",
+            "#left_external_iliac_vein",
+            "#left_renal_vein",
+            "#left_internal_iliac_vein"
+        ],
+        "renderOption": {
+            "color": "rgb(66,61,221)"
+        }
+    },
+    {
+        "@id": "#L3-L2-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_554_L3-L2-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#Spine",
+        "@type": "Group",
+        "annotation": {
+            "name": "Spine"
+        },
+        "member": [
+            "#L3-L2-IntervertebralDisc",
+            "#Thoracic10",
+            "#Thoracic11",
+            "#Thoracic12",
+            "#T10-T9-IntervertebralDisc",
+            "#Lumbar4",
+            "#Lumbar5",
+            "#Lumbar2",
+            "#Lumbar3",
+            "#T12-T11-IntervertebralDisc",
+            "#Lumbar1",
+            "#L2-L1-IntervertebralDisc",
+            "#Sacrum-L5-IntervertebralDisc",
+            "#Thoracic9",
+            "#L1-T12-IntervertebralDisc",
+            "#L4-L3-IntervertebralDisc",
+            "#L5-L4-IntervertebralDisc",
+            "#T11-T10-IntervertebralDisc"
+        ],
+        "renderOption": {
+            "color": "rgb(127,127,127)"
+        }
+    },
+    {
+        "@id": "#gallbladder_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_10_gallbladder.vtk"
+    },
+    {
+        "@id": "#L2-L1-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "L2-L1-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(207,207,198)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 555,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#L2-L1-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Rib6_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_686_Rib6.vtk"
+    },
+    {
+        "@id": "#Muscles",
+        "@type": "Group",
+        "annotation": {
+            "name": "Muscles"
+        },
+        "member": [
+            "#left_gluteus_minimus_muscle",
+            "#left_iliacus_muscle",
+            "#left_erector_spinae_muscle",
+            "#right_gluteus_minimus_muscle",
+            "#right_external_oblique_muscle",
+            "#left_internal_oblique_muscle",
+            "#right_iliacus_muscle",
+            "#left_gluteus_medius_muscle",
+            "#left_external_oblique_muscle",
+            "#right_internal_oblique_muscle",
+            "#right_quadratus_lumborum_muscle",
+            "#right_psoas_muscle",
+            "#left_gluteus_maximus_muscle",
+            "#left_quadratus_lumborum_muscle",
+            "#rectus_abdominis_muscle",
+            "#right_erector_spinae_muscle",
+            "#left_psoas_muscle",
+            "#right_gluteus_medius_muscle",
+            "#right_gluteus_maximus_muscle"
+        ],
+        "renderOption": {
+            "color": "rgb(218,160,154)"
+        }
+    },
+    {
+        "@id": "#right_gluteus_medius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right gluteus medius muscle"
+        },
+        "renderOption": {
+            "color": "rgb(230,124,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 140,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_gluteus_medius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_common_iliac_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_82_left_common_iliac_vein.vtk"
+    },
+    {
+        "@id": "#L3-L2-IntervertebralDisc",
+        "@type": "Structure",
+        "annotation": {
+            "name": "L3-L2-IntervertebralDisc"
+        },
+        "renderOption": {
+            "color": "rgb(165,165,165)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 554,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#L3-L2-IntervertebralDisc_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_internal_iliac_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left internal iliac artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 76,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_internal_iliac_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_psoas_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_231_left_psoas_muscle.vtk"
+    },
+    {
+        "@id": "#left_external_iliac_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_74_left_external_iliac_artery.vtk"
+    },
+    {
+        "@id": "#right_quadratus_lumborum_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_133_right_quadratus_lumborum_muscle.vtk"
+    },
+    {
+        "@id": "#left_renal_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left renal artery"
+        },
+        "renderOption": {
+            "color": "rgb(253,98,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 29,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_renal_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_renal_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_129_right_renal_vein.vtk"
+    },
+    {
+        "@id": "#right_ureter",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right ureter"
+        },
+        "renderOption": {
+            "color": "rgb(225,149,75)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 141,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_ureter_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#splenic_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "splenic vein"
+        },
+        "renderOption": {
+            "color": "rgb(40,165,255)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 117,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#splenic_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_gluteus_medius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_240_left_gluteus_medius_muscle.vtk"
+    },
+    {
+        "@id": "#Thoracic10_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_410_Thoracic10.vtk"
+    },
+    {
+        "@id": "#aorta",
+        "@type": "Structure",
+        "annotation": {
+            "name": "aorta"
+        },
+        "renderOption": {
+            "color": "rgb(255,49,20)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 7,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#aorta_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_oblique_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_136_right_internal_oblique_muscle.vtk"
+    },
+    {
+        "@id": "#L2-L1-IntervertebralDisc_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_555_L2-L1-IntervertebralDisc.vtk"
+    },
+    {
+        "@id": "#Rib8_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "Data/Model_688_Rib8.vtk"
+    }
+]

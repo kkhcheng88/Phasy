@@ -1,0 +1,3477 @@
+{
+ "blend": "C:\\projects\\Phasy\\.scratch\\phasy\\data\\z-anatomy\\Z-Anatomy\\Startup.blend",
+ "unit_system": "METRIC",
+ "scale_length": 1.0,
+ "n_objects": 7184,
+ "n_mesh_objects": 4569,
+ "matches": [
+  {
+   "name": "Deep part of masseter.l",
+   "mesh": "Deep part of masseter",
+   "verts": 497,
+   "polys": 994,
+   "bounds_min": [
+    0.0348,
+    -0.0441,
+    1.5134
+   ],
+   "bounds_max": [
+    0.0618,
+    -0.0095,
+    1.5789
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Deep part of masseter.r",
+   "mesh": "Deep part of masseter",
+   "verts": 497,
+   "polys": 994,
+   "bounds_min": [
+    -0.0618,
+    -0.0441,
+    1.5134
+   ],
+   "bounds_max": [
+    -0.0348,
+    -0.0095,
+    1.5789
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.el",
+   "mesh": "Gluteus maximus muscle.e",
+   "verts": 47,
+   "polys": 60,
+   "bounds_min": [
+    0.1058,
+    0.0149,
+    0.7092
+   ],
+   "bounds_max": [
+    0.1236,
+    0.03,
+    0.7898
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Femur.l",
+    "Bones of free part of lower limb.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.er",
+   "mesh": "Gluteus maximus muscle.e",
+   "verts": 47,
+   "polys": 60,
+   "bounds_min": [
+    -0.1236,
+    0.0149,
+    0.7092
+   ],
+   "bounds_max": [
+    -0.1058,
+    0.03,
+    0.7898
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Femur.r",
+    "Bones of free part of lower limb.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.l",
+   "mesh": "Gluteus maximus muscle",
+   "verts": 1663,
+   "polys": 3326,
+   "bounds_min": [
+    0.0014,
+    0.0149,
+    0.7097
+   ],
+   "bounds_max": [
+    0.1468,
+    0.1119,
+    0.9792
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Left lower limb",
+    "Muscles",
+    "Muscles of lower limb",
+    "Superficial gluteal muscles",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Superficial gluteal muscles.g",
+    "Muscles of lower limb.g",
+    "Muscular system of lower limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.ol",
+   "mesh": "Gluteus maximus muscle.o",
+   "verts": 64,
+   "polys": 76,
+   "bounds_min": [
+    0.0394,
+    0.0601,
+    0.9373
+   ],
+   "bounds_max": [
+    0.0662,
+    0.0811,
+    0.9797
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.l",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.or",
+   "mesh": "Gluteus maximus muscle.o",
+   "verts": 64,
+   "polys": 76,
+   "bounds_min": [
+    -0.0662,
+    0.0601,
+    0.9373
+   ],
+   "bounds_max": [
+    -0.0394,
+    0.0811,
+    0.9797
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.r",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Gluteus maximus muscle.r",
+   "mesh": "Gluteus maximus muscle",
+   "verts": 1663,
+   "polys": 3326,
+   "bounds_min": [
+    -0.1468,
+    0.0149,
+    0.7097
+   ],
+   "bounds_max": [
+    -0.0014,
+    0.1119,
+    0.9792
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Muscles",
+    "Muscles of lower limb",
+    "Right lower limb",
+    "Superficial gluteal muscles",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Superficial gluteal muscles.g",
+    "Muscles of lower limb.g",
+    "Muscular system of lower limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Hip bone.i",
+   "mesh": "Hip bone.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    0.0,
+    -0.0253,
+    -0.001
+   ],
+   "bounds_max": [
+    0.0336,
+    0.0,
+    -0.0005
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Hip bone.s",
+    "Hip bone.l",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Hip bone.j",
+   "mesh": "Hip bone.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.139,
+    -0.0088,
+    0.9119
+   ],
+   "bounds_max": [
+    -0.1055,
+    0.0165,
+    0.9124
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Hip bone.t",
+    "Hip bone.r",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Hip bone.l",
+   "mesh": "Hip bone",
+   "verts": 1894,
+   "polys": 3608,
+   "bounds_min": [
+    0.0029,
+    -0.0561,
+    0.7973
+   ],
+   "bounds_max": [
+    0.1349,
+    0.0868,
+    1.0119
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of lower limb",
+    "Bonus collection",
+    "Bony pelvis",
+    "Left lower limb",
+    "Pelvis"
+   ],
+   "parents": [
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Hip bone.r",
+   "mesh": "Hip bone",
+   "verts": 1894,
+   "polys": 3608,
+   "bounds_min": [
+    -0.1349,
+    -0.0561,
+    0.7973
+   ],
+   "bounds_max": [
+    -0.0029,
+    0.0868,
+    1.0119
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of lower limb",
+    "Bonus collection",
+    "Bony pelvis",
+    "Pelvis",
+    "Right lower limb"
+   ],
+   "parents": [
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Humerus.i",
+   "mesh": "Humerus.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    0.0,
+    -0.0,
+    0.0001
+   ],
+   "bounds_max": [
+    0.0358,
+    -0.0,
+    0.0005
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Humerus.s",
+    "Humerus.l",
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Humerus.j",
+   "mesh": "Humerus.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.2403,
+    0.0297,
+    1.3069
+   ],
+   "bounds_max": [
+    -0.2045,
+    0.0297,
+    1.3073
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Humerus.t",
+    "Humerus.r",
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Humerus.l",
+   "mesh": "Humerus",
+   "verts": 2143,
+   "polys": 4280,
+   "bounds_min": [
+    0.1446,
+    0.0013,
+    1.087
+   ],
+   "bounds_max": [
+    0.2488,
+    0.0536,
+    1.4046
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of upper limb",
+    "Bonus collection",
+    "Left upper limb"
+   ],
+   "parents": [
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Humerus.r",
+   "mesh": "Humerus",
+   "verts": 2143,
+   "polys": 4280,
+   "bounds_min": [
+    -0.2488,
+    0.0013,
+    1.087
+   ],
+   "bounds_max": [
+    -0.1446,
+    0.0536,
+    1.4046
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of upper limb",
+    "Bonus collection",
+    "Right upper limb"
+   ],
+   "parents": [
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.el",
+   "mesh": "Infraspinatus muscle.e",
+   "verts": 59,
+   "polys": 79,
+   "bounds_min": [
+    0.1843,
+    0.0247,
+    1.3836
+   ],
+   "bounds_max": [
+    0.1945,
+    0.0428,
+    1.3983
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Humerus.l",
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.er",
+   "mesh": "Infraspinatus muscle.e",
+   "verts": 59,
+   "polys": 79,
+   "bounds_min": [
+    -0.1945,
+    0.0247,
+    1.3836
+   ],
+   "bounds_max": [
+    -0.1843,
+    0.0428,
+    1.3983
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Humerus.r",
+    "Bones of free part of upper limb.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.l",
+   "mesh": "Infraspinatus muscle",
+   "verts": 1585,
+   "polys": 3166,
+   "bounds_min": [
+    0.063,
+    0.0253,
+    1.2859
+   ],
+   "bounds_max": [
+    0.1955,
+    0.117,
+    1.3995
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Left upper limb",
+    "Muscles",
+    "Muscles of upper limb",
+    "Rotator cuff muscles",
+    "Suprascapular nerve",
+    "Trunk"
+   ],
+   "parents": [
+    "Rotator cuff muscles.g",
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.ol",
+   "mesh": "Infraspinatus muscle.o",
+   "verts": 585,
+   "polys": 1027,
+   "bounds_min": [
+    0.0648,
+    0.0625,
+    1.2859
+   ],
+   "bounds_max": [
+    0.1416,
+    0.1116,
+    1.3924
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.or",
+   "mesh": "Infraspinatus muscle.o",
+   "verts": 585,
+   "polys": 1027,
+   "bounds_min": [
+    -0.1416,
+    0.0625,
+    1.2859
+   ],
+   "bounds_max": [
+    -0.0648,
+    0.1116,
+    1.3924
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Infraspinatus muscle.r",
+   "mesh": "Infraspinatus muscle",
+   "verts": 1585,
+   "polys": 3166,
+   "bounds_min": [
+    -0.1955,
+    0.0253,
+    1.2859
+   ],
+   "bounds_max": [
+    -0.063,
+    0.117,
+    1.3995
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Muscles",
+    "Muscles of upper limb",
+    "Right upper limb",
+    "Rotator cuff muscles",
+    "Suprascapular nerve",
+    "Trunk"
+   ],
+   "parents": [
+    "Rotator cuff muscles.g",
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.l",
+   "mesh": "Internal abdominal oblique muscle",
+   "verts": 14411,
+   "polys": 28869,
+   "bounds_min": [
+    0.0029,
+    -0.1221,
+    0.8499
+   ],
+   "bounds_max": [
+    0.1274,
+    0.0533,
+    1.2416
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o1l",
+   "mesh": "Internal abdominal oblique muscle.o1",
+   "verts": 96,
+   "polys": 61,
+   "bounds_min": [
+    0.0722,
+    -0.0933,
+    1.0614
+   ],
+   "bounds_max": [
+    0.1235,
+    -0.0161,
+    1.1448
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of tenth rib.l",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o1r",
+   "mesh": "Internal abdominal oblique muscle.o1",
+   "verts": 96,
+   "polys": 61,
+   "bounds_min": [
+    -0.1235,
+    -0.0933,
+    1.0614
+   ],
+   "bounds_max": [
+    -0.0722,
+    -0.0161,
+    1.1448
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of tenth rib.r",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o2l",
+   "mesh": "Internal abdominal oblique muscle.o2",
+   "verts": 64,
+   "polys": 83,
+   "bounds_min": [
+    0.119,
+    -0.0181,
+    1.0729
+   ],
+   "bounds_max": [
+    0.126,
+    -0.0059,
+    1.0818
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Tenth rib.l",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o2r",
+   "mesh": "Internal abdominal oblique muscle.o2",
+   "verts": 64,
+   "polys": 83,
+   "bounds_min": [
+    -0.126,
+    -0.0181,
+    1.0729
+   ],
+   "bounds_max": [
+    -0.119,
+    -0.0059,
+    1.0818
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Tenth rib.r",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o3l",
+   "mesh": "Internal abdominal oblique muscle.o3",
+   "verts": 68,
+   "polys": 66,
+   "bounds_min": [
+    0.0733,
+    -0.056,
+    0.9423
+   ],
+   "bounds_max": [
+    0.1265,
+    0.0488,
+    1.0119
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.l",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o3r",
+   "mesh": "Internal abdominal oblique muscle.o3",
+   "verts": 68,
+   "polys": 66,
+   "bounds_min": [
+    -0.1265,
+    -0.056,
+    0.9423
+   ],
+   "bounds_max": [
+    -0.0733,
+    0.0488,
+    1.0119
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.r",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o4l",
+   "mesh": "Internal abdominal oblique muscle.o4",
+   "verts": 293,
+   "polys": 461,
+   "bounds_min": [
+    0.1055,
+    -0.0014,
+    1.0591
+   ],
+   "bounds_max": [
+    0.1168,
+    0.0364,
+    1.0872
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Eleventh rib.l",
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.o4r",
+   "mesh": "Internal abdominal oblique muscle.o4",
+   "verts": 293,
+   "polys": 461,
+   "bounds_min": [
+    -0.1168,
+    -0.0014,
+    1.0591
+   ],
+   "bounds_max": [
+    -0.1055,
+    0.0364,
+    1.0872
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Eleventh rib.r",
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.ol",
+   "mesh": "Internal abdominal oblique muscle.o",
+   "verts": 223,
+   "polys": 381,
+   "bounds_min": [
+    0.0743,
+    0.0358,
+    1.0564
+   ],
+   "bounds_max": [
+    0.0854,
+    0.0534,
+    1.0747
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Twelfth rib.l",
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.or",
+   "mesh": "Internal abdominal oblique muscle.o",
+   "verts": 223,
+   "polys": 381,
+   "bounds_min": [
+    -0.0854,
+    0.0358,
+    1.0564
+   ],
+   "bounds_max": [
+    -0.0743,
+    0.0534,
+    1.0747
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Twelfth rib.r",
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Internal abdominal oblique muscle.r",
+   "mesh": "Internal abdominal oblique muscle",
+   "verts": 14411,
+   "polys": 28869,
+   "bounds_min": [
+    -0.1274,
+    -0.1221,
+    0.8499
+   ],
+   "bounds_max": [
+    -0.0029,
+    0.0533,
+    1.2416
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.el",
+   "mesh": "Latissimus dorsi muscle.e",
+   "verts": 150,
+   "polys": 231,
+   "bounds_min": [
+    0.0805,
+    0.0984,
+    1.2552
+   ],
+   "bounds_max": [
+    0.1033,
+    0.1125,
+    1.2808
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.er",
+   "mesh": "Latissimus dorsi muscle.e",
+   "verts": 150,
+   "polys": 231,
+   "bounds_min": [
+    -0.1033,
+    0.0984,
+    1.2552
+   ],
+   "bounds_max": [
+    -0.0805,
+    0.1125,
+    1.2808
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.l",
+   "mesh": "Latissimus dorsi muscle",
+   "verts": 10796,
+   "polys": 21580,
+   "bounds_min": [
+    -0.0022,
+    0.0183,
+    0.9315
+   ],
+   "bounds_max": [
+    0.1846,
+    0.12,
+    1.3419
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Hypaxial muscles of back",
+    "Muscles",
+    "Superficial muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Hypaxial muscles of back.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.ol",
+   "mesh": "Latissimus dorsi muscle.o",
+   "verts": 58,
+   "polys": 46,
+   "bounds_min": [
+    0.0361,
+    0.0415,
+    0.9505
+   ],
+   "bounds_max": [
+    0.0845,
+    0.0818,
+    1.006
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.l",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.or",
+   "mesh": "Latissimus dorsi muscle.o",
+   "verts": 58,
+   "polys": 46,
+   "bounds_min": [
+    -0.0845,
+    0.0415,
+    0.9505
+   ],
+   "bounds_max": [
+    -0.0361,
+    0.0818,
+    1.006
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.r",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Latissimus dorsi muscle.r",
+   "mesh": "Latissimus dorsi muscle",
+   "verts": 10796,
+   "polys": 21580,
+   "bounds_min": [
+    -0.1846,
+    0.0183,
+    0.9315
+   ],
+   "bounds_max": [
+    0.0022,
+    0.12,
+    1.3419
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Hypaxial muscles of back",
+    "Muscles",
+    "Superficial muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Hypaxial muscles of back.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Mandible",
+   "mesh": "Mandible",
+   "verts": 9388,
+   "polys": 18838,
+   "bounds_min": [
+    -0.0517,
+    -0.0837,
+    1.4963
+   ],
+   "bounds_max": [
+    0.0517,
+    -0.0018,
+    1.5786
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Axial skeleton",
+    "Extracranial bones of head",
+    "Head",
+    "Mandible"
+   ],
+   "parents": [
+    "Extracranial bones of head.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.el",
+   "mesh": "Masseter.e",
+   "verts": 36,
+   "polys": 39,
+   "bounds_min": [
+    0.0351,
+    -0.0477,
+    1.5122
+   ],
+   "bounds_max": [
+    0.0478,
+    -0.0114,
+    1.5631
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Mandible",
+    "Extracranial bones of head.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.er",
+   "mesh": "Masseter.e",
+   "verts": 36,
+   "polys": 39,
+   "bounds_min": [
+    -0.0478,
+    -0.0477,
+    1.5122
+   ],
+   "bounds_max": [
+    -0.0351,
+    -0.0114,
+    1.5631
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Mandible",
+    "Extracranial bones of head.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.o1l",
+   "mesh": "Masseter.o1",
+   "verts": 55,
+   "polys": 60,
+   "bounds_min": [
+    0.0559,
+    -0.0327,
+    1.5703
+   ],
+   "bounds_max": [
+    0.0619,
+    -0.0101,
+    1.5791
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Temporal bone.l",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.o1r",
+   "mesh": "Masseter.o1",
+   "verts": 55,
+   "polys": 60,
+   "bounds_min": [
+    -0.0619,
+    -0.0327,
+    1.5703
+   ],
+   "bounds_max": [
+    -0.0559,
+    -0.0101,
+    1.5791
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Temporal bone.r",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.ol",
+   "mesh": "Masseter.o",
+   "verts": 67,
+   "polys": 85,
+   "bounds_min": [
+    0.0453,
+    -0.0567,
+    1.5542
+   ],
+   "bounds_max": [
+    0.0623,
+    -0.0312,
+    1.5721
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Zygomatic bone.l",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseter.or",
+   "mesh": "Masseter.o",
+   "verts": 67,
+   "polys": 85,
+   "bounds_min": [
+    -0.0623,
+    -0.0567,
+    1.5542
+   ],
+   "bounds_max": [
+    -0.0453,
+    -0.0312,
+    1.5721
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Zygomatic bone.r",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Masseteric fascia.l",
+   "mesh": "Masseteric fascia",
+   "verts": 226,
+   "polys": 205,
+   "bounds_min": [
+    0.0349,
+    -0.0562,
+    1.5114
+   ],
+   "bounds_max": [
+    0.0632,
+    -0.009,
+    1.5804
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Fascia",
+    "Head",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Fasciae of head.g",
+    "Fasciae.g"
+   ]
+  },
+  {
+   "name": "Masseteric fascia.r",
+   "mesh": "Masseteric fascia",
+   "verts": 226,
+   "polys": 205,
+   "bounds_min": [
+    -0.0632,
+    -0.0562,
+    1.5114
+   ],
+   "bounds_max": [
+    -0.0349,
+    -0.009,
+    1.5804
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Fascia",
+    "Head",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Fasciae of head.g",
+    "Fasciae.g"
+   ]
+  },
+  {
+   "name": "Multifidus colli muscle.l",
+   "mesh": "Multifidus colli muscle",
+   "verts": 696,
+   "polys": 1390,
+   "bounds_min": [
+    0.0021,
+    0.024,
+    1.4407
+   ],
+   "bounds_max": [
+    0.0261,
+    0.0466,
+    1.5388
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Neck",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus colli muscle.r",
+   "mesh": "Multifidus colli muscle",
+   "verts": 696,
+   "polys": 1390,
+   "bounds_min": [
+    -0.0261,
+    0.024,
+    1.4407
+   ],
+   "bounds_max": [
+    -0.0021,
+    0.0466,
+    1.5388
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Neck",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus lumborum muscle.l",
+   "mesh": "Multifidus lumborum muscle",
+   "verts": 1413,
+   "polys": 2820,
+   "bounds_min": [
+    0.0035,
+    0.0282,
+    0.9931
+   ],
+   "bounds_max": [
+    0.0461,
+    0.0677,
+    1.1545
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus lumborum muscle.r",
+   "mesh": "Multifidus lumborum muscle",
+   "verts": 1413,
+   "polys": 2820,
+   "bounds_min": [
+    -0.0461,
+    0.0282,
+    0.9931
+   ],
+   "bounds_max": [
+    -0.0035,
+    0.0677,
+    1.1545
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus muscles.j",
+   "mesh": "Multifidus muscles.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.012,
+    0.0714,
+    1.1688
+   ],
+   "bounds_max": [
+    -0.012,
+    0.1223,
+    1.1688
+   ],
+   "world_scale": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus thoracis muscle.l",
+   "mesh": "Multifidus thoracis muscle",
+   "verts": 1987,
+   "polys": 3902,
+   "bounds_min": [
+    0.0021,
+    0.0421,
+    1.1444
+   ],
+   "bounds_max": [
+    0.0283,
+    0.0945,
+    1.4522
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Multifidus thoracis muscle.r",
+   "mesh": "Multifidus thoracis muscle",
+   "verts": 1987,
+   "polys": 3902,
+   "bounds_min": [
+    -0.0283,
+    0.0421,
+    1.1444
+   ],
+   "bounds_max": [
+    -0.0021,
+    0.0945,
+    1.4522
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Back",
+    "Muscles",
+    "Transversospinal muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Multifidus muscles.g",
+    "Transversospinal muscles.g",
+    "Epaxial muscles.g",
+    "Dorsal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Parotideomasseteric region.l",
+   "mesh": "Parotideomasseteric region",
+   "verts": 59,
+   "polys": 44,
+   "bounds_min": [
+    0.0456,
+    -0.0472,
+    1.5089
+   ],
+   "bounds_max": [
+    0.07,
+    -0.0031,
+    1.5773
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "9: Regions of human body",
+    "Head",
+    "Regions of face"
+   ],
+   "parents": [
+    "Regions of face.g",
+    "Regions of head.g",
+    "Regions of human body.g"
+   ]
+  },
+  {
+   "name": "Parotideomasseteric region.r",
+   "mesh": "Parotideomasseteric region",
+   "verts": 59,
+   "polys": 44,
+   "bounds_min": [
+    -0.07,
+    -0.0472,
+    1.5089
+   ],
+   "bounds_max": [
+    -0.0456,
+    -0.0031,
+    1.5773
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "9: Regions of human body",
+    "Head",
+    "Regions of face"
+   ],
+   "parents": [
+    "Regions of face.g",
+    "Regions of head.g",
+    "Regions of human body.g"
+   ]
+  },
+  {
+   "name": "Psoas major.l",
+   "mesh": "Psoas major",
+   "verts": 2737,
+   "polys": 5474,
+   "bounds_min": [
+    0.0082,
+    -0.037,
+    0.7755
+   ],
+   "bounds_max": [
+    0.108,
+    0.0411,
+    1.1555
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Left lower limb",
+    "Muscles",
+    "Muscles of lower limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Iliopsoas muscle.g",
+    "Muscles of lower limb.g",
+    "Muscular system of lower limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Psoas major.r",
+   "mesh": "Psoas major",
+   "verts": 2737,
+   "polys": 5474,
+   "bounds_min": [
+    -0.108,
+    -0.037,
+    0.7755
+   ],
+   "bounds_max": [
+    -0.0082,
+    0.0411,
+    1.1555
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Muscles",
+    "Muscles of lower limb",
+    "Right lower limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Iliopsoas muscle.g",
+    "Muscles of lower limb.g",
+    "Muscular system of lower limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Quadratus lumborum muscle.l",
+   "mesh": "Quadratus lumborum muscle",
+   "verts": 1416,
+   "polys": 2832,
+   "bounds_min": [
+    0.0177,
+    0.0286,
+    0.9404
+   ],
+   "bounds_max": [
+    0.0691,
+    0.0738,
+    1.1468
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Back",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Quadratus lumborum muscle.r",
+   "mesh": "Quadratus lumborum muscle",
+   "verts": 1416,
+   "polys": 2832,
+   "bounds_min": [
+    -0.0691,
+    0.0286,
+    0.9404
+   ],
+   "bounds_max": [
+    -0.0177,
+    0.0738,
+    1.1468
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Back",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.el",
+   "mesh": "Rectus abdominis muscle.e",
+   "verts": 48,
+   "polys": 53,
+   "bounds_min": [
+    0.002,
+    -0.1137,
+    0.8428
+   ],
+   "bounds_max": [
+    0.008,
+    -0.0409,
+    1.2364
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of seventh rib.l",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.er",
+   "mesh": "Rectus abdominis muscle.e",
+   "verts": 48,
+   "polys": 53,
+   "bounds_min": [
+    -0.008,
+    -0.1137,
+    0.8428
+   ],
+   "bounds_max": [
+    -0.002,
+    -0.0409,
+    1.2364
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of seventh rib.r",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.l",
+   "mesh": "Rectus abdominis muscle",
+   "verts": 10304,
+   "polys": 20604,
+   "bounds_min": [
+    0.003,
+    -0.1197,
+    0.8498
+   ],
+   "bounds_max": [
+    0.0817,
+    -0.045,
+    1.2583
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.ol",
+   "mesh": "Rectus abdominis muscle.o",
+   "verts": 225,
+   "polys": 290,
+   "bounds_min": [
+    0.0083,
+    -0.1128,
+    1.2155
+   ],
+   "bounds_max": [
+    0.0807,
+    -0.102,
+    1.2551
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of fifth rib.r",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.or",
+   "mesh": "Rectus abdominis muscle.o",
+   "verts": 225,
+   "polys": 290,
+   "bounds_min": [
+    -0.0807,
+    -0.1128,
+    1.2155
+   ],
+   "bounds_max": [
+    -0.0083,
+    -0.102,
+    1.2551
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Costal cartilage of fifth rib.r",
+    "Costal cartilages.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Rectus abdominis muscle.r",
+   "mesh": "Rectus abdominis muscle",
+   "verts": 10304,
+   "polys": 20604,
+   "bounds_min": [
+    -0.0817,
+    -0.1197,
+    0.8498
+   ],
+   "bounds_max": [
+    -0.003,
+    -0.045,
+    1.2583
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Sacrum",
+   "mesh": "Sacrum",
+   "verts": 5832,
+   "polys": 8522,
+   "bounds_min": [
+    -0.0615,
+    0.0036,
+    0.8658
+   ],
+   "bounds_max": [
+    0.0614,
+    0.095,
+    0.9808
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Abdomen",
+    "Axial skeleton",
+    "Back",
+    "Bony pelvis",
+    "Pelvis",
+    "Trunk",
+    "Vertebral column"
+   ],
+   "parents": [
+    "Vertebral column.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Sacrum.j",
+   "mesh": "Sacrum.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    0.0,
+    0.0312,
+    0.9105
+   ],
+   "bounds_max": [
+    0.0,
+    0.0467,
+    0.9253
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system"
+   ],
+   "parents": [
+    "Sacrum.t",
+    "Sacrum",
+    "Vertebral column.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapula.i",
+   "mesh": "Scapula.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    0.0,
+    -0.0,
+    -0.0016
+   ],
+   "bounds_max": [
+    0.0227,
+    0.0123,
+    -0.0015
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Scapula.s",
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapula.j",
+   "mesh": "Scapula.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.1512,
+    0.0618,
+    1.3176
+   ],
+   "bounds_max": [
+    -0.1285,
+    0.0741,
+    1.3176
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Scapula.t",
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapula.l",
+   "mesh": "Scapula",
+   "verts": 12690,
+   "polys": 25255,
+   "bounds_min": [
+    0.0606,
+    -0.0013,
+    1.2543
+   ],
+   "bounds_max": [
+    0.1736,
+    0.1128,
+    1.4178
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of pectoral girdle",
+    "Bones of upper limb",
+    "Bonus collection",
+    "Left upper limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapula.r",
+   "mesh": "Scapula",
+   "verts": 12690,
+   "polys": 25255,
+   "bounds_min": [
+    -0.1736,
+    -0.0013,
+    1.2543
+   ],
+   "bounds_max": [
+    -0.0606,
+    0.1128,
+    1.4178
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Appendicular skeleton",
+    "Bones of pectoral girdle",
+    "Bones of upper limb",
+    "Bonus collection",
+    "Right upper limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapular line.l",
+   "mesh": "Scapular line",
+   "verts": 44,
+   "polys": 21,
+   "bounds_min": [
+    0.0945,
+    0.1021,
+    1.2517
+   ],
+   "bounds_max": [
+    0.0955,
+    0.1355,
+    1.4359
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "Reference lines, reference planes, movements"
+   ],
+   "parents": [
+    "Reference lines.g"
+   ]
+  },
+  {
+   "name": "Scapular line.r",
+   "mesh": "Scapular line",
+   "verts": 44,
+   "polys": 21,
+   "bounds_min": [
+    -0.0955,
+    0.1021,
+    1.2517
+   ],
+   "bounds_max": [
+    -0.0945,
+    0.1355,
+    1.4359
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "Reference lines, reference planes, movements"
+   ],
+   "parents": [
+    "Reference lines.g"
+   ]
+  },
+  {
+   "name": "Scapular notch.i",
+   "mesh": "Scapular notch.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.0004,
+    -0.0004,
+    -0.0225
+   ],
+   "bounds_max": [
+    0.0,
+    -0.0,
+    -0.0005
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Scapular notch.s",
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapular notch.j",
+   "mesh": "Scapular notch.j",
+   "verts": 2,
+   "polys": 0,
+   "bounds_min": [
+    -0.1151,
+    0.051,
+    1.3868
+   ],
+   "bounds_max": [
+    -0.1147,
+    0.0513,
+    1.4088
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Bonus collection"
+   ],
+   "parents": [
+    "Scapular notch.t",
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapular region.l",
+   "mesh": "Scapular region",
+   "verts": 172,
+   "polys": 154,
+   "bounds_min": [
+    0.0547,
+    0.0549,
+    1.0702
+   ],
+   "bounds_max": [
+    0.1933,
+    0.1359,
+    1.436
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "9: Regions of human body",
+    "Left upper limb",
+    "Regions of trunk",
+    "Trunk"
+   ],
+   "parents": [
+    "Regions of back.g",
+    "Regions of human body.g"
+   ]
+  },
+  {
+   "name": "Scapular region.r",
+   "mesh": "Scapular region",
+   "verts": 172,
+   "polys": 154,
+   "bounds_min": [
+    -0.1933,
+    0.0549,
+    1.0702
+   ],
+   "bounds_max": [
+    -0.0547,
+    0.1359,
+    1.436
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "9: Regions of human body",
+    "Regions of trunk",
+    "Right upper limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Regions of back.g",
+    "Regions of human body.g"
+   ]
+  },
+  {
+   "name": "Scapular spinal part of deltoid muscle.l",
+   "mesh": "Scapular spinal part of deltoid muscle",
+   "verts": 2189,
+   "polys": 4378,
+   "bounds_min": [
+    0.0903,
+    0.023,
+    1.2508
+   ],
+   "bounds_max": [
+    0.2271,
+    0.1031,
+    1.4072
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Axillary nerve",
+    "Deltoid muscle",
+    "Left upper limb",
+    "Muscles",
+    "Muscles of upper limb",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Deltoid muscle.g",
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Scapular spinal part of deltoid muscle.ol",
+   "mesh": "Scapular spinal part of deltoid muscle.o",
+   "verts": 516,
+   "polys": 872,
+   "bounds_min": [
+    0.0961,
+    0.0582,
+    1.3725
+   ],
+   "bounds_max": [
+    0.1722,
+    0.0996,
+    1.4069
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapular spinal part of deltoid muscle.or",
+   "mesh": "Scapular spinal part of deltoid muscle.o",
+   "verts": 516,
+   "polys": 872,
+   "bounds_min": [
+    -0.1722,
+    0.0582,
+    1.3725
+   ],
+   "bounds_max": [
+    -0.0961,
+    0.0996,
+    1.4069
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Scapular spinal part of deltoid muscle.r",
+   "mesh": "Scapular spinal part of deltoid muscle",
+   "verts": 2189,
+   "polys": 4378,
+   "bounds_min": [
+    -0.2271,
+    0.023,
+    1.2508
+   ],
+   "bounds_max": [
+    -0.0903,
+    0.1031,
+    1.4072
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Axillary nerve",
+    "Deltoid muscle",
+    "Muscles",
+    "Muscles of upper limb",
+    "Right upper limb",
+    "Superficial muscles"
+   ],
+   "parents": [
+    "Deltoid muscle.g",
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Superficial part of masseter.l",
+   "mesh": "Superficial part of masseter",
+   "verts": 702,
+   "polys": 1402,
+   "bounds_min": [
+    0.0361,
+    -0.0567,
+    1.5122
+   ],
+   "bounds_max": [
+    0.0627,
+    -0.0172,
+    1.5743
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Superficial part of masseter.r",
+   "mesh": "Superficial part of masseter",
+   "verts": 702,
+   "polys": 1402,
+   "bounds_min": [
+    -0.0627,
+    -0.0567,
+    1.5122
+   ],
+   "bounds_max": [
+    -0.0361,
+    -0.0172,
+    1.5743
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.el",
+   "mesh": "Temporalis muscle.e",
+   "verts": 90,
+   "polys": 117,
+   "bounds_min": [
+    0.0392,
+    -0.0491,
+    1.5462
+   ],
+   "bounds_max": [
+    0.0441,
+    -0.0269,
+    1.5672
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Mandible",
+    "Extracranial bones of head.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.er",
+   "mesh": "Temporalis muscle.e",
+   "verts": 90,
+   "polys": 117,
+   "bounds_min": [
+    -0.0441,
+    -0.0491,
+    1.5462
+   ],
+   "bounds_max": [
+    -0.0392,
+    -0.0269,
+    1.5672
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Mandible",
+    "Extracranial bones of head.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.l",
+   "mesh": "Temporalis muscle",
+   "verts": 5126,
+   "polys": 10260,
+   "bounds_min": [
+    0.0378,
+    -0.0634,
+    1.546
+   ],
+   "bounds_max": [
+    0.0768,
+    0.0505,
+    1.662
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Superficial muscles",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o1l",
+   "mesh": "Temporalis muscle.o1",
+   "verts": 71,
+   "polys": 93,
+   "bounds_min": [
+    0.047,
+    -0.0633,
+    1.6094
+   ],
+   "bounds_max": [
+    0.0618,
+    -0.03,
+    1.659
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Frontal bone",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o1r",
+   "mesh": "Temporalis muscle.o1",
+   "verts": 71,
+   "polys": 93,
+   "bounds_min": [
+    -0.0618,
+    -0.0633,
+    1.6094
+   ],
+   "bounds_max": [
+    -0.047,
+    -0.03,
+    1.659
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Frontal bone",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o2l",
+   "mesh": "Temporalis muscle.o2",
+   "verts": 160,
+   "polys": 230,
+   "bounds_min": [
+    0.0537,
+    -0.0387,
+    1.5999
+   ],
+   "bounds_max": [
+    0.0744,
+    0.051,
+    1.6623
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Parietal bone.l",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o2r",
+   "mesh": "Temporalis muscle.o2",
+   "verts": 160,
+   "polys": 230,
+   "bounds_min": [
+    -0.0744,
+    -0.0387,
+    1.5999
+   ],
+   "bounds_max": [
+    -0.0537,
+    0.051,
+    1.6623
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Parietal bone.r",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o3l",
+   "mesh": "Temporalis muscle.o3",
+   "verts": 62,
+   "polys": 81,
+   "bounds_min": [
+    0.039,
+    -0.0562,
+    1.5887
+   ],
+   "bounds_max": [
+    0.0562,
+    -0.0312,
+    1.6201
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Sphenoid bone",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o3r",
+   "mesh": "Temporalis muscle.o3",
+   "verts": 62,
+   "polys": 81,
+   "bounds_min": [
+    -0.0562,
+    -0.0562,
+    1.5887
+   ],
+   "bounds_max": [
+    -0.039,
+    -0.0312,
+    1.6201
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Sphenoid bone",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o4l",
+   "mesh": "Temporalis muscle.o4",
+   "verts": 239,
+   "polys": 412,
+   "bounds_min": [
+    0.0465,
+    -0.0374,
+    1.5784
+   ],
+   "bounds_max": [
+    0.0724,
+    0.0263,
+    1.6227
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Temporal bone.l",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.o4r",
+   "mesh": "Temporalis muscle.o4",
+   "verts": 239,
+   "polys": 412,
+   "bounds_min": [
+    -0.0724,
+    -0.0374,
+    1.5784
+   ],
+   "bounds_max": [
+    -0.0465,
+    0.0263,
+    1.6227
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Temporal bone.r",
+    "Bones of cranium.g",
+    "Cranium.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Temporalis muscle.r",
+   "mesh": "Temporalis muscle",
+   "verts": 5126,
+   "polys": 10260,
+   "bounds_min": [
+    -0.0768,
+    -0.0634,
+    1.546
+   ],
+   "bounds_max": [
+    -0.0378,
+    0.0505,
+    1.662
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Head",
+    "Muscles",
+    "Muscles of head",
+    "Superficial muscles",
+    "Trigeminal nerve (V)"
+   ],
+   "parents": [
+    "Masticatory muscles.g",
+    "Muscles of head.g",
+    "Cranial part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Teres major muscle.l",
+   "mesh": "Teres major muscle",
+   "verts": 577,
+   "polys": 1154,
+   "bounds_min": [
+    0.0988,
+    0.0173,
+    1.2556
+   ],
+   "bounds_max": [
+    0.1845,
+    0.1,
+    1.3417
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Muscles",
+    "Trunk"
+   ],
+   "parents": [
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Teres major muscle.ol",
+   "mesh": "Teres major muscle.o",
+   "verts": 225,
+   "polys": 323,
+   "bounds_min": [
+    0.0986,
+    0.0861,
+    1.2558
+   ],
+   "bounds_max": [
+    0.1157,
+    0.0999,
+    1.291
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.l",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Teres major muscle.or",
+   "mesh": "Teres major muscle.o",
+   "verts": 225,
+   "polys": 323,
+   "bounds_min": [
+    -0.1157,
+    0.0861,
+    1.2558
+   ],
+   "bounds_max": [
+    -0.0986,
+    0.0999,
+    1.291
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Scapula.r",
+    "Bones of pectoral girdle.g",
+    "Bones of upper limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Teres major muscle.r",
+   "mesh": "Teres major muscle",
+   "verts": 577,
+   "polys": 1154,
+   "bounds_min": [
+    -0.1845,
+    0.0173,
+    1.2556
+   ],
+   "bounds_max": [
+    -0.0988,
+    0.1,
+    1.3417
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Muscles",
+    "Muscles of upper limb",
+    "Right upper limb",
+    "Trunk"
+   ],
+   "parents": [
+    "Scapulohumeral muscles.g",
+    "Muscles of upper limb.g",
+    "Muscular system of upper limb.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Transversus abdominis muscle.l",
+   "mesh": "Transversus abdominis muscle",
+   "verts": 17164,
+   "polys": 34328,
+   "bounds_min": [
+    0.0035,
+    -0.1041,
+    0.8411
+   ],
+   "bounds_max": [
+    0.133,
+    0.0633,
+    1.2622
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Transversus abdominis muscle.ol",
+   "mesh": "Transversus abdominis muscle.o",
+   "verts": 69,
+   "polys": 57,
+   "bounds_min": [
+    0.0567,
+    -0.0547,
+    0.9377
+   ],
+   "bounds_max": [
+    0.1232,
+    0.0592,
+    1.0116
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.l",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Transversus abdominis muscle.or",
+   "mesh": "Transversus abdominis muscle.o",
+   "verts": 69,
+   "polys": 57,
+   "bounds_min": [
+    -0.1232,
+    -0.0547,
+    0.9377
+   ],
+   "bounds_max": [
+    -0.0567,
+    0.0592,
+    1.0116
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "2: Muscular insertions"
+   ],
+   "parents": [
+    "Hip bone.r",
+    "Bones of pelvic girdle.g",
+    "Bones of lower limb.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Transversus abdominis muscle.r",
+   "mesh": "Transversus abdominis muscle",
+   "verts": 17164,
+   "polys": 34328,
+   "bounds_min": [
+    -0.133,
+    -0.1041,
+    0.8411
+   ],
+   "bounds_max": [
+    -0.0035,
+    0.0633,
+    1.2622
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "4: Muscular system",
+    "Abdominal part of muscular system",
+    "Muscles",
+    "Muscles of abdomen",
+    "Trunk"
+   ],
+   "parents": [
+    "Muscles of abdomen.g",
+    "Abdominal part of muscular system.g",
+    "Muscular system.g"
+   ]
+  },
+  {
+   "name": "Twelfth rib.l",
+   "mesh": "Twelfth rib",
+   "verts": 1503,
+   "polys": 2995,
+   "bounds_min": [
+    0.0194,
+    0.0237,
+    1.0564
+   ],
+   "bounds_max": [
+    0.0854,
+    0.0681,
+    1.1543
+   ],
+   "world_scale": [
+    -1.0,
+    -1.0,
+    -1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Axial skeleton",
+    "Bonus collection",
+    "False ribs",
+    "Floating ribs",
+    "Ribs",
+    "Thoracic skeleton",
+    "Thorax",
+    "Trunk"
+   ],
+   "parents": [
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  },
+  {
+   "name": "Twelfth rib.r",
+   "mesh": "Twelfth rib",
+   "verts": 1503,
+   "polys": 2995,
+   "bounds_min": [
+    -0.0854,
+    0.0237,
+    1.0564
+   ],
+   "bounds_max": [
+    -0.0194,
+    0.0681,
+    1.1543
+   ],
+   "world_scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "collections": [
+    "1: Skeletal system",
+    "Axial skeleton",
+    "Bonus collection",
+    "False ribs",
+    "Floating ribs",
+    "Ribs",
+    "Thoracic skeleton",
+    "Thorax",
+    "Trunk"
+   ],
+   "parents": [
+    "Floating ribs.g",
+    "False ribs.g",
+    "Ribs.g",
+    "Bones of thorax.g",
+    "Thoracic skeleton.g",
+    "Skeletal system.g"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+﻿FMA13377 to FMA16586 in 3.0 frame: min 0.1 mm, p1 15.8 mm
+FMA13377 warped, to 4.0 FMA16586: min 0.7 mm, p1 15.1 mm
+FMA13378 to FMA16587 in 3.0 frame: min 0.6 mm, p1 9.7 mm
+FMA13378 warped, to 4.0 FMA16587: min 0.5 mm, p1 8.5 mm

@@ -1,0 +1,400 @@
+{
+ "fit_to_4.0": {
+  "scale": 0.9593,
+  "rotation_deg": 1.89,
+  "translation_mm": [
+   0.2,
+   -59.2,
+   -11.9
+  ],
+  "residual_median_p90_mm": {
+   "Hip bone.r": [
+    4.62,
+    10.75
+   ],
+   "Hip bone.l": [
+    4.81,
+    10.78
+   ],
+   "Twelfth rib.r": [
+    3.02,
+    8.53
+   ],
+   "Twelfth rib.l": [
+    2.97,
+    8.47
+   ],
+   "Scapula.r": [
+    1.8,
+    3.98
+   ],
+   "Scapula.l": [
+    1.9,
+    3.96
+   ],
+   "Humerus.r": [
+    2.61,
+    6.97
+   ],
+   "Humerus.l": [
+    2.85,
+    7.13
+   ],
+   "Mandible": [
+    4.24,
+    9.62
+   ],
+   "Sacrum": [
+    2.9,
+    4.79
+   ],
+   "Psoas major.r": [
+    3.39,
+    10.55
+   ],
+   "Psoas major.l": [
+    3.47,
+    10.67
+   ],
+   "Infraspinatus muscle.r": [
+    6.21,
+    12.67
+   ],
+   "Infraspinatus muscle.l": [
+    6.27,
+    12.71
+   ],
+   "Teres major muscle.r": [
+    4.66,
+    7.84
+   ],
+   "Teres major muscle.l": [
+    4.66,
+    7.67
+   ],
+   "Gluteus maximus muscle.r": [
+    5.04,
+    11.35
+   ],
+   "Gluteus maximus muscle.l": [
+    5.03,
+    11.29
+   ]
+  },
+  "missing_refs": []
+ },
+ "fit_to_3.0": {
+  "scale": 0.9685,
+  "rotation_deg": 0.04,
+  "translation_mm": [
+   -0.1,
+   -97.7,
+   -13.3
+  ],
+  "residual_median_p90_mm": {
+   "Hip bone.r": [
+    0.26,
+    5.06
+   ],
+   "Hip bone.l": [
+    2.5,
+    5.92
+   ],
+   "Twelfth rib.r": [
+    0.12,
+    0.13
+   ],
+   "Twelfth rib.l": [
+    1.16,
+    3.7
+   ],
+   "Scapula.r": [
+    0.15,
+    0.19
+   ],
+   "Scapula.l": [
+    0.36,
+    1.12
+   ],
+   "Humerus.r": [
+    1.0,
+    2.66
+   ],
+   "Humerus.l": [
+    1.36,
+    3.64
+   ],
+   "Mandible": [
+    3.94,
+    7.82
+   ],
+   "Sacrum": [
+    1.86,
+    4.74
+   ],
+   "Psoas major.r": [
+    0.21,
+    0.69
+   ],
+   "Psoas major.l": [
+    0.68,
+    1.99
+   ],
+   "Infraspinatus muscle.r": [
+    0.18,
+    0.77
+   ],
+   "Infraspinatus muscle.l": [
+    0.68,
+    1.92
+   ],
+   "Teres major muscle.r": [
+    3.49,
+    7.36
+   ],
+   "Teres major muscle.l": [
+    3.67,
+    7.4
+   ],
+   "Gluteus maximus muscle.r": [
+    0.26,
+    1.08
+   ],
+   "Gluteus maximus muscle.l": [
+    1.06,
+    3.38
+   ]
+  },
+  "missing_refs": []
+ },
+ "muscles": {
+  "latissimus dorsi": {
+   "za_objects": [
+    "Latissimus dorsi muscle.r"
+   ],
+   "bp30_files": [
+    "FMA13358"
+   ],
+   "za_vertices": 10796,
+   "za_faces": 21580,
+   "bp30_vertices": 29667,
+   "bp30_faces": 45594,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "humerus": 3.1,
+     "hip bone": 3.5,
+     "T7-T12": 1.6,
+     "scapula": 7.1
+    },
+    "3.0 shifted": {
+     "humerus": 2.4,
+     "hip bone": 3.1,
+     "T7-T12": 1.8,
+     "scapula": 3.3
+    },
+    "3.0 warped": {
+     "humerus": 2.5,
+     "hip bone": 2.6,
+     "T7-T12": 1.8,
+     "scapula": 2.3
+    }
+   },
+   "za_vs_bp30warped_median_mm": 2.8,
+   "za_vs_bp30warped_p90_mm": 5.1
+  },
+  "quadratus lumborum": {
+   "za_objects": [
+    "Quadratus lumborum muscle.r"
+   ],
+   "bp30_files": [
+    "FMA22348"
+   ],
+   "za_vertices": 1416,
+   "za_faces": 2832,
+   "bp30_vertices": 3637,
+   "bp30_faces": 5676,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "twelfth rib": 0.9,
+     "hip bone": 2.8,
+     "L1-L5": 1.6
+    },
+    "3.0 shifted": {
+     "twelfth rib": 1.1,
+     "hip bone": 4.7,
+     "L1-L5": 0.8
+    },
+    "3.0 warped": {
+     "twelfth rib": 0.6,
+     "hip bone": 2.7,
+     "L1-L5": 0.6
+    }
+   },
+   "za_vs_bp30warped_median_mm": 2.1,
+   "za_vs_bp30warped_p90_mm": 4.2
+  },
+  "multifidus": {
+   "za_objects": [
+    "Multifidus lumborum muscle.r",
+    "Multifidus thoracis muscle.r",
+    "Multifidus colli muscle.r"
+   ],
+   "bp30_files": [
+    "FMA22878"
+   ],
+   "za_vertices": 4096,
+   "za_faces": 8112,
+   "bp30_vertices": 16634,
+   "bp30_faces": 14796,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "sacrum": 23.7,
+     "L1-L5": 0.9,
+     "T7-T12": 1.2
+    },
+    "3.0 shifted": {
+     "sacrum": 1.6,
+     "L1-L5": 0.8,
+     "T7-T12": 1.3
+    },
+    "3.0 warped": {
+     "sacrum": 1.4,
+     "L1-L5": 0.8,
+     "T7-T12": 1.0
+    }
+   },
+   "za_vs_bp30warped_median_mm": 4.3,
+   "za_vs_bp30warped_p90_mm": 15.8
+  },
+  "rectus abdominis": {
+   "za_objects": [
+    "Rectus abdominis muscle.r"
+   ],
+   "bp30_files": [
+    "FMA13377"
+   ],
+   "za_vertices": 10304,
+   "za_faces": 20604,
+   "bp30_vertices": 25972,
+   "bp30_faces": 41920,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "hip bone": 18.2
+    },
+    "3.0 shifted": {
+     "hip bone": 22.6
+    },
+    "3.0 warped": {
+     "hip bone": 16.9
+    }
+   },
+   "za_vs_bp30warped_median_mm": 3.3,
+   "za_vs_bp30warped_p90_mm": 5.6
+  },
+  "internal oblique": {
+   "za_objects": [
+    "Internal abdominal oblique muscle.r"
+   ],
+   "bp30_files": [
+    "FMA13892"
+   ],
+   "za_vertices": 14411,
+   "za_faces": 28869,
+   "bp30_vertices": 40543,
+   "bp30_faces": 58408,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "hip bone": 7.3,
+     "twelfth rib": 4.4
+    },
+    "3.0 shifted": {
+     "hip bone": 10.6,
+     "twelfth rib": 2.7
+    },
+    "3.0 warped": {
+     "hip bone": 1.8,
+     "twelfth rib": 3.4
+    }
+   },
+   "za_vs_bp30warped_median_mm": 3.3,
+   "za_vs_bp30warped_p90_mm": 5.7
+  },
+  "transversus abdominis": {
+   "za_objects": [
+    "Transversus abdominis muscle.r"
+   ],
+   "bp30_files": [
+    "FMA22344"
+   ],
+   "za_vertices": 17164,
+   "za_faces": 34328,
+   "bp30_vertices": 39204,
+   "bp30_faces": 68682,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "hip bone": 3.8
+    },
+    "3.0 shifted": {
+     "hip bone": 7.2
+    },
+    "3.0 warped": {
+     "hip bone": 2.5
+    }
+   },
+   "za_vs_bp30warped_median_mm": 2.9,
+   "za_vs_bp30warped_p90_mm": 5.5
+  },
+  "masseter": {
+   "za_objects": [
+    "Superficial part of masseter.r",
+    "Deep part of masseter.r"
+   ],
+   "bp30_files": [
+    "FMA49001",
+    "FMA49004"
+   ],
+   "za_vertices": 1199,
+   "za_faces": 2398,
+   "bp30_vertices": 3697,
+   "bp30_faces": 4846,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "mandible": 1.0
+    },
+    "3.0 shifted": {
+     "mandible": 0.9
+    },
+    "3.0 warped": {
+     "mandible": 1.0
+    }
+   },
+   "za_vs_bp30warped_median_mm": 3.2,
+   "za_vs_bp30warped_p90_mm": 13.6
+  },
+  "temporalis": {
+   "za_objects": [
+    "Temporalis muscle.r"
+   ],
+   "bp30_files": [
+    "FMA49007"
+   ],
+   "za_vertices": 5126,
+   "za_faces": 10260,
+   "bp30_vertices": 14634,
+   "bp30_faces": 21250,
+   "closest_to_attachment_bone_mm": {
+    "Z-Anatomy (fitted)": {
+     "mandible": 1.6
+    },
+    "3.0 shifted": {
+     "mandible": 0.6
+    },
+    "3.0 warped": {
+     "mandible": 1.0
+    }
+   },
+   "za_vs_bp30warped_median_mm": 4.3,
+   "za_vs_bp30warped_p90_mm": 14.2
+  }
+ }
+}

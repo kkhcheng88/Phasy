@@ -1,0 +1,10 @@
+# Downloaded tools and dependency trees
+node_modules/
+.scratch/phasy/data/tools/
+__pycache__/
+*.pyc
+
+# Files over GitHub's 100 MB limit
+.scratch/phasy/data/z-anatomy/Z-Anatomy/Startup.blend
+.scratch/phasy/data/bodyparts3d/isa_BP3D_4.0_obj_99.zip
+.scratch/phasy/data/bodyparts3d-3.0/BodyParts3D_3.0_obj_99.zip

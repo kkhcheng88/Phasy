@@ -1,0 +1,9826 @@
+{
+ "common_structures": 783,
+ "files_30": 924,
+ "concepts_40": 1658,
+ "targets": {
+  "FMA13358": {
+   "name": "right latissimus dorsi",
+   "vertices": 29667,
+   "triangles": 45594,
+   "bounds_mm": [
+    [
+     -179.4,
+     -81.1,
+     888.8
+    ],
+    [
+     1.5,
+     18.3,
+     1286.2
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA22780",
+     "name": "Left spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.3,
+      2.0,
+      -4.8
+     ],
+     "shift_len_mm": 5.7,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.68
+    },
+    {
+     "fma": "FMA22779",
+     "name": "Right spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      1.8,
+      -5.5
+     ],
+     "shift_len_mm": 5.8,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA37697",
+     "name": "Lateral head of right triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      1.0,
+      -3.8,
+      -6.6
+     ],
+     "shift_len_mm": 7.7,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 4.22
+    },
+    {
+     "fma": "FMA33583",
+     "name": "Ascending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      -1.9,
+      -7.0
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.41,
+     "residual_p90_mm": 6.03
+    },
+    {
+     "fma": "FMA33581",
+     "name": "Ascending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -1.7,
+      -7.5
+     ],
+     "shift_len_mm": 8.0,
+     "residual_median_mm": 2.3,
+     "residual_p90_mm": 5.99
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA22873",
+     "name": "Left semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -1.1,
+      -8.3
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.85
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA22872",
+     "name": "Right semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -1.1,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.95,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA37686",
+     "name": "Long head of right biceps brachii",
+     "bone": false,
+     "shift_mm": [
+      1.0,
+      -3.7,
+      -8.6
+     ],
+     "shift_len_mm": 9.4,
+     "residual_median_mm": 2.01,
+     "residual_p90_mm": 5.41
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA37695",
+     "name": "Medial head of right triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -3.8,
+      -9.2
+     ],
+     "shift_len_mm": 10.0,
+     "residual_median_mm": 2.44,
+     "residual_p90_mm": 6.74
+    },
+    {
+     "fma": "FMA34682",
+     "name": "Acromial part of right deltoid",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      -3.8,
+      -9.5
+     ],
+     "shift_len_mm": 10.4,
+     "residual_median_mm": 3.11,
+     "residual_p90_mm": 7.39
+    },
+    {
+     "fma": "FMA37665",
+     "name": "Right coracobrachialis",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -5.7,
+      -8.7
+     ],
+     "shift_len_mm": 10.5,
+     "residual_median_mm": 3.13,
+     "residual_p90_mm": 6.38
+    },
+    {
+     "fma": "FMA23130",
+     "name": "Right humerus",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      -3.7,
+      -10.3
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 0.13,
+     "residual_p90_mm": 0.46
+    },
+    {
+     "fma": "FMA37699",
+     "name": "Long head of right triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      -3.7,
+      -10.3
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 2.54,
+     "residual_p90_mm": 5.88
+    },
+    {
+     "fma": "FMA22328",
+     "name": "Right gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      10.9,
+      -2.7
+     ],
+     "shift_len_mm": 11.2,
+     "residual_median_mm": 3.07,
+     "residual_p90_mm": 8.42
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA34680",
+     "name": "Clavicular part of right deltoid",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -5.1,
+      -11.1
+     ],
+     "shift_len_mm": 12.2,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 6.44
+    },
+    {
+     "fma": "FMA37684",
+     "name": "Short head of right biceps brachii",
+     "bone": false,
+     "shift_mm": [
+      -0.2,
+      -4.9,
+      -11.2
+     ],
+     "shift_len_mm": 12.2,
+     "residual_median_mm": 1.84,
+     "residual_p90_mm": 5.93
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA13395",
+     "name": "Right scapula",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -5.2,
+      -11.4
+     ],
+     "shift_len_mm": 12.5,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.05
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA13414",
+     "name": "Right subscapularis",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -9.0,
+      -9.2
+     ],
+     "shift_len_mm": 13.0,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 5.82
+    },
+    {
+     "fma": "FMA32553",
+     "name": "Right teres minor",
+     "bone": false,
+     "shift_mm": [
+      -3.4,
+      -7.6,
+      -10.5
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 4.41,
+     "residual_p90_mm": 6.93
+    },
+    {
+     "fma": "FMA13381",
+     "name": "Right rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.7,
+      -12.5
+     ],
+     "shift_len_mm": 13.5,
+     "residual_median_mm": 2.0,
+     "residual_p90_mm": 4.22
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA8531",
+     "name": "Right eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      4.1,
+      4.4,
+      -12.6
+     ],
+     "shift_len_mm": 14.0,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.69
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA22753",
+     "name": "Left longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      1.5,
+      -14.0
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 2.32,
+     "residual_p90_mm": 5.15
+    },
+    {
+     "fma": "FMA22330",
+     "name": "Right gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      14.2,
+      -0.9
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.24,
+     "residual_p90_mm": 4.54
+    },
+    {
+     "fma": "FMA8445",
+     "name": "Right tenth rib",
+     "bone": true,
+     "shift_mm": [
+      4.4,
+      3.1,
+      -13.9
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.27
+    },
+    {
+     "fma": "FMA45874",
+     "name": "Abdominal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -2.0,
+      -14.9
+     ],
+     "shift_len_mm": 15.0,
+     "residual_median_mm": 1.98,
+     "residual_p90_mm": 3.59
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA32551",
+     "name": "Right teres major",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      -5.7,
+      -13.9
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 2.59,
+     "residual_p90_mm": 5.7
+    },
+    {
+     "fma": "FMA79979",
+     "name": "Sternocostal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      0.1,
+      -15.2
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 1.31,
+     "residual_p90_mm": 3.97
+    },
+    {
+     "fma": "FMA32547",
+     "name": "Right infraspinatus muscle",
+     "bone": false,
+     "shift_mm": [
+      -1.2,
+      -9.5,
+      -12.0
+     ],
+     "shift_len_mm": 15.3,
+     "residual_median_mm": 4.81,
+     "residual_p90_mm": 9.72
+    },
+    {
+     "fma": "FMA34690",
+     "name": "Clavicular part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      0.2,
+      -15.4
+     ],
+     "shift_len_mm": 15.4,
+     "residual_median_mm": 0.83,
+     "residual_p90_mm": 2.46
+    },
+    {
+     "fma": "FMA74075",
+     "name": "Set of right levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -0.6,
+      -15.6
+     ],
+     "shift_len_mm": 15.8,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 3.19
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA22322",
+     "name": "Right iliacus",
+     "bone": false,
+     "shift_mm": [
+      -8.9,
+      14.4,
+      -2.6
+     ],
+     "shift_len_mm": 17.2,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.55
+    },
+    {
+     "fma": "FMA74077",
+     "name": "Set of right levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      3.6,
+      -1.7,
+      -17.1
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA8364",
+     "name": "Right ninth rib",
+     "bone": true,
+     "shift_mm": [
+      2.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.7,
+     "residual_median_mm": 2.27,
+     "residual_p90_mm": 4.56
+    },
+    {
+     "fma": "FMA10037",
+     "name": "Tenth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.1,
+      -17.7
+     ],
+     "shift_len_mm": 17.8,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 2.59
+    },
+    {
+     "fma": "FMA13398",
+     "name": "Right serratus anterior",
+     "bone": false,
+     "shift_mm": [
+      1.1,
+      -1.8,
+      -17.9
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 1.56,
+     "residual_p90_mm": 3.1
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA10014",
+     "name": "Ninth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.25
+    },
+    {
+     "fma": "FMA22742",
+     "name": "Right iliocostalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -0.0,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.84,
+     "residual_p90_mm": 3.25
+    },
+    {
+     "fma": "FMA9991",
+     "name": "Eighth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA8283",
+     "name": "Right eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      0.1,
+      -20.1
+     ],
+     "shift_len_mm": 20.1,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA9968",
+     "name": "Seventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      -0.2,
+      -20.2
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA8229",
+     "name": "Right seventh rib",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.5,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.89
+    },
+    {
+     "fma": "FMA8175",
+     "name": "Right sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      0.1,
+      -22.0
+     ],
+     "shift_len_mm": 22.0,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA7204",
+     "name": "Right kidney",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -17.2,
+      -29.5
+     ],
+     "shift_len_mm": 34.9,
+     "residual_median_mm": 2.84,
+     "residual_p90_mm": 6.86
+    },
+    {
+     "fma": "FMA71307",
+     "name": "Set of interspinales lumborum",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.0,
+      -44.4
+     ],
+     "shift_len_mm": 44.7,
+     "residual_median_mm": 6.29,
+     "residual_p90_mm": 26.7
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.6,
+    -0.1,
+    -11.1
+   ],
+   "neighbour_shift_spread_mm": 6.2,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 4.3,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.064,
+   "warp_shift_range_z_mm": [
+    -22.0,
+    -7.2
+   ]
+  },
+  "FMA13359": {
+   "name": "left latissimus dorsi",
+   "vertices": 29826,
+   "triangles": 45572,
+   "bounds_mm": [
+    [
+     -0.9,
+     -81.3,
+     888.8
+    ],
+    [
+     178.7,
+     18.3,
+     1286.2
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA22780",
+     "name": "Left spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.3,
+      2.0,
+      -4.8
+     ],
+     "shift_len_mm": 5.7,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.68
+    },
+    {
+     "fma": "FMA22779",
+     "name": "Right spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      1.8,
+      -5.5
+     ],
+     "shift_len_mm": 5.8,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA37698",
+     "name": "Lateral head of left triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -3.9,
+      -6.5
+     ],
+     "shift_len_mm": 7.6,
+     "residual_median_mm": 2.0,
+     "residual_p90_mm": 4.17
+    },
+    {
+     "fma": "FMA33583",
+     "name": "Ascending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      -1.9,
+      -7.0
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.41,
+     "residual_p90_mm": 6.03
+    },
+    {
+     "fma": "FMA37696",
+     "name": "Medial head of left triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -3.8,
+      -6.8
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.95,
+     "residual_p90_mm": 7.37
+    },
+    {
+     "fma": "FMA33581",
+     "name": "Ascending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -1.7,
+      -7.5
+     ],
+     "shift_len_mm": 8.0,
+     "residual_median_mm": 2.3,
+     "residual_p90_mm": 5.99
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA22873",
+     "name": "Left semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -1.1,
+      -8.3
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.85
+    },
+    {
+     "fma": "FMA8534",
+     "name": "Left twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.2,
+      -6.6
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 3.35,
+     "residual_p90_mm": 8.24
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA22872",
+     "name": "Right semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -1.1,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.95,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA37687",
+     "name": "Long head of left biceps brachii",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      -3.7,
+      -8.1
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.25,
+     "residual_p90_mm": 5.62
+    },
+    {
+     "fma": "FMA37685",
+     "name": "Short head of left biceps brachii",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -4.0,
+      -8.0
+     ],
+     "shift_len_mm": 9.0,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.98
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA37666",
+     "name": "Left coracobrachialis",
+     "bone": false,
+     "shift_mm": [
+      -0.3,
+      -5.6,
+      -7.9
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 3.38,
+     "residual_p90_mm": 6.69
+    },
+    {
+     "fma": "FMA34683",
+     "name": "Acromial part of left deltoid",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -3.9,
+      -9.6
+     ],
+     "shift_len_mm": 10.4,
+     "residual_median_mm": 2.95,
+     "residual_p90_mm": 7.2
+    },
+    {
+     "fma": "FMA23131",
+     "name": "Left humerus",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      -3.7,
+      -10.2
+     ],
+     "shift_len_mm": 10.9,
+     "residual_median_mm": 0.4,
+     "residual_p90_mm": 1.96
+    },
+    {
+     "fma": "FMA37700",
+     "name": "Long head of left triceps brachii",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      -3.7,
+      -10.3
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 2.57,
+     "residual_p90_mm": 6.03
+    },
+    {
+     "fma": "FMA22329",
+     "name": "Left gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      10.4,
+      -2.7
+     ],
+     "shift_len_mm": 11.1,
+     "residual_median_mm": 3.34,
+     "residual_p90_mm": 9.04
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA13396",
+     "name": "Left scapula",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -5.2,
+      -11.4
+     ],
+     "shift_len_mm": 12.5,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 3.02
+    },
+    {
+     "fma": "FMA34681",
+     "name": "Clavicular part of left deltoid",
+     "bone": false,
+     "shift_mm": [
+      0.2,
+      -5.3,
+      -11.4
+     ],
+     "shift_len_mm": 12.5,
+     "residual_median_mm": 2.94,
+     "residual_p90_mm": 6.44
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA13415",
+     "name": "Left subscapularis",
+     "bone": false,
+     "shift_mm": [
+      -0.7,
+      -8.8,
+      -10.1
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 2.31,
+     "residual_p90_mm": 5.76
+    },
+    {
+     "fma": "FMA13382",
+     "name": "Left rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -4.5,
+      -12.8
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA8532",
+     "name": "Left eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      -3.2,
+      4.4,
+      -12.5
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.62
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA32554",
+     "name": "Left teres minor",
+     "bone": false,
+     "shift_mm": [
+      4.2,
+      -7.0,
+      -11.0
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 4.21,
+     "residual_p90_mm": 6.96
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA22753",
+     "name": "Left longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      1.5,
+      -14.0
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 2.32,
+     "residual_p90_mm": 5.15
+    },
+    {
+     "fma": "FMA45875",
+     "name": "Abdominal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -1.9,
+      -14.2
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA22331",
+     "name": "Left gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      4.6,
+      14.1,
+      -1.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.14,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA8472",
+     "name": "Left tenth rib",
+     "bone": true,
+     "shift_mm": [
+      -3.3,
+      2.8,
+      -14.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 5.2
+    },
+    {
+     "fma": "FMA34691",
+     "name": "Clavicular part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      0.3,
+      -15.0
+     ],
+     "shift_len_mm": 15.0,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 2.93
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA79980",
+     "name": "Sternocostal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      0.2,
+      -15.4
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 1.45,
+     "residual_p90_mm": 3.81
+    },
+    {
+     "fma": "FMA32548",
+     "name": "Left infraspinatus muscle",
+     "bone": false,
+     "shift_mm": [
+      2.8,
+      -9.5,
+      -12.0
+     ],
+     "shift_len_mm": 15.6,
+     "residual_median_mm": 4.81,
+     "residual_p90_mm": 9.58
+    },
+    {
+     "fma": "FMA32552",
+     "name": "Left teres major",
+     "bone": false,
+     "shift_mm": [
+      2.9,
+      -5.9,
+      -14.1
+     ],
+     "shift_len_mm": 15.6,
+     "residual_median_mm": 2.64,
+     "residual_p90_mm": 5.61
+    },
+    {
+     "fma": "FMA74076",
+     "name": "Set of left levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -0.2,
+      -16.3
+     ],
+     "shift_len_mm": 16.3,
+     "residual_median_mm": 1.5,
+     "residual_p90_mm": 3.33
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA13399",
+     "name": "Left serratus anterior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      -1.6,
+      -17.5
+     ],
+     "shift_len_mm": 17.6,
+     "residual_median_mm": 1.63,
+     "residual_p90_mm": 3.27
+    },
+    {
+     "fma": "FMA8391",
+     "name": "Left ninth rib",
+     "bone": true,
+     "shift_mm": [
+      -1.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.6,
+     "residual_median_mm": 2.26,
+     "residual_p90_mm": 4.58
+    },
+    {
+     "fma": "FMA10037",
+     "name": "Tenth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.1,
+      -17.7
+     ],
+     "shift_len_mm": 17.8,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 2.59
+    },
+    {
+     "fma": "FMA22323",
+     "name": "Left iliacus",
+     "bone": false,
+     "shift_mm": [
+      10.5,
+      14.2,
+      -2.9
+     ],
+     "shift_len_mm": 17.9,
+     "residual_median_mm": 2.53,
+     "residual_p90_mm": 5.66
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA74078",
+     "name": "Set of left levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      -1.1,
+      -1.4,
+      -18.3
+     ],
+     "shift_len_mm": 18.4,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA10014",
+     "name": "Ninth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.25
+    },
+    {
+     "fma": "FMA22743",
+     "name": "Left iliocostalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.6,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 19.1,
+     "residual_median_mm": 1.78,
+     "residual_p90_mm": 3.17
+    },
+    {
+     "fma": "FMA8310",
+     "name": "Left eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA9991",
+     "name": "Eighth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA9968",
+     "name": "Seventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      -0.2,
+      -20.2
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA8256",
+     "name": "Left seventh rib",
+     "bone": true,
+     "shift_mm": [
+      -1.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA8202",
+     "name": "Left sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      0.2,
+      -21.6
+     ],
+     "shift_len_mm": 21.6,
+     "residual_median_mm": 1.02,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA7196",
+     "name": "Spleen",
+     "bone": false,
+     "shift_mm": [
+      3.4,
+      5.5,
+      -23.5
+     ],
+     "shift_len_mm": 24.3,
+     "residual_median_mm": 6.26,
+     "residual_p90_mm": 10.87
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA7205",
+     "name": "Left kidney",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      -3.7,
+      -26.7
+     ],
+     "shift_len_mm": 27.7,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 3.96
+    },
+    {
+     "fma": "FMA71307",
+     "name": "Set of interspinales lumborum",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.0,
+      -44.4
+     ],
+     "shift_len_mm": 44.7,
+     "residual_median_mm": 6.29,
+     "residual_p90_mm": 26.7
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.5,
+    -0.1,
+    -11.3
+   ],
+   "neighbour_shift_spread_mm": 6.4,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 4.1,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.063,
+   "warp_shift_range_z_mm": [
+    -21.6,
+    -7.3
+   ]
+  },
+  "FMA22348": {
+   "name": "right quadratus lumborum",
+   "vertices": 3637,
+   "triangles": 5676,
+   "bounds_mm": [
+    [
+     -67.5,
+     -70.1,
+     897.5
+    ],
+    [
+     -17.8,
+     -26.4,
+     1097.3
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA23089",
+     "name": "Right lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      3.7,
+      1.3,
+      -6.8
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.7,
+     "residual_p90_mm": 5.41
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA22872",
+     "name": "Right semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -1.1,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.95,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA22342",
+     "name": "Right psoas major",
+     "bone": false,
+     "shift_mm": [
+      -2.8,
+      7.3,
+      -4.3
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 3.67,
+     "residual_p90_mm": 7.79
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA22328",
+     "name": "Right gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      10.9,
+      -2.7
+     ],
+     "shift_len_mm": 11.2,
+     "residual_median_mm": 3.07,
+     "residual_p90_mm": 8.42
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA22330",
+     "name": "Right gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      14.2,
+      -0.9
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.24,
+     "residual_p90_mm": 4.54
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA74075",
+     "name": "Set of right levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -0.6,
+      -15.6
+     ],
+     "shift_len_mm": 15.8,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 3.19
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA22322",
+     "name": "Right iliacus",
+     "bone": false,
+     "shift_mm": [
+      -8.9,
+      14.4,
+      -2.6
+     ],
+     "shift_len_mm": 17.2,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.55
+    },
+    {
+     "fma": "FMA74077",
+     "name": "Set of right levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      3.6,
+      -1.7,
+      -17.1
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA22742",
+     "name": "Right iliocostalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -0.0,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.84,
+     "residual_p90_mm": 3.25
+    },
+    {
+     "fma": "FMA7204",
+     "name": "Right kidney",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -17.2,
+      -29.5
+     ],
+     "shift_len_mm": 34.9,
+     "residual_median_mm": 2.84,
+     "residual_p90_mm": 6.86
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    }
+   ],
+   "median_shift_mm": [
+    0.2,
+    1.4,
+    -8.5
+   ],
+   "neighbour_shift_spread_mm": 8.0,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 4.1,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.182,
+   "warp_shift_range_z_mm": [
+    -14.2,
+    -6.8
+   ]
+  },
+  "FMA22349": {
+   "name": "left quadratus lumborum",
+   "vertices": 3447,
+   "triangles": 5612,
+   "bounds_mm": [
+    [
+     -45.3,
+     -70.1,
+     897.5
+    ],
+    [
+     66.1,
+     -26.4,
+     1097.3
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA23089",
+     "name": "Right lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      3.7,
+      1.3,
+      -6.8
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.7,
+     "residual_p90_mm": 5.41
+    },
+    {
+     "fma": "FMA23090",
+     "name": "Left lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      0.7,
+      -7.4
+     ],
+     "shift_len_mm": 7.9,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 4.7
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA22873",
+     "name": "Left semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -1.1,
+      -8.3
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.85
+    },
+    {
+     "fma": "FMA8534",
+     "name": "Left twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.2,
+      -6.6
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 3.35,
+     "residual_p90_mm": 8.24
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA22342",
+     "name": "Right psoas major",
+     "bone": false,
+     "shift_mm": [
+      -2.8,
+      7.3,
+      -4.3
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 3.67,
+     "residual_p90_mm": 7.79
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA22343",
+     "name": "Left psoas major",
+     "bone": false,
+     "shift_mm": [
+      4.7,
+      8.1,
+      -3.8
+     ],
+     "shift_len_mm": 10.1,
+     "residual_median_mm": 3.92,
+     "residual_p90_mm": 7.87
+    },
+    {
+     "fma": "FMA22329",
+     "name": "Left gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      10.4,
+      -2.7
+     ],
+     "shift_len_mm": 11.1,
+     "residual_median_mm": 3.34,
+     "residual_p90_mm": 9.04
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA22753",
+     "name": "Left longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      1.5,
+      -14.0
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 2.32,
+     "residual_p90_mm": 5.15
+    },
+    {
+     "fma": "FMA22331",
+     "name": "Left gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      4.6,
+      14.1,
+      -1.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.14,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA74075",
+     "name": "Set of right levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -0.6,
+      -15.6
+     ],
+     "shift_len_mm": 15.8,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 3.19
+    },
+    {
+     "fma": "FMA74076",
+     "name": "Set of left levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -0.2,
+      -16.3
+     ],
+     "shift_len_mm": 16.3,
+     "residual_median_mm": 1.5,
+     "residual_p90_mm": 3.33
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA74077",
+     "name": "Set of right levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      3.6,
+      -1.7,
+      -17.1
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA22323",
+     "name": "Left iliacus",
+     "bone": false,
+     "shift_mm": [
+      10.5,
+      14.2,
+      -2.9
+     ],
+     "shift_len_mm": 17.9,
+     "residual_median_mm": 2.53,
+     "residual_p90_mm": 5.66
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA74078",
+     "name": "Set of left levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      -1.1,
+      -1.4,
+      -18.3
+     ],
+     "shift_len_mm": 18.4,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA22742",
+     "name": "Right iliocostalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -0.0,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.84,
+     "residual_p90_mm": 3.25
+    },
+    {
+     "fma": "FMA22743",
+     "name": "Left iliocostalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.6,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 19.1,
+     "residual_median_mm": 1.78,
+     "residual_p90_mm": 3.17
+    },
+    {
+     "fma": "FMA7205",
+     "name": "Left kidney",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      -3.7,
+      -26.7
+     ],
+     "shift_len_mm": 27.7,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 3.96
+    },
+    {
+     "fma": "FMA7204",
+     "name": "Right kidney",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -17.2,
+      -29.5
+     ],
+     "shift_len_mm": 34.9,
+     "residual_median_mm": 2.84,
+     "residual_p90_mm": 6.86
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    }
+   ],
+   "median_shift_mm": [
+    0.7,
+    1.3,
+    -8.4
+   ],
+   "neighbour_shift_spread_mm": 8.2,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 4.1,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.139,
+   "warp_shift_range_z_mm": [
+    -14.2,
+    -6.8
+   ]
+  },
+  "FMA22878": {
+   "name": "right multifidus",
+   "vertices": 16634,
+   "triangles": 14796,
+   "bounds_mm": [
+    [
+     -38.0,
+     -69.8,
+     844.0
+    ],
+    [
+     -1.0,
+     -5.2,
+     1459.1
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA22780",
+     "name": "Left spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.3,
+      2.0,
+      -4.8
+     ],
+     "shift_len_mm": 5.7,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.68
+    },
+    {
+     "fma": "FMA22779",
+     "name": "Right spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      1.8,
+      -5.5
+     ],
+     "shift_len_mm": 5.8,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA23089",
+     "name": "Right lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      3.7,
+      1.3,
+      -6.8
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.7,
+     "residual_p90_mm": 5.41
+    },
+    {
+     "fma": "FMA33583",
+     "name": "Ascending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      -1.9,
+      -7.0
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.41,
+     "residual_p90_mm": 6.03
+    },
+    {
+     "fma": "FMA23090",
+     "name": "Left lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      0.7,
+      -7.4
+     ],
+     "shift_len_mm": 7.9,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 4.7
+    },
+    {
+     "fma": "FMA33581",
+     "name": "Ascending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -1.7,
+      -7.5
+     ],
+     "shift_len_mm": 8.0,
+     "residual_median_mm": 2.3,
+     "residual_p90_mm": 5.99
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA22873",
+     "name": "Left semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -1.1,
+      -8.3
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.85
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA22872",
+     "name": "Right semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -1.1,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.95,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA33585",
+     "name": "Transverse part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.6,
+      -2.0,
+      -8.5
+     ],
+     "shift_len_mm": 8.8,
+     "residual_median_mm": 1.52,
+     "residual_p90_mm": 2.94
+    },
+    {
+     "fma": "FMA22727",
+     "name": "Left splenius cervicis",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      -0.1,
+      -8.8
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 1.61,
+     "residual_p90_mm": 4.92
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA22726",
+     "name": "Right splenius cervicis",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -0.1,
+      -8.9
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 4.53
+    },
+    {
+     "fma": "FMA33584",
+     "name": "Transverse part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      -1.3,
+      -9.0
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 1.29,
+     "residual_p90_mm": 3.13
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA22754",
+     "name": "Right longissimus capitis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      0.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.6,
+     "residual_median_mm": 2.08,
+     "residual_p90_mm": 4.56
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA14544",
+     "name": "Rectum",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      7.9,
+      -7.0
+     ],
+     "shift_len_mm": 10.7,
+     "residual_median_mm": 5.6,
+     "residual_p90_mm": 10.21
+    },
+    {
+     "fma": "FMA22744",
+     "name": "Right iliocostalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      2.3,
+      0.3,
+      -10.4
+     ],
+     "shift_len_mm": 10.7,
+     "residual_median_mm": 1.76,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA22328",
+     "name": "Right gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      10.9,
+      -2.7
+     ],
+     "shift_len_mm": 11.2,
+     "residual_median_mm": 3.07,
+     "residual_p90_mm": 8.42
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA22875",
+     "name": "Left semispinalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      1.5,
+      -11.8
+     ],
+     "shift_len_mm": 12.2,
+     "residual_median_mm": 2.85,
+     "residual_p90_mm": 4.63
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA13390",
+     "name": "Right scalenus medius",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      6.2,
+      -10.9
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 2.12,
+     "residual_p90_mm": 4.82
+    },
+    {
+     "fma": "FMA22729",
+     "name": "Left splenius capitis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      2.5,
+      -12.3
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 2.1,
+     "residual_p90_mm": 4.11
+    },
+    {
+     "fma": "FMA22874",
+     "name": "Right semispinalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      4.5,
+      1.5,
+      -11.8
+     ],
+     "shift_len_mm": 12.7,
+     "residual_median_mm": 2.74,
+     "residual_p90_mm": 4.4
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA22757",
+     "name": "Right longissimus cervicis",
+     "bone": false,
+     "shift_mm": [
+      3.4,
+      1.9,
+      -12.2
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 3.18,
+     "residual_p90_mm": 6.47
+    },
+    {
+     "fma": "FMA33587",
+     "name": "Descending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.5,
+      4.2,
+      -12.1
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 2.6,
+     "residual_p90_mm": 5.03
+    },
+    {
+     "fma": "FMA71309",
+     "name": "Set of interspinales cervicis",
+     "bone": false,
+     "shift_mm": [
+      4.4,
+      5.4,
+      -10.8
+     ],
+     "shift_len_mm": 12.9,
+     "residual_median_mm": 3.12,
+     "residual_p90_mm": 5.18
+    },
+    {
+     "fma": "FMA13384",
+     "name": "Left rhomboid minor",
+     "bone": false,
+     "shift_mm": [
+      -2.1,
+      -5.2,
+      -11.8
+     ],
+     "shift_len_mm": 13.0,
+     "residual_median_mm": 1.85,
+     "residual_p90_mm": 3.48
+    },
+    {
+     "fma": "FMA13388",
+     "name": "Right scalenus posterior",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      1.9,
+      -12.7
+     ],
+     "shift_len_mm": 13.0,
+     "residual_median_mm": 1.36,
+     "residual_p90_mm": 2.42
+    },
+    {
+     "fma": "FMA13383",
+     "name": "Right rhomboid minor",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -5.8,
+      -11.8
+     ],
+     "shift_len_mm": 13.2,
+     "residual_median_mm": 1.79,
+     "residual_p90_mm": 3.38
+    },
+    {
+     "fma": "FMA22728",
+     "name": "Right splenius capitis",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      2.7,
+      -13.0
+     ],
+     "shift_len_mm": 13.2,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 3.98
+    },
+    {
+     "fma": "FMA12524",
+     "name": "Sixth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      3.0,
+      -12.9
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.86
+    },
+    {
+     "fma": "FMA13381",
+     "name": "Right rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.7,
+      -12.5
+     ],
+     "shift_len_mm": 13.5,
+     "residual_median_mm": 2.0,
+     "residual_p90_mm": 4.22
+    },
+    {
+     "fma": "FMA13382",
+     "name": "Left rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -4.5,
+      -12.8
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA33586",
+     "name": "Descending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.5,
+      4.1,
+      -12.9
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 2.43,
+     "residual_p90_mm": 5.11
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA8531",
+     "name": "Right eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      4.1,
+      4.4,
+      -12.6
+     ],
+     "shift_len_mm": 14.0,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.69
+    },
+    {
+     "fma": "FMA32540",
+     "name": "Right levator scapulae",
+     "bone": false,
+     "shift_mm": [
+      3.8,
+      0.9,
+      -13.6
+     ],
+     "shift_len_mm": 14.1,
+     "residual_median_mm": 3.28,
+     "residual_p90_mm": 7.77
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA12523",
+     "name": "Fifth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      5.4,
+      -13.1
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA22753",
+     "name": "Left longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      1.5,
+      -14.0
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 2.32,
+     "residual_p90_mm": 5.15
+    },
+    {
+     "fma": "FMA32536",
+     "name": "Right obliquus capitis inferior",
+     "bone": false,
+     "shift_mm": [
+      -1.2,
+      9.9,
+      -10.3
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 1.78
+    },
+    {
+     "fma": "FMA78497",
+     "name": "Central canal of spinal cord",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      10.9,
+      -9.7
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 0.42,
+     "residual_p90_mm": 0.74
+    },
+    {
+     "fma": "FMA32537",
+     "name": "Left obliquus capitis inferior",
+     "bone": false,
+     "shift_mm": [
+      3.8,
+      9.8,
+      -10.4
+     ],
+     "shift_len_mm": 14.7,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 1.77
+    },
+    {
+     "fma": "FMA12525",
+     "name": "Seventh cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.0,
+      1.3,
+      -14.8
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 0.94,
+     "residual_p90_mm": 2.14
+    },
+    {
+     "fma": "FMA22340",
+     "name": "Right piriformis",
+     "bone": false,
+     "shift_mm": [
+      -2.8,
+      12.3,
+      -8.0
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.02,
+     "residual_p90_mm": 4.18
+    },
+    {
+     "fma": "FMA8445",
+     "name": "Right tenth rib",
+     "bone": true,
+     "shift_mm": [
+      4.4,
+      3.1,
+      -13.9
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.27
+    },
+    {
+     "fma": "FMA12522",
+     "name": "Fourth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      8.4,
+      -12.5
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA81753",
+     "name": "Left cervical rotator",
+     "bone": false,
+     "shift_mm": [
+      -2.4,
+      5.9,
+      -13.7
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 2.62,
+     "residual_p90_mm": 5.49
+    },
+    {
+     "fma": "FMA12519",
+     "name": "Atlas",
+     "bone": true,
+     "shift_mm": [
+      -0.0,
+      12.6,
+      -8.6
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 1.95
+    },
+    {
+     "fma": "FMA32530",
+     "name": "Right rectus capitis posterior major",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      12.0,
+      -9.7
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 0.92,
+     "residual_p90_mm": 1.84
+    },
+    {
+     "fma": "FMA46443",
+     "name": "Right coccygeus",
+     "bone": false,
+     "shift_mm": [
+      -2.6,
+      13.3,
+      -7.6
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 1.92
+    },
+    {
+     "fma": "FMA81752",
+     "name": "Right cervical rotator",
+     "bone": false,
+     "shift_mm": [
+      3.2,
+      6.1,
+      -13.9
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 2.96,
+     "residual_p90_mm": 5.44
+    },
+    {
+     "fma": "FMA74075",
+     "name": "Set of right levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -0.6,
+      -15.6
+     ],
+     "shift_len_mm": 15.8,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 3.19
+    },
+    {
+     "fma": "FMA12521",
+     "name": "Third cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      10.3,
+      -12.3
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 1.51,
+     "residual_p90_mm": 2.65
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA22877",
+     "name": "Left semispinalis capitis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      5.5,
+      -15.2
+     ],
+     "shift_len_mm": 16.2,
+     "residual_median_mm": 1.55,
+     "residual_p90_mm": 4.98
+    },
+    {
+     "fma": "FMA32531",
+     "name": "Left rectus capitis posterior major",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      12.6,
+      -9.8
+     ],
+     "shift_len_mm": 16.2,
+     "residual_median_mm": 0.81,
+     "residual_p90_mm": 1.44
+    },
+    {
+     "fma": "FMA12520",
+     "name": "Axis",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      11.5,
+      -11.6
+     ],
+     "shift_len_mm": 16.3,
+     "residual_median_mm": 1.28,
+     "residual_p90_mm": 2.52
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA22876",
+     "name": "Right semispinalis capitis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      5.4,
+      -15.7
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 4.69
+    },
+    {
+     "fma": "FMA9165",
+     "name": "First thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.2,
+      -0.2,
+      -16.9
+     ],
+     "shift_len_mm": 17.0,
+     "residual_median_mm": 0.94,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA13404",
+     "name": "Left serratus posterior superior",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      -2.5,
+      -17.2
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.45,
+     "residual_p90_mm": 2.79
+    },
+    {
+     "fma": "FMA74077",
+     "name": "Set of right levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      3.6,
+      -1.7,
+      -17.1
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA8364",
+     "name": "Right ninth rib",
+     "bone": true,
+     "shift_mm": [
+      2.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.7,
+     "residual_median_mm": 2.27,
+     "residual_p90_mm": 4.56
+    },
+    {
+     "fma": "FMA10037",
+     "name": "Tenth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.1,
+      -17.7
+     ],
+     "shift_len_mm": 17.8,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 2.59
+    },
+    {
+     "fma": "FMA10458",
+     "name": "Intervertebral disk of first thoracic vertebra",
+     "bone": false,
+     "shift_mm": [
+      1.2,
+      -0.3,
+      -17.7
+     ],
+     "shift_len_mm": 17.8,
+     "residual_median_mm": 0.75,
+     "residual_p90_mm": 1.23
+    },
+    {
+     "fma": "FMA7882",
+     "name": "Right second rib",
+     "bone": true,
+     "shift_mm": [
+      -1.4,
+      -0.1,
+      -17.9
+     ],
+     "shift_len_mm": 17.9,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 2.97
+    },
+    {
+     "fma": "FMA13403",
+     "name": "Right serratus posterior superior",
+     "bone": false,
+     "shift_mm": [
+      1.7,
+      -2.5,
+      -17.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 1.41,
+     "residual_p90_mm": 2.58
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA7909",
+     "name": "Right third rib",
+     "bone": true,
+     "shift_mm": [
+      1.0,
+      -3.0,
+      -18.1
+     ],
+     "shift_len_mm": 18.3,
+     "residual_median_mm": 2.27,
+     "residual_p90_mm": 5.22
+    },
+    {
+     "fma": "FMA9187",
+     "name": "Second thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.0,
+      -0.6,
+      -18.5
+     ],
+     "shift_len_mm": 18.5,
+     "residual_median_mm": 0.83,
+     "residual_p90_mm": 1.81
+    },
+    {
+     "fma": "FMA7957",
+     "name": "Right fourth rib",
+     "bone": true,
+     "shift_mm": [
+      3.4,
+      -0.0,
+      -18.3
+     ],
+     "shift_len_mm": 18.6,
+     "residual_median_mm": 1.9,
+     "residual_p90_mm": 3.83
+    },
+    {
+     "fma": "FMA10014",
+     "name": "Ninth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.25
+    },
+    {
+     "fma": "FMA7857",
+     "name": "Right first rib",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      2.3,
+      -18.8
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.23,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA9209",
+     "name": "Third thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.8,
+      -0.9,
+      -19.3
+     ],
+     "shift_len_mm": 19.3,
+     "residual_median_mm": 0.91,
+     "residual_p90_mm": 1.89
+    },
+    {
+     "fma": "FMA9248",
+     "name": "Fourth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.3,
+      -0.1,
+      -19.8
+     ],
+     "shift_len_mm": 19.8,
+     "residual_median_mm": 0.92,
+     "residual_p90_mm": 2.12
+    },
+    {
+     "fma": "FMA9991",
+     "name": "Eighth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA8283",
+     "name": "Right eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      0.1,
+      -20.1
+     ],
+     "shift_len_mm": 20.1,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA9945",
+     "name": "Sixth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.4,
+      -20.1
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.0,
+     "residual_p90_mm": 2.06
+    },
+    {
+     "fma": "FMA9968",
+     "name": "Seventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      -0.2,
+      -20.2
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA9922",
+     "name": "Fifth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      -0.8,
+      -20.2
+     ],
+     "shift_len_mm": 20.3,
+     "residual_median_mm": 1.15,
+     "residual_p90_mm": 2.39
+    },
+    {
+     "fma": "FMA8066",
+     "name": "Right fifth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      -0.2,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 0.89,
+     "residual_p90_mm": 1.93
+    },
+    {
+     "fma": "FMA8229",
+     "name": "Right seventh rib",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.5,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.89
+    },
+    {
+     "fma": "FMA8175",
+     "name": "Right sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      0.1,
+      -22.0
+     ],
+     "shift_len_mm": 22.0,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA71443",
+     "name": "Set of posterior cervical intertransversarii",
+     "bone": false,
+     "shift_mm": [
+      31.9,
+      7.6,
+      -10.8
+     ],
+     "shift_len_mm": 34.5,
+     "residual_median_mm": 21.97,
+     "residual_p90_mm": 29.85
+    },
+    {
+     "fma": "FMA71307",
+     "name": "Set of interspinales lumborum",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.0,
+      -44.4
+     ],
+     "shift_len_mm": 44.7,
+     "residual_median_mm": 6.29,
+     "residual_p90_mm": 26.7
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    }
+   ],
+   "median_shift_mm": [
+    0.7,
+    1.4,
+    -12.3
+   ],
+   "neighbour_shift_spread_mm": 6.2,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.0,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.133,
+   "warp_shift_range_z_mm": [
+    -20.6,
+    -6.8
+   ]
+  },
+  "FMA22879": {
+   "name": "left multifidus",
+   "vertices": 14629,
+   "triangles": 14224,
+   "bounds_mm": [
+    [
+     -0.2,
+     -70.1,
+     846.0
+    ],
+    [
+     36.8,
+     -5.2,
+     1457.0
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA22780",
+     "name": "Left spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      2.3,
+      2.0,
+      -4.8
+     ],
+     "shift_len_mm": 5.7,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.68
+    },
+    {
+     "fma": "FMA22779",
+     "name": "Right spinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      1.8,
+      -5.5
+     ],
+     "shift_len_mm": 5.8,
+     "residual_median_mm": 1.46,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA23089",
+     "name": "Right lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      3.7,
+      1.3,
+      -6.8
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.7,
+     "residual_p90_mm": 5.41
+    },
+    {
+     "fma": "FMA33583",
+     "name": "Ascending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      -1.9,
+      -7.0
+     ],
+     "shift_len_mm": 7.8,
+     "residual_median_mm": 2.41,
+     "residual_p90_mm": 6.03
+    },
+    {
+     "fma": "FMA23090",
+     "name": "Left lumbar rotator",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      0.7,
+      -7.4
+     ],
+     "shift_len_mm": 7.9,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 4.7
+    },
+    {
+     "fma": "FMA33581",
+     "name": "Ascending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      -1.7,
+      -7.5
+     ],
+     "shift_len_mm": 8.0,
+     "residual_median_mm": 2.3,
+     "residual_p90_mm": 5.99
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA22873",
+     "name": "Left semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.9,
+      -1.1,
+      -8.3
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.85
+    },
+    {
+     "fma": "FMA8534",
+     "name": "Left twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.2,
+      -6.6
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 3.35,
+     "residual_p90_mm": 8.24
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA22872",
+     "name": "Right semispinalis thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -1.1,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.95,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA33585",
+     "name": "Transverse part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.6,
+      -2.0,
+      -8.5
+     ],
+     "shift_len_mm": 8.8,
+     "residual_median_mm": 1.52,
+     "residual_p90_mm": 2.94
+    },
+    {
+     "fma": "FMA22727",
+     "name": "Left splenius cervicis",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      -0.1,
+      -8.8
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 1.61,
+     "residual_p90_mm": 4.92
+    },
+    {
+     "fma": "FMA22726",
+     "name": "Right splenius cervicis",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -0.1,
+      -8.9
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 4.53
+    },
+    {
+     "fma": "FMA33584",
+     "name": "Transverse part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      -1.3,
+      -9.0
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 1.29,
+     "residual_p90_mm": 3.13
+    },
+    {
+     "fma": "FMA13075",
+     "name": "Fourth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.3,
+      -6.8
+     ],
+     "shift_len_mm": 9.3,
+     "residual_median_mm": 1.82,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA13074",
+     "name": "Third lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      1.5,
+      -9.5
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.6,
+     "residual_p90_mm": 3.57
+    },
+    {
+     "fma": "FMA22745",
+     "name": "Left iliocostalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      0.1,
+      -9.6
+     ],
+     "shift_len_mm": 9.7,
+     "residual_median_mm": 1.75,
+     "residual_p90_mm": 3.74
+    },
+    {
+     "fma": "FMA22756",
+     "name": "Left longissimus capitis",
+     "bone": false,
+     "shift_mm": [
+      1.0,
+      0.7,
+      -9.8
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.74,
+     "residual_p90_mm": 4.47
+    },
+    {
+     "fma": "FMA14544",
+     "name": "Rectum",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      7.9,
+      -7.0
+     ],
+     "shift_len_mm": 10.7,
+     "residual_median_mm": 5.6,
+     "residual_p90_mm": 10.21
+    },
+    {
+     "fma": "FMA22329",
+     "name": "Left gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      10.4,
+      -2.7
+     ],
+     "shift_len_mm": 11.1,
+     "residual_median_mm": 3.34,
+     "residual_p90_mm": 9.04
+    },
+    {
+     "fma": "FMA13073",
+     "name": "Second lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.4,
+      -11.3
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.28
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA22875",
+     "name": "Left semispinalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      1.5,
+      -11.8
+     ],
+     "shift_len_mm": 12.2,
+     "residual_median_mm": 2.85,
+     "residual_p90_mm": 4.63
+    },
+    {
+     "fma": "FMA13072",
+     "name": "First lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.3,
+      -12.3
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.29
+    },
+    {
+     "fma": "FMA22758",
+     "name": "Left longissimus cervicis",
+     "bone": false,
+     "shift_mm": [
+      -1.6,
+      1.8,
+      -12.2
+     ],
+     "shift_len_mm": 12.4,
+     "residual_median_mm": 3.08,
+     "residual_p90_mm": 6.23
+    },
+    {
+     "fma": "FMA13389",
+     "name": "Left scalenus posterior",
+     "bone": false,
+     "shift_mm": [
+      -2.3,
+      1.4,
+      -12.3
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 1.43,
+     "residual_p90_mm": 2.99
+    },
+    {
+     "fma": "FMA22729",
+     "name": "Left splenius capitis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      2.5,
+      -12.3
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 2.1,
+     "residual_p90_mm": 4.11
+    },
+    {
+     "fma": "FMA22874",
+     "name": "Right semispinalis cervicis",
+     "bone": false,
+     "shift_mm": [
+      4.5,
+      1.5,
+      -11.8
+     ],
+     "shift_len_mm": 12.7,
+     "residual_median_mm": 2.74,
+     "residual_p90_mm": 4.4
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA33587",
+     "name": "Descending part of left trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.5,
+      4.2,
+      -12.1
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 2.6,
+     "residual_p90_mm": 5.03
+    },
+    {
+     "fma": "FMA71309",
+     "name": "Set of interspinales cervicis",
+     "bone": false,
+     "shift_mm": [
+      4.4,
+      5.4,
+      -10.8
+     ],
+     "shift_len_mm": 12.9,
+     "residual_median_mm": 3.12,
+     "residual_p90_mm": 5.18
+    },
+    {
+     "fma": "FMA13384",
+     "name": "Left rhomboid minor",
+     "bone": false,
+     "shift_mm": [
+      -2.1,
+      -5.2,
+      -11.8
+     ],
+     "shift_len_mm": 13.0,
+     "residual_median_mm": 1.85,
+     "residual_p90_mm": 3.48
+    },
+    {
+     "fma": "FMA13391",
+     "name": "Left scalenus medius",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -11.4
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 2.09,
+     "residual_p90_mm": 4.4
+    },
+    {
+     "fma": "FMA22728",
+     "name": "Right splenius capitis",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      2.7,
+      -13.0
+     ],
+     "shift_len_mm": 13.2,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 3.98
+    },
+    {
+     "fma": "FMA12524",
+     "name": "Sixth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      3.0,
+      -12.9
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.86
+    },
+    {
+     "fma": "FMA13381",
+     "name": "Right rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.7,
+      -12.5
+     ],
+     "shift_len_mm": 13.5,
+     "residual_median_mm": 2.0,
+     "residual_p90_mm": 4.22
+    },
+    {
+     "fma": "FMA13382",
+     "name": "Left rhomboid major",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      -4.5,
+      -12.8
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 2.04,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA33586",
+     "name": "Descending part of right trapezius",
+     "bone": false,
+     "shift_mm": [
+      -0.5,
+      4.1,
+      -12.9
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 2.43,
+     "residual_p90_mm": 5.11
+    },
+    {
+     "fma": "FMA8532",
+     "name": "Left eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      -3.2,
+      4.4,
+      -12.5
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.62
+    },
+    {
+     "fma": "FMA22751",
+     "name": "Right longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      1.4,
+      -13.6
+     ],
+     "shift_len_mm": 13.7,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA32541",
+     "name": "Left levator scapulae",
+     "bone": false,
+     "shift_mm": [
+      -2.5,
+      0.7,
+      -13.6
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 2.77,
+     "residual_p90_mm": 6.57
+    },
+    {
+     "fma": "FMA10081",
+     "name": "Twelfth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      -0.1,
+      -14.2
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA12523",
+     "name": "Fifth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      5.4,
+      -13.1
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA22753",
+     "name": "Left longissimus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      1.5,
+      -14.0
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 2.32,
+     "residual_p90_mm": 5.15
+    },
+    {
+     "fma": "FMA32536",
+     "name": "Right obliquus capitis inferior",
+     "bone": false,
+     "shift_mm": [
+      -1.2,
+      9.9,
+      -10.3
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 1.78
+    },
+    {
+     "fma": "FMA32537",
+     "name": "Left obliquus capitis inferior",
+     "bone": false,
+     "shift_mm": [
+      3.8,
+      9.8,
+      -10.4
+     ],
+     "shift_len_mm": 14.7,
+     "residual_median_mm": 1.19,
+     "residual_p90_mm": 1.77
+    },
+    {
+     "fma": "FMA12525",
+     "name": "Seventh cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.0,
+      1.3,
+      -14.8
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 0.94,
+     "residual_p90_mm": 2.14
+    },
+    {
+     "fma": "FMA8472",
+     "name": "Left tenth rib",
+     "bone": true,
+     "shift_mm": [
+      -3.3,
+      2.8,
+      -14.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 5.2
+    },
+    {
+     "fma": "FMA12522",
+     "name": "Fourth cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.2,
+      8.4,
+      -12.5
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.1,
+     "residual_p90_mm": 2.21
+    },
+    {
+     "fma": "FMA16202",
+     "name": "Sacrum",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      12.9,
+      -7.9
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.64,
+     "residual_p90_mm": 3.26
+    },
+    {
+     "fma": "FMA81753",
+     "name": "Left cervical rotator",
+     "bone": false,
+     "shift_mm": [
+      -2.4,
+      5.9,
+      -13.7
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 2.62,
+     "residual_p90_mm": 5.49
+    },
+    {
+     "fma": "FMA22341",
+     "name": "Left piriformis",
+     "bone": false,
+     "shift_mm": [
+      3.8,
+      12.4,
+      -7.9
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 2.08,
+     "residual_p90_mm": 4.26
+    },
+    {
+     "fma": "FMA32530",
+     "name": "Right rectus capitis posterior major",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      12.0,
+      -9.7
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 0.92,
+     "residual_p90_mm": 1.84
+    },
+    {
+     "fma": "FMA81752",
+     "name": "Right cervical rotator",
+     "bone": false,
+     "shift_mm": [
+      3.2,
+      6.1,
+      -13.9
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 2.96,
+     "residual_p90_mm": 5.44
+    },
+    {
+     "fma": "FMA46444",
+     "name": "Left coccygeus",
+     "bone": false,
+     "shift_mm": [
+      4.5,
+      13.3,
+      -7.6
+     ],
+     "shift_len_mm": 15.9,
+     "residual_median_mm": 0.87,
+     "residual_p90_mm": 1.72
+    },
+    {
+     "fma": "FMA12521",
+     "name": "Third cervical vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      10.3,
+      -12.3
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 1.51,
+     "residual_p90_mm": 2.65
+    },
+    {
+     "fma": "FMA22877",
+     "name": "Left semispinalis capitis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      5.5,
+      -15.2
+     ],
+     "shift_len_mm": 16.2,
+     "residual_median_mm": 1.55,
+     "residual_p90_mm": 4.98
+    },
+    {
+     "fma": "FMA32531",
+     "name": "Left rectus capitis posterior major",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      12.6,
+      -9.8
+     ],
+     "shift_len_mm": 16.2,
+     "residual_median_mm": 0.81,
+     "residual_p90_mm": 1.44
+    },
+    {
+     "fma": "FMA12520",
+     "name": "Axis",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      11.5,
+      -11.6
+     ],
+     "shift_len_mm": 16.3,
+     "residual_median_mm": 1.28,
+     "residual_p90_mm": 2.52
+    },
+    {
+     "fma": "FMA74076",
+     "name": "Set of left levatores costarum longi",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -0.2,
+      -16.3
+     ],
+     "shift_len_mm": 16.3,
+     "residual_median_mm": 1.5,
+     "residual_p90_mm": 3.33
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA10059",
+     "name": "Eleventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -16.5
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA22876",
+     "name": "Right semispinalis capitis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      5.4,
+      -15.7
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 4.69
+    },
+    {
+     "fma": "FMA9165",
+     "name": "First thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.2,
+      -0.2,
+      -16.9
+     ],
+     "shift_len_mm": 17.0,
+     "residual_median_mm": 0.94,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA13404",
+     "name": "Left serratus posterior superior",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      -2.5,
+      -17.2
+     ],
+     "shift_len_mm": 17.5,
+     "residual_median_mm": 1.45,
+     "residual_p90_mm": 2.79
+    },
+    {
+     "fma": "FMA8391",
+     "name": "Left ninth rib",
+     "bone": true,
+     "shift_mm": [
+      -1.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.6,
+     "residual_median_mm": 2.26,
+     "residual_p90_mm": 4.58
+    },
+    {
+     "fma": "FMA10037",
+     "name": "Tenth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.1,
+      -17.7
+     ],
+     "shift_len_mm": 17.8,
+     "residual_median_mm": 1.09,
+     "residual_p90_mm": 2.59
+    },
+    {
+     "fma": "FMA13403",
+     "name": "Right serratus posterior superior",
+     "bone": false,
+     "shift_mm": [
+      1.7,
+      -2.5,
+      -17.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 1.41,
+     "residual_p90_mm": 2.58
+    },
+    {
+     "fma": "FMA23083",
+     "name": "Thoracic rotator",
+     "bone": false,
+     "shift_mm": [
+      14.4,
+      -1.9,
+      -10.7
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 6.15,
+     "residual_p90_mm": 12.97
+    },
+    {
+     "fma": "FMA18810",
+     "name": "Left internal iliac artery",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      14.5,
+      -10.8
+     ],
+     "shift_len_mm": 18.2,
+     "residual_median_mm": 1.56,
+     "residual_p90_mm": 2.71
+    },
+    {
+     "fma": "FMA74078",
+     "name": "Set of left levatores costarum breves",
+     "bone": false,
+     "shift_mm": [
+      -1.1,
+      -1.4,
+      -18.3
+     ],
+     "shift_len_mm": 18.4,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 2.78
+    },
+    {
+     "fma": "FMA8148",
+     "name": "Left fourth rib",
+     "bone": true,
+     "shift_mm": [
+      -2.6,
+      -0.1,
+      -18.3
+     ],
+     "shift_len_mm": 18.4,
+     "residual_median_mm": 1.93,
+     "residual_p90_mm": 3.67
+    },
+    {
+     "fma": "FMA8039",
+     "name": "Left third rib",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      -2.9,
+      -18.2
+     ],
+     "shift_len_mm": 18.5,
+     "residual_median_mm": 2.19,
+     "residual_p90_mm": 5.04
+    },
+    {
+     "fma": "FMA9187",
+     "name": "Second thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.0,
+      -0.6,
+      -18.5
+     ],
+     "shift_len_mm": 18.5,
+     "residual_median_mm": 0.83,
+     "residual_p90_mm": 1.81
+    },
+    {
+     "fma": "FMA10014",
+     "name": "Ninth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.3,
+      -0.1,
+      -18.9
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.25
+    },
+    {
+     "fma": "FMA8012",
+     "name": "Left second rib",
+     "bone": true,
+     "shift_mm": [
+      2.0,
+      -0.2,
+      -18.8
+     ],
+     "shift_len_mm": 18.9,
+     "residual_median_mm": 1.62,
+     "residual_p90_mm": 3.05
+    },
+    {
+     "fma": "FMA7987",
+     "name": "Left first rib",
+     "bone": true,
+     "shift_mm": [
+      1.1,
+      1.8,
+      -19.0
+     ],
+     "shift_len_mm": 19.2,
+     "residual_median_mm": 1.4,
+     "residual_p90_mm": 2.35
+    },
+    {
+     "fma": "FMA9209",
+     "name": "Third thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.8,
+      -0.9,
+      -19.3
+     ],
+     "shift_len_mm": 19.3,
+     "residual_median_mm": 0.91,
+     "residual_p90_mm": 1.89
+    },
+    {
+     "fma": "FMA9248",
+     "name": "Fourth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.3,
+      -0.1,
+      -19.8
+     ],
+     "shift_len_mm": 19.8,
+     "residual_median_mm": 0.92,
+     "residual_p90_mm": 2.12
+    },
+    {
+     "fma": "FMA8310",
+     "name": "Left eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA9991",
+     "name": "Eighth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      -0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA9945",
+     "name": "Sixth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      -0.4,
+      -20.1
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.0,
+     "residual_p90_mm": 2.06
+    },
+    {
+     "fma": "FMA9968",
+     "name": "Seventh thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      -0.2,
+      -20.2
+     ],
+     "shift_len_mm": 20.2,
+     "residual_median_mm": 1.03,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA9922",
+     "name": "Fifth thoracic vertebra",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      -0.8,
+      -20.2
+     ],
+     "shift_len_mm": 20.3,
+     "residual_median_mm": 1.15,
+     "residual_p90_mm": 2.39
+    },
+    {
+     "fma": "FMA8093",
+     "name": "Left fifth rib",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      -0.1,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.97
+    },
+    {
+     "fma": "FMA8256",
+     "name": "Left seventh rib",
+     "bone": true,
+     "shift_mm": [
+      -1.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA8202",
+     "name": "Left sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      0.2,
+      -21.6
+     ],
+     "shift_len_mm": 21.6,
+     "residual_median_mm": 1.02,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA71442",
+     "name": "Set of anterior cervical intertransversarii",
+     "bone": false,
+     "shift_mm": [
+      23.6,
+      7.8,
+      -11.2
+     ],
+     "shift_len_mm": 27.3,
+     "residual_median_mm": 18.32,
+     "residual_p90_mm": 23.84
+    },
+    {
+     "fma": "FMA71443",
+     "name": "Set of posterior cervical intertransversarii",
+     "bone": false,
+     "shift_mm": [
+      31.9,
+      7.6,
+      -10.8
+     ],
+     "shift_len_mm": 34.5,
+     "residual_median_mm": 21.97,
+     "residual_p90_mm": 29.85
+    },
+    {
+     "fma": "FMA71307",
+     "name": "Set of interspinales lumborum",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -4.0,
+      -44.4
+     ],
+     "shift_len_mm": 44.7,
+     "residual_median_mm": 6.29,
+     "residual_p90_mm": 26.7
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    }
+   ],
+   "median_shift_mm": [
+    0.5,
+    1.4,
+    -12.3
+   ],
+   "neighbour_shift_spread_mm": 6.4,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.0,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.131,
+   "warp_shift_range_z_mm": [
+    -20.4,
+    -6.8
+   ]
+  },
+  "FMA13377": {
+   "name": "right rectus abdominis",
+   "vertices": 25972,
+   "triangles": 41920,
+   "bounds_mm": [
+    [
+     -79.7,
+     -213.7,
+     809.4
+    ],
+    [
+     -3.5,
+     -141.5,
+     1205.2
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19235",
+     "name": "Right deferent duct",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -0.6,
+      -0.4
+     ],
+     "shift_len_mm": 0.8,
+     "residual_median_mm": 1.15,
+     "residual_p90_mm": 4.95
+    },
+    {
+     "fma": "FMA15900",
+     "name": "Urinary bladder",
+     "bone": false,
+     "shift_mm": [
+      0.2,
+      5.3,
+      -4.7
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 5.32,
+     "residual_p90_mm": 9.79
+    },
+    {
+     "fma": "FMA22456",
+     "name": "Right adductor longus",
+     "bone": false,
+     "shift_mm": [
+      -3.6,
+      5.6,
+      -2.5
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 4.02,
+     "residual_p90_mm": 7.18
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA8070",
+     "name": "Right fifth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.1,
+      -3.7,
+      -13.6
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 1.91,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA45874",
+     "name": "Abdominal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -2.0,
+      -14.9
+     ],
+     "shift_len_mm": 15.0,
+     "residual_median_mm": 1.98,
+     "residual_p90_mm": 3.59
+    },
+    {
+     "fma": "FMA79979",
+     "name": "Sternocostal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      0.1,
+      -15.2
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 1.31,
+     "residual_p90_mm": 3.97
+    },
+    {
+     "fma": "FMA8194",
+     "name": "Right sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      -3.6,
+      -15.3
+     ],
+     "shift_len_mm": 15.9,
+     "residual_median_mm": 1.77,
+     "residual_p90_mm": 3.15
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA22450",
+     "name": "Right pectineus",
+     "bone": false,
+     "shift_mm": [
+      -5.5,
+      16.2,
+      -9.5
+     ],
+     "shift_len_mm": 19.6,
+     "residual_median_mm": 2.65,
+     "residual_p90_mm": 5.1
+    },
+    {
+     "fma": "FMA8066",
+     "name": "Right fifth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      -0.2,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 0.89,
+     "residual_p90_mm": 1.93
+    },
+    {
+     "fma": "FMA8175",
+     "name": "Right sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.7,
+      0.1,
+      -22.0
+     ],
+     "shift_len_mm": 22.0,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 2.02
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA18885",
+     "name": "Right external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.8,
+      -16.8
+     ],
+     "shift_len_mm": 26.3,
+     "residual_median_mm": 3.39,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA18806",
+     "name": "Right external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.1,
+      -21.5
+     ],
+     "shift_len_mm": 29.2,
+     "residual_median_mm": 3.69,
+     "residual_p90_mm": 6.88
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.3,
+    -0.9,
+    -10.9
+   ],
+   "neighbour_shift_spread_mm": 8.8,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 3.8,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.001,
+   "warp_shift_range_z_mm": [
+    -22.0,
+    -7.4
+   ]
+  },
+  "FMA13378": {
+   "name": "left rectus abdominis",
+   "vertices": 23639,
+   "triangles": 41406,
+   "bounds_mm": [
+    [
+     -6.6,
+     -213.8,
+     809.8
+    ],
+    [
+     78.4,
+     -141.5,
+     1205.1
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19236",
+     "name": "Left deferent duct",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      1.4,
+      -4.3
+     ],
+     "shift_len_mm": 5.3,
+     "residual_median_mm": 3.77,
+     "residual_p90_mm": 12.99
+    },
+    {
+     "fma": "FMA15900",
+     "name": "Urinary bladder",
+     "bone": false,
+     "shift_mm": [
+      0.2,
+      5.3,
+      -4.7
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 5.32,
+     "residual_p90_mm": 9.79
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA22457",
+     "name": "Left adductor longus",
+     "bone": false,
+     "shift_mm": [
+      5.0,
+      5.8,
+      -3.0
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 4.05,
+     "residual_p90_mm": 6.97
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA8112",
+     "name": "Left fifth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      -3.5,
+      -13.5
+     ],
+     "shift_len_mm": 14.0,
+     "residual_median_mm": 1.87,
+     "residual_p90_mm": 3.44
+    },
+    {
+     "fma": "FMA45875",
+     "name": "Abdominal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -1.9,
+      -14.2
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA8221",
+     "name": "Left sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -0.9,
+      -4.0,
+      -14.8
+     ],
+     "shift_len_mm": 15.4,
+     "residual_median_mm": 1.81,
+     "residual_p90_mm": 3.6
+    },
+    {
+     "fma": "FMA79980",
+     "name": "Sternocostal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      0.2,
+      -15.4
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 1.45,
+     "residual_p90_mm": 3.81
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA18886",
+     "name": "Left external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      15.9,
+      -9.2
+     ],
+     "shift_len_mm": 19.5,
+     "residual_median_mm": 3.65,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA18807",
+     "name": "Left external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      17.9,
+      -8.0
+     ],
+     "shift_len_mm": 19.7,
+     "residual_median_mm": 3.57,
+     "residual_p90_mm": 6.38
+    },
+    {
+     "fma": "FMA22451",
+     "name": "Left pectineus",
+     "bone": false,
+     "shift_mm": [
+      7.0,
+      16.0,
+      -9.6
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 2.78,
+     "residual_p90_mm": 5.36
+    },
+    {
+     "fma": "FMA8093",
+     "name": "Left fifth rib",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      -0.1,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 0.9,
+     "residual_p90_mm": 1.97
+    },
+    {
+     "fma": "FMA8202",
+     "name": "Left sixth rib",
+     "bone": true,
+     "shift_mm": [
+      0.1,
+      0.2,
+      -21.6
+     ],
+     "shift_len_mm": 21.6,
+     "residual_median_mm": 1.02,
+     "residual_p90_mm": 2.07
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.8,
+    -0.9,
+    -9.6
+   ],
+   "neighbour_shift_spread_mm": 7.9,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 3.8,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.002,
+   "warp_shift_range_z_mm": [
+    -21.6,
+    -7.5
+   ]
+  },
+  "FMA13892": {
+   "name": "right internal oblique",
+   "vertices": 40543,
+   "triangles": 58408,
+   "bounds_mm": [
+    [
+     -123.9,
+     -216.1,
+     809.8
+    ],
+    [
+     -3.4,
+     -46.1,
+     1189.0
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19235",
+     "name": "Right deferent duct",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -0.6,
+      -0.4
+     ],
+     "shift_len_mm": 0.8,
+     "residual_median_mm": 1.15,
+     "residual_p90_mm": 4.95
+    },
+    {
+     "fma": "FMA22456",
+     "name": "Right adductor longus",
+     "bone": false,
+     "shift_mm": [
+      -3.6,
+      5.6,
+      -2.5
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 4.02,
+     "residual_p90_mm": 7.18
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA7202",
+     "name": "Gallbladder",
+     "bone": false,
+     "shift_mm": [
+      7.8,
+      -3.7,
+      -9.1
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 1.61,
+     "residual_p90_mm": 3.09
+    },
+    {
+     "fma": "FMA58776",
+     "name": "Right iliotibial tract",
+     "bone": false,
+     "shift_mm": [
+      -11.2,
+      6.2,
+      -3.8
+     ],
+     "shift_len_mm": 13.3,
+     "residual_median_mm": 2.56,
+     "residual_p90_mm": 6.75
+    },
+    {
+     "fma": "FMA8531",
+     "name": "Right eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      4.1,
+      4.4,
+      -12.6
+     ],
+     "shift_len_mm": 14.0,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.69
+    },
+    {
+     "fma": "FMA22330",
+     "name": "Right gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      14.2,
+      -0.9
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.24,
+     "residual_p90_mm": 4.54
+    },
+    {
+     "fma": "FMA8445",
+     "name": "Right tenth rib",
+     "bone": true,
+     "shift_mm": [
+      4.4,
+      3.1,
+      -13.9
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.27
+    },
+    {
+     "fma": "FMA45874",
+     "name": "Abdominal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -2.0,
+      -14.9
+     ],
+     "shift_len_mm": 15.0,
+     "residual_median_mm": 1.98,
+     "residual_p90_mm": 3.59
+    },
+    {
+     "fma": "FMA79979",
+     "name": "Sternocostal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      0.1,
+      -15.2
+     ],
+     "shift_len_mm": 15.2,
+     "residual_median_mm": 1.31,
+     "residual_p90_mm": 3.97
+    },
+    {
+     "fma": "FMA8194",
+     "name": "Right sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      -3.6,
+      -15.3
+     ],
+     "shift_len_mm": 15.9,
+     "residual_median_mm": 1.77,
+     "residual_p90_mm": 3.15
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA22322",
+     "name": "Right iliacus",
+     "bone": false,
+     "shift_mm": [
+      -8.9,
+      14.4,
+      -2.6
+     ],
+     "shift_len_mm": 17.2,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.55
+    },
+    {
+     "fma": "FMA22450",
+     "name": "Right pectineus",
+     "bone": false,
+     "shift_mm": [
+      -5.5,
+      16.2,
+      -9.5
+     ],
+     "shift_len_mm": 19.6,
+     "residual_median_mm": 2.65,
+     "residual_p90_mm": 5.1
+    },
+    {
+     "fma": "FMA22425",
+     "name": "Right tensor fasciae latae",
+     "bone": false,
+     "shift_mm": [
+      -15.7,
+      13.4,
+      -2.4
+     ],
+     "shift_len_mm": 20.8,
+     "residual_median_mm": 3.19,
+     "residual_p90_mm": 6.18
+    },
+    {
+     "fma": "FMA22354",
+     "name": "Right sartorius",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -1.3,
+      -21.5
+     ],
+     "shift_len_mm": 21.6,
+     "residual_median_mm": 8.98,
+     "residual_p90_mm": 16.01
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA18885",
+     "name": "Right external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.8,
+      -16.8
+     ],
+     "shift_len_mm": 26.3,
+     "residual_median_mm": 3.39,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA18806",
+     "name": "Right external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.1,
+      -21.5
+     ],
+     "shift_len_mm": 29.2,
+     "residual_median_mm": 3.69,
+     "residual_p90_mm": 6.88
+    },
+    {
+     "fma": "FMA7204",
+     "name": "Right kidney",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -17.2,
+      -29.5
+     ],
+     "shift_len_mm": 34.9,
+     "residual_median_mm": 2.84,
+     "residual_p90_mm": 6.86
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.1,
+    0.1,
+    -9.5
+   ],
+   "neighbour_shift_spread_mm": 9.1,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 3.9,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.025,
+   "warp_shift_range_z_mm": [
+    -22.0,
+    -7.4
+   ]
+  },
+  "FMA13893": {
+   "name": "left internal oblique",
+   "vertices": 37744,
+   "triangles": 57920,
+   "bounds_mm": [
+    [
+     2.1,
+     -216.1,
+     809.8
+    ],
+    [
+     122.6,
+     -46.2,
+     1189.0
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19236",
+     "name": "Left deferent duct",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      1.4,
+      -4.3
+     ],
+     "shift_len_mm": 5.3,
+     "residual_median_mm": 3.77,
+     "residual_p90_mm": 12.99
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA22457",
+     "name": "Left adductor longus",
+     "bone": false,
+     "shift_mm": [
+      5.0,
+      5.8,
+      -3.0
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 4.05,
+     "residual_p90_mm": 6.97
+    },
+    {
+     "fma": "FMA8534",
+     "name": "Left twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.2,
+      -6.6
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 3.35,
+     "residual_p90_mm": 8.24
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA8532",
+     "name": "Left eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      -3.2,
+      4.4,
+      -12.5
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.62
+    },
+    {
+     "fma": "FMA45875",
+     "name": "Abdominal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -1.9,
+      -14.2
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA58777",
+     "name": "Left iliotibial tract",
+     "bone": false,
+     "shift_mm": [
+      12.5,
+      6.5,
+      -4.0
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.59,
+     "residual_p90_mm": 6.72
+    },
+    {
+     "fma": "FMA22331",
+     "name": "Left gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      4.6,
+      14.1,
+      -1.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.14,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA8472",
+     "name": "Left tenth rib",
+     "bone": true,
+     "shift_mm": [
+      -3.3,
+      2.8,
+      -14.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 5.2
+    },
+    {
+     "fma": "FMA8221",
+     "name": "Left sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -0.9,
+      -4.0,
+      -14.8
+     ],
+     "shift_len_mm": 15.4,
+     "residual_median_mm": 1.81,
+     "residual_p90_mm": 3.6
+    },
+    {
+     "fma": "FMA79980",
+     "name": "Sternocostal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      0.2,
+      -15.4
+     ],
+     "shift_len_mm": 15.5,
+     "residual_median_mm": 1.45,
+     "residual_p90_mm": 3.81
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA22323",
+     "name": "Left iliacus",
+     "bone": false,
+     "shift_mm": [
+      10.5,
+      14.2,
+      -2.9
+     ],
+     "shift_len_mm": 17.9,
+     "residual_median_mm": 2.53,
+     "residual_p90_mm": 5.66
+    },
+    {
+     "fma": "FMA18886",
+     "name": "Left external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      15.9,
+      -9.2
+     ],
+     "shift_len_mm": 19.5,
+     "residual_median_mm": 3.65,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA18807",
+     "name": "Left external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      17.9,
+      -8.0
+     ],
+     "shift_len_mm": 19.7,
+     "residual_median_mm": 3.57,
+     "residual_p90_mm": 6.38
+    },
+    {
+     "fma": "FMA22451",
+     "name": "Left pectineus",
+     "bone": false,
+     "shift_mm": [
+      7.0,
+      16.0,
+      -9.6
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 2.78,
+     "residual_p90_mm": 5.36
+    },
+    {
+     "fma": "FMA22426",
+     "name": "Left tensor fasciae latae",
+     "bone": false,
+     "shift_mm": [
+      17.3,
+      13.4,
+      -2.5
+     ],
+     "shift_len_mm": 22.0,
+     "residual_median_mm": 3.17,
+     "residual_p90_mm": 5.85
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA22355",
+     "name": "Left sartorius",
+     "bone": false,
+     "shift_mm": [
+      -1.9,
+      -2.7,
+      -25.8
+     ],
+     "shift_len_mm": 26.0,
+     "residual_median_mm": 9.57,
+     "residual_p90_mm": 16.25
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA7205",
+     "name": "Left kidney",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      -3.7,
+      -26.7
+     ],
+     "shift_len_mm": 27.7,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 3.96
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    1.5,
+    0.8,
+    -9.1
+   ],
+   "neighbour_shift_spread_mm": 9.5,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 4.5,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.014,
+   "warp_shift_range_z_mm": [
+    -21.6,
+    -7.5
+   ]
+  },
+  "FMA22344": {
+   "name": "right transversus abdominis",
+   "vertices": 39204,
+   "triangles": 68682,
+   "bounds_mm": [
+    [
+     -129.4,
+     -198.6,
+     801.4
+    ],
+    [
+     -4.0,
+     -36.6,
+     1209.0
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19235",
+     "name": "Right deferent duct",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      -0.6,
+      -0.4
+     ],
+     "shift_len_mm": 0.8,
+     "residual_median_mm": 1.15,
+     "residual_p90_mm": 4.95
+    },
+    {
+     "fma": "FMA15900",
+     "name": "Urinary bladder",
+     "bone": false,
+     "shift_mm": [
+      0.2,
+      5.3,
+      -4.7
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 5.32,
+     "residual_p90_mm": 9.79
+    },
+    {
+     "fma": "FMA22456",
+     "name": "Right adductor longus",
+     "bone": false,
+     "shift_mm": [
+      -3.6,
+      5.6,
+      -2.5
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 4.02,
+     "residual_p90_mm": 7.18
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA43883",
+     "name": "Right gracilis",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -7.2,
+      -2.7
+     ],
+     "shift_len_mm": 7.9,
+     "residual_median_mm": 5.45,
+     "residual_p90_mm": 11.1
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA13405",
+     "name": "Right serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      3.2,
+      -7.9
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 4.35
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA8533",
+     "name": "Right twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      -0.6,
+      4.5,
+      -7.7
+     ],
+     "shift_len_mm": 8.9,
+     "residual_median_mm": 2.89,
+     "residual_p90_mm": 8.12
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA22328",
+     "name": "Right gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      -0.8,
+      10.9,
+      -2.7
+     ],
+     "shift_len_mm": 11.2,
+     "residual_median_mm": 3.07,
+     "residual_p90_mm": 8.42
+    },
+    {
+     "fma": "FMA22740",
+     "name": "Right iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.7,
+      11.2,
+      -0.9
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 2.22,
+     "residual_p90_mm": 5.23
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA22452",
+     "name": "Right adductor brevis",
+     "bone": false,
+     "shift_mm": [
+      -0.7,
+      8.3,
+      -9.0
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 3.32,
+     "residual_p90_mm": 6.76
+    },
+    {
+     "fma": "FMA7202",
+     "name": "Gallbladder",
+     "bone": false,
+     "shift_mm": [
+      7.8,
+      -3.7,
+      -9.1
+     ],
+     "shift_len_mm": 12.6,
+     "residual_median_mm": 1.61,
+     "residual_p90_mm": 3.09
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA58776",
+     "name": "Right iliotibial tract",
+     "bone": false,
+     "shift_mm": [
+      -11.2,
+      6.2,
+      -3.8
+     ],
+     "shift_len_mm": 13.3,
+     "residual_median_mm": 2.56,
+     "residual_p90_mm": 6.75
+    },
+    {
+     "fma": "FMA8531",
+     "name": "Right eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      4.1,
+      4.4,
+      -12.6
+     ],
+     "shift_len_mm": 14.0,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.69
+    },
+    {
+     "fma": "FMA22330",
+     "name": "Right gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      14.2,
+      -0.9
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.24,
+     "residual_p90_mm": 4.54
+    },
+    {
+     "fma": "FMA8445",
+     "name": "Right tenth rib",
+     "bone": true,
+     "shift_mm": [
+      4.4,
+      3.1,
+      -13.9
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.27
+    },
+    {
+     "fma": "FMA45874",
+     "name": "Abdominal part of right pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      0.3,
+      -2.0,
+      -14.9
+     ],
+     "shift_len_mm": 15.0,
+     "residual_median_mm": 1.98,
+     "residual_p90_mm": 3.59
+    },
+    {
+     "fma": "FMA8194",
+     "name": "Right sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      -3.6,
+      -15.3
+     ],
+     "shift_len_mm": 15.9,
+     "residual_median_mm": 1.77,
+     "residual_p90_mm": 3.15
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA15571",
+     "name": "Right ureter",
+     "bone": false,
+     "shift_mm": [
+      -0.2,
+      -8.8,
+      -14.0
+     ],
+     "shift_len_mm": 16.5,
+     "residual_median_mm": 7.25,
+     "residual_p90_mm": 19.55
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA22322",
+     "name": "Right iliacus",
+     "bone": false,
+     "shift_mm": [
+      -8.9,
+      14.4,
+      -2.6
+     ],
+     "shift_len_mm": 17.2,
+     "residual_median_mm": 2.55,
+     "residual_p90_mm": 5.55
+    },
+    {
+     "fma": "FMA8364",
+     "name": "Right ninth rib",
+     "bone": true,
+     "shift_mm": [
+      2.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.7,
+     "residual_median_mm": 2.27,
+     "residual_p90_mm": 4.56
+    },
+    {
+     "fma": "FMA13398",
+     "name": "Right serratus anterior",
+     "bone": false,
+     "shift_mm": [
+      1.1,
+      -1.8,
+      -17.9
+     ],
+     "shift_len_mm": 18.0,
+     "residual_median_mm": 1.56,
+     "residual_p90_mm": 3.1
+    },
+    {
+     "fma": "FMA22450",
+     "name": "Right pectineus",
+     "bone": false,
+     "shift_mm": [
+      -5.5,
+      16.2,
+      -9.5
+     ],
+     "shift_len_mm": 19.6,
+     "residual_median_mm": 2.65,
+     "residual_p90_mm": 5.1
+    },
+    {
+     "fma": "FMA8283",
+     "name": "Right eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.5,
+      0.1,
+      -20.1
+     ],
+     "shift_len_mm": 20.1,
+     "residual_median_mm": 1.89,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA8229",
+     "name": "Right seventh rib",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.5,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.89
+    },
+    {
+     "fma": "FMA22425",
+     "name": "Right tensor fasciae latae",
+     "bone": false,
+     "shift_mm": [
+      -15.7,
+      13.4,
+      -2.4
+     ],
+     "shift_len_mm": 20.8,
+     "residual_median_mm": 3.19,
+     "residual_p90_mm": 6.18
+    },
+    {
+     "fma": "FMA22354",
+     "name": "Right sartorius",
+     "bone": false,
+     "shift_mm": [
+      2.0,
+      -1.3,
+      -21.5
+     ],
+     "shift_len_mm": 21.6,
+     "residual_median_mm": 8.98,
+     "residual_p90_mm": 16.01
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA18885",
+     "name": "Right external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.8,
+      -16.8
+     ],
+     "shift_len_mm": 26.3,
+     "residual_median_mm": 3.39,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA18806",
+     "name": "Right external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      -7.7,
+      18.1,
+      -21.5
+     ],
+     "shift_len_mm": 29.2,
+     "residual_median_mm": 3.69,
+     "residual_p90_mm": 6.88
+    },
+    {
+     "fma": "FMA7204",
+     "name": "Right kidney",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -17.2,
+      -29.5
+     ],
+     "shift_len_mm": 34.9,
+     "residual_median_mm": 2.84,
+     "residual_p90_mm": 6.86
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.2,
+    0.3,
+    -9.3
+   ],
+   "neighbour_shift_spread_mm": 9.5,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 5.7,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.034,
+   "warp_shift_range_z_mm": [
+    -22.0,
+    -7.2
+   ]
+  },
+  "FMA22345": {
+   "name": "left transversus abdominis",
+   "vertices": 38634,
+   "triangles": 68592,
+   "bounds_mm": [
+    [
+     2.7,
+     -198.6,
+     801.4
+    ],
+    [
+     128.1,
+     -36.6,
+     1209.0
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA19236",
+     "name": "Left deferent duct",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      1.4,
+      -4.3
+     ],
+     "shift_len_mm": 5.3,
+     "residual_median_mm": 3.77,
+     "residual_p90_mm": 12.99
+    },
+    {
+     "fma": "FMA15900",
+     "name": "Urinary bladder",
+     "bone": false,
+     "shift_mm": [
+      0.2,
+      5.3,
+      -4.7
+     ],
+     "shift_len_mm": 7.1,
+     "residual_median_mm": 5.32,
+     "residual_p90_mm": 9.79
+    },
+    {
+     "fma": "FMA11336",
+     "name": "Linea alba",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      -2.0,
+      -6.9
+     ],
+     "shift_len_mm": 7.2,
+     "residual_median_mm": 1.08,
+     "residual_p90_mm": 4.12
+    },
+    {
+     "fma": "FMA43884",
+     "name": "Left gracilis",
+     "bone": false,
+     "shift_mm": [
+      -0.9,
+      -7.4,
+      -3.3
+     ],
+     "shift_len_mm": 8.1,
+     "residual_median_mm": 5.3,
+     "residual_p90_mm": 11.64
+    },
+    {
+     "fma": "FMA13337",
+     "name": "Left external oblique",
+     "bone": false,
+     "shift_mm": [
+      1.8,
+      -1.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 1.18,
+     "residual_p90_mm": 3.68
+    },
+    {
+     "fma": "FMA22457",
+     "name": "Left adductor longus",
+     "bone": false,
+     "shift_mm": [
+      5.0,
+      5.8,
+      -3.0
+     ],
+     "shift_len_mm": 8.2,
+     "residual_median_mm": 4.05,
+     "residual_p90_mm": 6.97
+    },
+    {
+     "fma": "FMA8534",
+     "name": "Left twelfth rib",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.2,
+      -6.6
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 3.35,
+     "residual_p90_mm": 8.24
+    },
+    {
+     "fma": "FMA13336",
+     "name": "Right external oblique",
+     "bone": false,
+     "shift_mm": [
+      -0.4,
+      -1.2,
+      -8.5
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.16,
+     "residual_p90_mm": 3.61
+    },
+    {
+     "fma": "FMA13406",
+     "name": "Left serratus posterior inferior",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      3.3,
+      -7.9
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.94,
+     "residual_p90_mm": 4.21
+    },
+    {
+     "fma": "FMA13295",
+     "name": "Diaphragm",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -0.9,
+      -9.1
+     ],
+     "shift_len_mm": 9.1,
+     "residual_median_mm": 3.61,
+     "residual_p90_mm": 9.2
+    },
+    {
+     "fma": "FMA7487",
+     "name": "Body of sternum",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -2.6,
+      -9.5
+     ],
+     "shift_len_mm": 9.9,
+     "residual_median_mm": 1.97,
+     "residual_p90_mm": 3.82
+    },
+    {
+     "fma": "FMA7488",
+     "name": "Xiphoid process",
+     "bone": false,
+     "shift_mm": [
+      0.8,
+      -8.0,
+      -6.3
+     ],
+     "shift_len_mm": 10.2,
+     "residual_median_mm": 0.47,
+     "residual_p90_mm": 1.08
+    },
+    {
+     "fma": "FMA22329",
+     "name": "Left gluteus maximus",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      10.4,
+      -2.7
+     ],
+     "shift_len_mm": 11.1,
+     "residual_median_mm": 3.34,
+     "residual_p90_mm": 9.04
+    },
+    {
+     "fma": "FMA22741",
+     "name": "Left iliocostalis lumborum",
+     "bone": false,
+     "shift_mm": [
+      0.5,
+      11.5,
+      -0.5
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 5.47
+    },
+    {
+     "fma": "FMA9761",
+     "name": "Right transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      -4.2,
+      -10.9
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 3.65
+    },
+    {
+     "fma": "FMA9762",
+     "name": "Left transversus thoracis",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      -4.3,
+      -10.8
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 1.34,
+     "residual_p90_mm": 3.78
+    },
+    {
+     "fma": "FMA22454",
+     "name": "Left adductor brevis",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      7.9,
+      -8.6
+     ],
+     "shift_len_mm": 11.8,
+     "residual_median_mm": 3.71,
+     "residual_p90_mm": 6.76
+    },
+    {
+     "fma": "FMA13076",
+     "name": "Fifth lumbar vertebra",
+     "bone": true,
+     "shift_mm": [
+      -0.3,
+      9.7,
+      -8.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.72
+    },
+    {
+     "fma": "FMA15572",
+     "name": "Left ureter",
+     "bone": false,
+     "shift_mm": [
+      7.1,
+      -3.0,
+      -11.0
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 6.57,
+     "residual_p90_mm": 15.98
+    },
+    {
+     "fma": "FMA8532",
+     "name": "Left eleventh rib",
+     "bone": true,
+     "shift_mm": [
+      -3.2,
+      4.4,
+      -12.5
+     ],
+     "shift_len_mm": 13.6,
+     "residual_median_mm": 1.96,
+     "residual_p90_mm": 5.62
+    },
+    {
+     "fma": "FMA45875",
+     "name": "Abdominal part of left pectoralis major",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -1.9,
+      -14.2
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 2.33,
+     "residual_p90_mm": 3.95
+    },
+    {
+     "fma": "FMA58777",
+     "name": "Left iliotibial tract",
+     "bone": false,
+     "shift_mm": [
+      12.5,
+      6.5,
+      -4.0
+     ],
+     "shift_len_mm": 14.6,
+     "residual_median_mm": 2.59,
+     "residual_p90_mm": 6.72
+    },
+    {
+     "fma": "FMA22331",
+     "name": "Left gluteus medius",
+     "bone": false,
+     "shift_mm": [
+      4.6,
+      14.1,
+      -1.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.14,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA8472",
+     "name": "Left tenth rib",
+     "bone": true,
+     "shift_mm": [
+      -3.3,
+      2.8,
+      -14.2
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 5.2
+    },
+    {
+     "fma": "FMA8221",
+     "name": "Left sixth costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -0.9,
+      -4.0,
+      -14.8
+     ],
+     "shift_len_mm": 15.4,
+     "residual_median_mm": 1.81,
+     "residual_p90_mm": 3.6
+    },
+    {
+     "fma": "FMA16586",
+     "name": "Right hip bone",
+     "bone": true,
+     "shift_mm": [
+      -4.5,
+      13.3,
+      -7.8
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.76,
+     "residual_p90_mm": 5.64
+    },
+    {
+     "fma": "FMA8275",
+     "name": "Left seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      -6.2,
+      -14.6
+     ],
+     "shift_len_mm": 16.0,
+     "residual_median_mm": 2.46,
+     "residual_p90_mm": 4.83
+    },
+    {
+     "fma": "FMA16587",
+     "name": "Left hip bone",
+     "bone": true,
+     "shift_mm": [
+      3.9,
+      13.5,
+      -8.4
+     ],
+     "shift_len_mm": 16.4,
+     "residual_median_mm": 2.73,
+     "residual_p90_mm": 5.46
+    },
+    {
+     "fma": "FMA8248",
+     "name": "Right seventh costal cartilage",
+     "bone": false,
+     "shift_mm": [
+      1.6,
+      -6.3,
+      -15.3
+     ],
+     "shift_len_mm": 16.6,
+     "residual_median_mm": 2.67,
+     "residual_p90_mm": 4.41
+    },
+    {
+     "fma": "FMA13399",
+     "name": "Left serratus anterior",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      -1.6,
+      -17.5
+     ],
+     "shift_len_mm": 17.6,
+     "residual_median_mm": 1.63,
+     "residual_p90_mm": 3.27
+    },
+    {
+     "fma": "FMA8391",
+     "name": "Left ninth rib",
+     "bone": true,
+     "shift_mm": [
+      -1.3,
+      0.5,
+      -17.6
+     ],
+     "shift_len_mm": 17.6,
+     "residual_median_mm": 2.26,
+     "residual_p90_mm": 4.58
+    },
+    {
+     "fma": "FMA22323",
+     "name": "Left iliacus",
+     "bone": false,
+     "shift_mm": [
+      10.5,
+      14.2,
+      -2.9
+     ],
+     "shift_len_mm": 17.9,
+     "residual_median_mm": 2.53,
+     "residual_p90_mm": 5.66
+    },
+    {
+     "fma": "FMA18886",
+     "name": "Left external iliac vein",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      15.9,
+      -9.2
+     ],
+     "shift_len_mm": 19.5,
+     "residual_median_mm": 3.65,
+     "residual_p90_mm": 5.86
+    },
+    {
+     "fma": "FMA18807",
+     "name": "Left external iliac artery",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      17.9,
+      -8.0
+     ],
+     "shift_len_mm": 19.7,
+     "residual_median_mm": 3.57,
+     "residual_p90_mm": 6.38
+    },
+    {
+     "fma": "FMA22451",
+     "name": "Left pectineus",
+     "bone": false,
+     "shift_mm": [
+      7.0,
+      16.0,
+      -9.6
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 2.78,
+     "residual_p90_mm": 5.36
+    },
+    {
+     "fma": "FMA8310",
+     "name": "Left eighth rib",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      0.1,
+      -19.9
+     ],
+     "shift_len_mm": 19.9,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 4.16
+    },
+    {
+     "fma": "FMA8256",
+     "name": "Left seventh rib",
+     "bone": true,
+     "shift_mm": [
+      -1.5,
+      0.3,
+      -20.4
+     ],
+     "shift_len_mm": 20.4,
+     "residual_median_mm": 1.39,
+     "residual_p90_mm": 2.91
+    },
+    {
+     "fma": "FMA22426",
+     "name": "Left tensor fasciae latae",
+     "bone": false,
+     "shift_mm": [
+      17.3,
+      13.4,
+      -2.5
+     ],
+     "shift_len_mm": 22.0,
+     "residual_median_mm": 3.17,
+     "residual_p90_mm": 5.85
+    },
+    {
+     "fma": "FMA7196",
+     "name": "Spleen",
+     "bone": false,
+     "shift_mm": [
+      3.4,
+      5.5,
+      -23.5
+     ],
+     "shift_len_mm": 24.3,
+     "residual_median_mm": 6.26,
+     "residual_p90_mm": 10.87
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    },
+    {
+     "fma": "FMA22355",
+     "name": "Left sartorius",
+     "bone": false,
+     "shift_mm": [
+      -1.9,
+      -2.7,
+      -25.8
+     ],
+     "shift_len_mm": 26.0,
+     "residual_median_mm": 9.57,
+     "residual_p90_mm": 16.25
+    },
+    {
+     "fma": "FMA7148",
+     "name": "Stomach",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      -4.1,
+      -26.2
+     ],
+     "shift_len_mm": 26.5,
+     "residual_median_mm": 6.71,
+     "residual_p90_mm": 11.61
+    },
+    {
+     "fma": "FMA7205",
+     "name": "Left kidney",
+     "bone": false,
+     "shift_mm": [
+      6.6,
+      -3.7,
+      -26.7
+     ],
+     "shift_len_mm": 27.7,
+     "residual_median_mm": 1.99,
+     "residual_p90_mm": 3.96
+    },
+    {
+     "fma": "FMA9756",
+     "name": "External intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      75.5,
+      6.7,
+      -0.0
+     ],
+     "shift_len_mm": 75.8,
+     "residual_median_mm": 63.6,
+     "residual_p90_mm": 99.16
+    },
+    {
+     "fma": "FMA9757",
+     "name": "Internal intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      76.1,
+      -8.7,
+      -19.9
+     ],
+     "shift_len_mm": 79.1,
+     "residual_median_mm": 69.46,
+     "residual_p90_mm": 109.27
+    },
+    {
+     "fma": "FMA9758",
+     "name": "Innermost intercostal muscle",
+     "bone": false,
+     "shift_mm": [
+      91.6,
+      12.9,
+      -16.3
+     ],
+     "shift_len_mm": 93.9,
+     "residual_median_mm": 82.96,
+     "residual_p90_mm": 112.6
+    }
+   ],
+   "median_shift_mm": [
+    0.9,
+    0.9,
+    -9.1
+   ],
+   "neighbour_shift_spread_mm": 9.5,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 5.8,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.049,
+   "warp_shift_range_z_mm": [
+    -21.6,
+    -7.5
+   ]
+  },
+  "FMA49001": {
+   "name": "superficial part of right masseter",
+   "vertices": 1524,
+   "triangles": 2016,
+   "bounds_mm": [
+    [
+     -60.5,
+     -140.6,
+     1452.3
+    ],
+    [
+     -34.3,
+     -107.1,
+     1515.7
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA46321",
+     "name": "Right mylohyoid",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.2,
+      -8.8
+     ],
+     "shift_len_mm": 10.8,
+     "residual_median_mm": 0.43,
+     "residual_p90_mm": 1.01
+    },
+    {
+     "fma": "FMA45826",
+     "name": "Right stylohyoid",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.7,
+      -8.7
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 0.3,
+     "residual_p90_mm": 0.87
+    },
+    {
+     "fma": "FMA52892",
+     "name": "Right zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      6.7,
+      -9.2
+     ],
+     "shift_len_mm": 11.6,
+     "residual_median_mm": 0.65,
+     "residual_p90_mm": 1.29
+    },
+    {
+     "fma": "FMA52736",
+     "name": "Sphenoid bone",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      8.1,
+      -8.5
+     ],
+     "shift_len_mm": 11.8,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA13408",
+     "name": "Right sternocleidomastoid",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      9.3,
+      -9.1
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 1.54,
+     "residual_p90_mm": 3.28
+    },
+    {
+     "fma": "FMA52738",
+     "name": "Right temporal bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 1.96
+    },
+    {
+     "fma": "FMA55705",
+     "name": "Right lower first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      6.8,
+      -12.5
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 0.38,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55706",
+     "name": "Right lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA45739",
+     "name": "Right platysma",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      7.3,
+      -13.1
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 1.41,
+     "residual_p90_mm": 2.85
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    -0.1,
+    6.8,
+    -10.9
+   ],
+   "neighbour_shift_spread_mm": 2.2,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.5,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.334,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -9.2
+   ]
+  },
+  "FMA49002": {
+   "name": "superficial part of left masseter",
+   "vertices": 1373,
+   "triangles": 2006,
+   "bounds_mm": [
+    [
+     33.0,
+     -140.6,
+     1452.3
+    ],
+    [
+     59.1,
+     -107.0,
+     1515.7
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA45827",
+     "name": "Left stylohyoid",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      7.1,
+      -7.8
+     ],
+     "shift_len_mm": 10.6,
+     "residual_median_mm": 0.63,
+     "residual_p90_mm": 1.14
+    },
+    {
+     "fma": "FMA46322",
+     "name": "Left mylohyoid",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -8.8
+     ],
+     "shift_len_mm": 10.9,
+     "residual_median_mm": 0.33,
+     "residual_p90_mm": 0.99
+    },
+    {
+     "fma": "FMA52893",
+     "name": "Left zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      6.7,
+      -9.3
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 0.68,
+     "residual_p90_mm": 1.42
+    },
+    {
+     "fma": "FMA52736",
+     "name": "Sphenoid bone",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      8.1,
+      -8.5
+     ],
+     "shift_len_mm": 11.8,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA13409",
+     "name": "Left sternocleidomastoid",
+     "bone": false,
+     "shift_mm": [
+      3.0,
+      9.5,
+      -8.9
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 3.21
+    },
+    {
+     "fma": "FMA52739",
+     "name": "Left temporal bone",
+     "bone": true,
+     "shift_mm": [
+      2.6,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 1.01,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA55704",
+     "name": "Left lower first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      6.8,
+      -12.5
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 0.39,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55703",
+     "name": "Left lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.37,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA45740",
+     "name": "Left platysma",
+     "bone": false,
+     "shift_mm": [
+      0.4,
+      7.4,
+      -13.1
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 2.81
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    0.5,
+    7.0,
+    -10.9
+   ],
+   "neighbour_shift_spread_mm": 2.4,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.5,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.33,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -9.3
+   ]
+  },
+  "FMA49004": {
+   "name": "deep part of right masseter",
+   "vertices": 2173,
+   "triangles": 2830,
+   "bounds_mm": [
+    [
+     -61.3,
+     -152.8,
+     1451.2
+    ],
+    [
+     -35.6,
+     -114.5,
+     1511.4
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA46321",
+     "name": "Right mylohyoid",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.2,
+      -8.8
+     ],
+     "shift_len_mm": 10.8,
+     "residual_median_mm": 0.43,
+     "residual_p90_mm": 1.01
+    },
+    {
+     "fma": "FMA45826",
+     "name": "Right stylohyoid",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.7,
+      -8.7
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 0.3,
+     "residual_p90_mm": 0.87
+    },
+    {
+     "fma": "FMA52892",
+     "name": "Right zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      6.7,
+      -9.2
+     ],
+     "shift_len_mm": 11.6,
+     "residual_median_mm": 0.65,
+     "residual_p90_mm": 1.29
+    },
+    {
+     "fma": "FMA53649",
+     "name": "Right maxilla",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      6.0,
+      -10.3
+     ],
+     "shift_len_mm": 11.9,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.5
+    },
+    {
+     "fma": "FMA55698",
+     "name": "Right upper first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      6.7,
+      -11.1
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.39,
+     "residual_p90_mm": 0.85
+    },
+    {
+     "fma": "FMA59763",
+     "name": "Gingiva of upper jaw",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.3,
+      -11.5
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 1.65
+    },
+    {
+     "fma": "FMA13408",
+     "name": "Right sternocleidomastoid",
+     "bone": false,
+     "shift_mm": [
+      -3.0,
+      9.3,
+      -9.1
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 1.54,
+     "residual_p90_mm": 3.28
+    },
+    {
+     "fma": "FMA55697",
+     "name": "Right upper second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      7.3,
+      -11.1
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.68
+    },
+    {
+     "fma": "FMA52738",
+     "name": "Right temporal bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 1.96
+    },
+    {
+     "fma": "FMA55705",
+     "name": "Right lower first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.3,
+      6.8,
+      -12.5
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 0.38,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55706",
+     "name": "Right lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA45739",
+     "name": "Right platysma",
+     "bone": false,
+     "shift_mm": [
+      0.0,
+      7.3,
+      -13.1
+     ],
+     "shift_len_mm": 14.9,
+     "residual_median_mm": 1.41,
+     "residual_p90_mm": 2.85
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    -1.0,
+    6.7,
+    -11.1
+   ],
+   "neighbour_shift_spread_mm": 2.0,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.4,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.316,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -9.2
+   ]
+  },
+  "FMA49005": {
+   "name": "deep part of left masseter",
+   "vertices": 2093,
+   "triangles": 2822,
+   "bounds_mm": [
+    [
+     34.2,
+     -152.8,
+     1451.4
+    ],
+    [
+     60.0,
+     -114.6,
+     1511.4
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA45827",
+     "name": "Left stylohyoid",
+     "bone": false,
+     "shift_mm": [
+      0.6,
+      7.1,
+      -7.8
+     ],
+     "shift_len_mm": 10.6,
+     "residual_median_mm": 0.63,
+     "residual_p90_mm": 1.14
+    },
+    {
+     "fma": "FMA46322",
+     "name": "Left mylohyoid",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -8.8
+     ],
+     "shift_len_mm": 10.9,
+     "residual_median_mm": 0.33,
+     "residual_p90_mm": 0.99
+    },
+    {
+     "fma": "FMA52893",
+     "name": "Left zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      6.7,
+      -9.3
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 0.68,
+     "residual_p90_mm": 1.42
+    },
+    {
+     "fma": "FMA53650",
+     "name": "Left maxilla",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.9,
+      -10.5
+     ],
+     "shift_len_mm": 12.1,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.59
+    },
+    {
+     "fma": "FMA55699",
+     "name": "Left upper first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      6.7,
+      -11.1
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.84
+    },
+    {
+     "fma": "FMA59763",
+     "name": "Gingiva of upper jaw",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.3,
+      -11.5
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 1.65
+    },
+    {
+     "fma": "FMA13409",
+     "name": "Left sternocleidomastoid",
+     "bone": false,
+     "shift_mm": [
+      3.0,
+      9.5,
+      -8.9
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 3.21
+    },
+    {
+     "fma": "FMA55700",
+     "name": "Left upper second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      7.3,
+      -11.2
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.38,
+     "residual_p90_mm": 0.61
+    },
+    {
+     "fma": "FMA52739",
+     "name": "Left temporal bone",
+     "bone": true,
+     "shift_mm": [
+      2.6,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 1.01,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA55704",
+     "name": "Left lower first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.3,
+      6.8,
+      -12.5
+     ],
+     "shift_len_mm": 14.3,
+     "residual_median_mm": 0.39,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55703",
+     "name": "Left lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.37,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA45740",
+     "name": "Left platysma",
+     "bone": false,
+     "shift_mm": [
+      0.4,
+      7.4,
+      -13.1
+     ],
+     "shift_len_mm": 15.1,
+     "residual_median_mm": 1.38,
+     "residual_p90_mm": 2.81
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    0.9,
+    6.8,
+    -11.2
+   ],
+   "neighbour_shift_spread_mm": 2.0,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.2,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.34,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -9.3
+   ]
+  },
+  "FMA49007": {
+   "name": "right temporalis",
+   "vertices": 14634,
+   "triangles": 21250,
+   "bounds_mm": [
+    [
+     -75.0,
+     -159.2,
+     1483.7
+    ],
+    [
+     -37.2,
+     -49.0,
+     1596.1
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA52734",
+     "name": "Frontal bone",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      6.1,
+      -6.1
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.67,
+     "residual_p90_mm": 2.82
+    },
+    {
+     "fma": "FMA72655",
+     "name": "Right middle frontal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -1.8,
+      7.0,
+      -4.6
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 0.87,
+     "residual_p90_mm": 1.94
+    },
+    {
+     "fma": "FMA72685",
+     "name": "Right middle temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -3.8,
+      4.3,
+      -7.4
+     ],
+     "shift_len_mm": 9.4,
+     "residual_median_mm": 2.24,
+     "residual_p90_mm": 4.19
+    },
+    {
+     "fma": "FMA50875",
+     "name": "Right optic nerve",
+     "bone": false,
+     "shift_mm": [
+      -1.7,
+      6.5,
+      -8.7
+     ],
+     "shift_len_mm": 11.0,
+     "residual_median_mm": 0.41,
+     "residual_p90_mm": 0.88
+    },
+    {
+     "fma": "FMA72661",
+     "name": "Right precentral gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.1,
+      10.2,
+      -4.4
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.0,
+     "residual_p90_mm": 1.91
+    },
+    {
+     "fma": "FMA72687",
+     "name": "Right inferior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.4,
+      7.1,
+      -8.4
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 1.44,
+     "residual_p90_mm": 2.67
+    },
+    {
+     "fma": "FMA52788",
+     "name": "Right parietal bone",
+     "bone": true,
+     "shift_mm": [
+      -1.7,
+      10.9,
+      -2.9
+     ],
+     "shift_len_mm": 11.4,
+     "residual_median_mm": 1.75,
+     "residual_p90_mm": 3.46
+    },
+    {
+     "fma": "FMA72800",
+     "name": "Anterior part of right superior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.7,
+      8.6,
+      -7.1
+     ],
+     "shift_len_mm": 11.4,
+     "residual_median_mm": 0.77,
+     "residual_p90_mm": 1.45
+    },
+    {
+     "fma": "FMA52892",
+     "name": "Right zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      6.7,
+      -9.2
+     ],
+     "shift_len_mm": 11.6,
+     "residual_median_mm": 0.65,
+     "residual_p90_mm": 1.29
+    },
+    {
+     "fma": "FMA52736",
+     "name": "Sphenoid bone",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      8.1,
+      -8.5
+     ],
+     "shift_len_mm": 11.8,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA53649",
+     "name": "Right maxilla",
+     "bone": true,
+     "shift_mm": [
+      -1.0,
+      6.0,
+      -10.3
+     ],
+     "shift_len_mm": 11.9,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.5
+    },
+    {
+     "fma": "FMA53655",
+     "name": "Right palatine bone",
+     "bone": true,
+     "shift_mm": [
+      -1.4,
+      7.1,
+      -9.9
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 2.92
+    },
+    {
+     "fma": "FMA72665",
+     "name": "Right postcentral gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.2,
+      11.2,
+      -4.5
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.06,
+     "residual_p90_mm": 1.86
+    },
+    {
+     "fma": "FMA72804",
+     "name": "Posterior part of right superior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -3.4,
+      10.6,
+      -6.3
+     ],
+     "shift_len_mm": 12.8,
+     "residual_median_mm": 0.95,
+     "residual_p90_mm": 1.72
+    },
+    {
+     "fma": "FMA72667",
+     "name": "Right supramarginal gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.8,
+      11.4,
+      -5.4
+     ],
+     "shift_len_mm": 12.9,
+     "residual_median_mm": 0.74,
+     "residual_p90_mm": 1.15
+    },
+    {
+     "fma": "FMA55698",
+     "name": "Right upper first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      6.7,
+      -11.1
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.39,
+     "residual_p90_mm": 0.85
+    },
+    {
+     "fma": "FMA59763",
+     "name": "Gingiva of upper jaw",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.3,
+      -11.5
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 1.65
+    },
+    {
+     "fma": "FMA55697",
+     "name": "Right upper second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.4,
+      7.3,
+      -11.1
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.68
+    },
+    {
+     "fma": "FMA52738",
+     "name": "Right temporal bone",
+     "bone": true,
+     "shift_mm": [
+      -2.5,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 0.96,
+     "residual_p90_mm": 1.96
+    },
+    {
+     "fma": "FMA72669",
+     "name": "Right angular gyrus",
+     "bone": false,
+     "shift_mm": [
+      -2.4,
+      12.9,
+      -5.4
+     ],
+     "shift_len_mm": 14.2,
+     "residual_median_mm": 0.87,
+     "residual_p90_mm": 1.48
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55706",
+     "name": "Right lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      -1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    -1.7,
+    7.1,
+    -8.6
+   ],
+   "neighbour_shift_spread_mm": 3.6,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.8,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.264,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -2.9
+   ]
+  },
+  "FMA49008": {
+   "name": "left temporalis",
+   "vertices": 13785,
+   "triangles": 21270,
+   "bounds_mm": [
+    [
+     35.9,
+     -159.6,
+     1483.8
+    ],
+    [
+     73.7,
+     -49.0,
+     1596.1
+    ]
+   ],
+   "neighbours": [
+    {
+     "fma": "FMA72656",
+     "name": "Left middle frontal gyrus",
+     "bone": false,
+     "shift_mm": [
+      1.7,
+      6.9,
+      -4.7
+     ],
+     "shift_len_mm": 8.5,
+     "residual_median_mm": 0.87,
+     "residual_p90_mm": 1.79
+    },
+    {
+     "fma": "FMA52734",
+     "name": "Frontal bone",
+     "bone": true,
+     "shift_mm": [
+      0.4,
+      6.1,
+      -6.1
+     ],
+     "shift_len_mm": 8.6,
+     "residual_median_mm": 1.67,
+     "residual_p90_mm": 2.82
+    },
+    {
+     "fma": "FMA72686",
+     "name": "Left middle temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      3.7,
+      4.7,
+      -7.3
+     ],
+     "shift_len_mm": 9.4,
+     "residual_median_mm": 2.15,
+     "residual_p90_mm": 4.0
+    },
+    {
+     "fma": "FMA50878",
+     "name": "Left optic nerve",
+     "bone": false,
+     "shift_mm": [
+      1.7,
+      6.6,
+      -8.7
+     ],
+     "shift_len_mm": 11.1,
+     "residual_median_mm": 0.44,
+     "residual_p90_mm": 0.95
+    },
+    {
+     "fma": "FMA72662",
+     "name": "Left precentral gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.1,
+      10.2,
+      -4.4
+     ],
+     "shift_len_mm": 11.3,
+     "residual_median_mm": 0.98,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA72688",
+     "name": "Left inferior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      7.5,
+      -8.2
+     ],
+     "shift_len_mm": 11.4,
+     "residual_median_mm": 1.37,
+     "residual_p90_mm": 2.61
+    },
+    {
+     "fma": "FMA72801",
+     "name": "Anterior part of left superior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.7,
+      8.7,
+      -7.0
+     ],
+     "shift_len_mm": 11.5,
+     "residual_median_mm": 0.8,
+     "residual_p90_mm": 1.58
+    },
+    {
+     "fma": "FMA52789",
+     "name": "Left parietal bone",
+     "bone": true,
+     "shift_mm": [
+      1.4,
+      11.2,
+      -2.4
+     ],
+     "shift_len_mm": 11.6,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 3.47
+    },
+    {
+     "fma": "FMA52893",
+     "name": "Left zygomatic bone",
+     "bone": true,
+     "shift_mm": [
+      2.5,
+      6.7,
+      -9.3
+     ],
+     "shift_len_mm": 11.7,
+     "residual_median_mm": 0.68,
+     "residual_p90_mm": 1.42
+    },
+    {
+     "fma": "FMA52736",
+     "name": "Sphenoid bone",
+     "bone": true,
+     "shift_mm": [
+      0.0,
+      8.1,
+      -8.5
+     ],
+     "shift_len_mm": 11.8,
+     "residual_median_mm": 1.04,
+     "residual_p90_mm": 2.05
+    },
+    {
+     "fma": "FMA53650",
+     "name": "Left maxilla",
+     "bone": true,
+     "shift_mm": [
+      0.9,
+      5.9,
+      -10.5
+     ],
+     "shift_len_mm": 12.1,
+     "residual_median_mm": 0.86,
+     "residual_p90_mm": 1.59
+    },
+    {
+     "fma": "FMA72666",
+     "name": "Left postcentral gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.2,
+      11.2,
+      -4.6
+     ],
+     "shift_len_mm": 12.3,
+     "residual_median_mm": 1.07,
+     "residual_p90_mm": 1.81
+    },
+    {
+     "fma": "FMA72805",
+     "name": "Posterior part of left superior temporal gyrus",
+     "bone": false,
+     "shift_mm": [
+      3.6,
+      10.2,
+      -6.2
+     ],
+     "shift_len_mm": 12.4,
+     "residual_median_mm": 1.0,
+     "residual_p90_mm": 1.93
+    },
+    {
+     "fma": "FMA72668",
+     "name": "Left supramarginal gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.9,
+      11.4,
+      -5.3
+     ],
+     "shift_len_mm": 13.0,
+     "residual_median_mm": 0.74,
+     "residual_p90_mm": 1.17
+    },
+    {
+     "fma": "FMA55699",
+     "name": "Left upper first secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.4,
+      6.7,
+      -11.1
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.36,
+     "residual_p90_mm": 0.84
+    },
+    {
+     "fma": "FMA59763",
+     "name": "Gingiva of upper jaw",
+     "bone": false,
+     "shift_mm": [
+      0.1,
+      6.3,
+      -11.5
+     ],
+     "shift_len_mm": 13.1,
+     "residual_median_mm": 0.99,
+     "residual_p90_mm": 1.65
+    },
+    {
+     "fma": "FMA55700",
+     "name": "Left upper second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      7.3,
+      -11.2
+     ],
+     "shift_len_mm": 13.4,
+     "residual_median_mm": 0.38,
+     "residual_p90_mm": 0.61
+    },
+    {
+     "fma": "FMA52739",
+     "name": "Left temporal bone",
+     "bone": true,
+     "shift_mm": [
+      2.6,
+      9.8,
+      -9.4
+     ],
+     "shift_len_mm": 13.8,
+     "residual_median_mm": 1.01,
+     "residual_p90_mm": 1.99
+    },
+    {
+     "fma": "FMA72670",
+     "name": "Left angular gyrus",
+     "bone": false,
+     "shift_mm": [
+      2.4,
+      12.9,
+      -5.4
+     ],
+     "shift_len_mm": 14.1,
+     "residual_median_mm": 0.83,
+     "residual_p90_mm": 1.47
+    },
+    {
+     "fma": "FMA52748",
+     "name": "Mandible",
+     "bone": true,
+     "shift_mm": [
+      -0.1,
+      6.9,
+      -12.7
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.53,
+     "residual_p90_mm": 2.6
+    },
+    {
+     "fma": "FMA55703",
+     "name": "Left lower second secondary molar tooth",
+     "bone": false,
+     "shift_mm": [
+      1.5,
+      7.4,
+      -12.3
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 0.37,
+     "residual_p90_mm": 0.52
+    },
+    {
+     "fma": "FMA59764",
+     "name": "Gingiva of lower jaw",
+     "bone": false,
+     "shift_mm": [
+      -0.1,
+      6.4,
+      -12.9
+     ],
+     "shift_len_mm": 14.4,
+     "residual_median_mm": 1.05,
+     "residual_p90_mm": 1.9
+    },
+    {
+     "fma": "FMA7163",
+     "name": "Skin",
+     "bone": false,
+     "shift_mm": [
+      -0.0,
+      0.3,
+      -24.9
+     ],
+     "shift_len_mm": 24.9,
+     "residual_median_mm": 6.58,
+     "residual_p90_mm": 18.17
+    }
+   ],
+   "median_shift_mm": [
+    1.7,
+    7.3,
+    -8.5
+   ],
+   "neighbour_shift_spread_mm": 3.5,
+   "after_shift_gap_to_4.0_neighbours_median_mm": 2.8,
+   "after_shift_share_of_vertices_within_2mm_of_4.0_bone": 0.254,
+   "warp_shift_range_z_mm": [
+    -12.7,
+    -2.4
+   ]
+  }
+ },
+ "shift_all_shared_mm": {
+  "n": 783,
+  "median": 13.0680306839806,
+  "p90": 67.28807972899655,
+  "share_under_1mm": 0.011494252873563218,
+  "share_over_10mm": 0.8275862068965517
+ },
+ "warp_validation_on_muscles_in_both_releases": {
+  "Right external oblique": {
+   "as_is_median_mm": 2.2,
+   "warped_median_mm": 2.5,
+   "warped_p90_mm": 11.0,
+   "best_own_translation_median_mm": 1.2
+  },
+  "Right serratus anterior": {
+   "as_is_median_mm": 5.5,
+   "warped_median_mm": 1.4,
+   "warped_p90_mm": 3.2,
+   "best_own_translation_median_mm": 1.6
+  },
+  "Right serratus posterior inferior": {
+   "as_is_median_mm": 2.9,
+   "warped_median_mm": 1.7,
+   "warped_p90_mm": 3.6,
+   "best_own_translation_median_mm": 1.9
+  },
+  "Right iliacus": {
+   "as_is_median_mm": 14.5,
+   "warped_median_mm": 4.1,
+   "warped_p90_mm": 7.7,
+   "best_own_translation_median_mm": 2.6
+  },
+  "Right iliocostalis lumborum": {
+   "as_is_median_mm": 8.0,
+   "warped_median_mm": 2.8,
+   "warped_p90_mm": 6.8,
+   "best_own_translation_median_mm": 2.2
+  },
+  "Right longissimus thoracis": {
+   "as_is_median_mm": 4.0,
+   "warped_median_mm": 1.7,
+   "warped_p90_mm": 4.3,
+   "best_own_translation_median_mm": 2.3
+  },
+  "Right spinalis thoracis": {
+   "as_is_median_mm": 2.0,
+   "warped_median_mm": 1.3,
+   "warped_p90_mm": 2.2,
+   "best_own_translation_median_mm": 1.5
+  },
+  "Right teres major": {
+   "as_is_median_mm": 5.5,
+   "warped_median_mm": 2.7,
+   "warped_p90_mm": 7.0,
+   "best_own_translation_median_mm": 2.6
+  }
+ }
+}

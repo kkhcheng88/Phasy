@@ -1,0 +1,192 @@
+{
+  "app": "phasy-session-flow",
+  "libraryFile": "test/library.stub.json",
+  "libraryVersion": "stub-2026-09-24",
+  "startedAt": "2026-09-24T11:27:49.209Z",
+  "receiver": {
+    "slot": "A",
+    "name": "成員 A"
+  },
+  "helper": true,
+  "sides": [
+    "R"
+  ],
+  "zones": [
+    "z-neck-back-upper",
+    "z-neck-back-lower",
+    "z-shoulder-top"
+  ],
+  "kind": "疲累",
+  "description": "開長途車之後，肩頸很攰",
+  "reading": "",
+  "aiSituations": [],
+  "situations": [
+    "s-phone-head-down"
+  ],
+  "test": "s-phone-head-down",
+  "testReason": "這是你說的情況，可以即場做一次。",
+  "testBefore": 6,
+  "followups": [],
+  "candidates": [
+    {
+      "muscle": "m-trap-upper",
+      "side": "R",
+      "matched": [
+        "z-shoulder-top",
+        "z-neck-back-upper"
+      ],
+      "matchedAt": [
+        "z-shoulder-top"
+      ],
+      "matchedRef": [
+        "z-neck-back-upper"
+      ],
+      "byLoad": true,
+      "aiAdded": false,
+      "reason": "這條肌肉的激痛點就在肩頂，也激痛點會把痛引到頸後上段。",
+      "by": "rule"
+    },
+    {
+      "muscle": "m-levator-scapulae",
+      "side": "R",
+      "matched": [
+        "z-neck-back-lower"
+      ],
+      "matchedAt": [],
+      "matchedRef": [
+        "z-neck-back-lower"
+      ],
+      "byLoad": true,
+      "aiAdded": false,
+      "reason": "這條肌肉的激痛點會把痛引到頸後下段。",
+      "by": "rule"
+    },
+    {
+      "muscle": "m-splenius-capitis",
+      "side": "R",
+      "matched": [
+        "z-neck-back-upper"
+      ],
+      "matchedAt": [
+        "z-neck-back-upper"
+      ],
+      "matchedRef": [
+        "z-neck-back-upper"
+      ],
+      "byLoad": false,
+      "aiAdded": false,
+      "reason": "這條肌肉的激痛點就在頸後上段，也激痛點會把痛引到頸後上段。",
+      "by": "rule"
+    }
+  ],
+  "checks": [
+    {
+      "n": 1,
+      "check": "c-trap-upper-pinch",
+      "muscle": "m-trap-upper",
+      "side": "R",
+      "reason": "按可疑程度的次序，下一個是這條肌肉。",
+      "by": "fallback",
+      "score": 6,
+      "familiar": true,
+      "shape": "area",
+      "other": 2
+    },
+    {
+      "n": 2,
+      "check": "c-levator-press",
+      "muscle": "m-levator-scapulae",
+      "side": "R",
+      "reason": "按可疑程度的次序，下一個是這條肌肉。",
+      "by": "fallback",
+      "score": 5,
+      "familiar": false,
+      "shape": "point",
+      "other": null
+    }
+  ],
+  "stopReason": "你按了「完成檢查」。",
+  "picked": [
+    "m-trap-upper|R"
+  ],
+  "plan": [
+    {
+      "id": "cp-trap-upper",
+      "kind": "cupping",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這是知識庫為這條肌肉列出的第一個做法。",
+      "by": "fallback"
+    },
+    {
+      "id": "mt-trap-upper-hold",
+      "kind": "manual",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這是知識庫為這條肌肉列出的第一個做法。",
+      "by": "fallback"
+    },
+    {
+      "id": "st-trap-upper-seated",
+      "kind": "stretch",
+      "muscle": "m-trap-upper",
+      "sides": [
+        "R"
+      ],
+      "reason": "這是知識庫為這條肌肉列出的第一個做法。",
+      "by": "fallback"
+    }
+  ],
+  "recheck": {
+    "muscles": {
+      "m-trap-upper|R": {
+        "muscle": "m-trap-upper",
+        "side": "R",
+        "check": "c-trap-upper-pinch",
+        "before": 6,
+        "after": 6
+      }
+    },
+    "test": {
+      "before": 6,
+      "after": 5
+    }
+  },
+  "summary": "找到平時那種痛的肌肉：斜方肌上部（右）。做了 3 項處理。測試動作由 6 分變為 5 分。下次可以再比較。",
+  "statuses": [
+    {
+      "muscle": "m-trap-upper",
+      "L": 2,
+      "R": 6
+    },
+    {
+      "muscle": "m-levator-scapulae",
+      "L": "unchecked",
+      "R": 5
+    },
+    {
+      "muscle": "m-splenius-capitis",
+      "L": "unchecked",
+      "R": "suspected"
+    },
+    {
+      "muscle": "m-rhomboid",
+      "L": "unchecked",
+      "R": "unchecked"
+    }
+  ],
+  "endedAt": "2026-09-24T11:27:53.097Z",
+  "settings": {
+    "base": "http://localhost:8771/mock",
+    "model": "mock-model",
+    "effort": "low",
+    "keySet": false
+  },
+  "llm": [],
+  "refusals": [],
+  "notes": []
+}

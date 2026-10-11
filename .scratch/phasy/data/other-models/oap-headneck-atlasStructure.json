@@ -1,0 +1,2327 @@
+[
+    {
+        "@id": "#left_internal_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_108_left_internal_carotid.vtk"
+    },
+    {
+        "@id": "#left_trapezius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_53_left_trapezius_muscle.vtk"
+    },
+    {
+        "@id": "#atlas_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_11_atlas.vtk"
+    },
+    {
+        "@id": "#right_clavicle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_26_right_clavicle.vtk"
+    },
+    {
+        "@id": "#right_common_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_101_right_common_carotid.vtk"
+    },
+    {
+        "@id": "#skull",
+        "@type": "Structure",
+        "annotation": {
+            "name": "skull"
+        },
+        "renderOption": {
+            "color": "rgb(244,244,244)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 10,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#skull_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_parotid_gland_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_49_left_parotid_gland.vtk"
+    },
+    {
+        "@id": "#_LabelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "labels/HN-Atlas-labels.nrrd"
+    },
+    {
+        "@id": "#skull_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_10_skull.vtk"
+    },
+    {
+        "@id": "#left_clavicle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_27_left_clavicle.vtk"
+    },
+    {
+        "@id": "#left_temporalis_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_51_left_temporalis_muscle.vtk"
+    },
+    {
+        "@id": "#mandible",
+        "@type": "Structure",
+        "annotation": {
+            "name": "mandible"
+        },
+        "renderOption": {
+            "color": "rgb(219,225,105)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 25,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#mandible_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Glands",
+        "@type": "Group",
+        "annotation": {
+            "name": "Glands"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#right_parotid_gland",
+            "#left_parotid_gland",
+            "#thyroid_gland"
+        ],
+        "renderOption": {
+            "color": "rgb(209,175,184)"
+        }
+    },
+    {
+        "@id": "#left_subclavian_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_subclavian_artery"
+        },
+        "renderOption": {
+            "color": "rgb(230,214,149)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 104,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_subclavian_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_scalenius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_59_left_scalenius_muscle.vtk"
+    },
+    {
+        "@id": "#thoracic2_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_22_thoracic2.vtk"
+    },
+    {
+        "@id": "#left_internal_jugular_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_internal_jugular_vein"
+        },
+        "renderOption": {
+            "color": "rgb(130,175,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 110,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_internal_jugular_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_clavicle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_clavicle"
+        },
+        "renderOption": {
+            "color": "rgb(175,89,70)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 26,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_clavicle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_masseter_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_55_left_masseter_muscle.vtk"
+    },
+    {
+        "@id": "#rib1_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_31_rib1.vtk"
+    },
+    {
+        "@id": "#left_scalenius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_scalenius_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(149,140,170)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 59,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_scalenius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_sternocleidomastoideus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_61_left_sternocleidomastoideus_muscle.vtk"
+    },
+    {
+        "@id": "#left_internal_jugular_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_110_left_internal_jugular_vein.vtk"
+    },
+    {
+        "@id": "#left_subclavian_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_104_left_subclavian_artery.vtk"
+    },
+    {
+        "@id": "#left_zygomatic_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_zygomatic_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(200,167,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 63,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_zygomatic_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#axis",
+        "@type": "Structure",
+        "annotation": {
+            "name": "axis"
+        },
+        "renderOption": {
+            "color": "rgb(230,209,24)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 12,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#axis_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Bones",
+        "@type": "Group",
+        "annotation": {
+            "name": "Bones"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#skull",
+            "#hyoid",
+            "#right_clavicle",
+            "#axis",
+            "#mandible",
+            "#cervical3",
+            "#cervical6",
+            "#cervical7",
+            "#cervical4",
+            "#cervical5",
+            "#thoracic4",
+            "#thoracic5",
+            "#thoracic2",
+            "#thoracic3",
+            "#atlas",
+            "#sternum",
+            "#rib3",
+            "#rib2",
+            "#rib1",
+            "#rib5",
+            "#rib4",
+            "#thoracic1",
+            "#left_clavicle"
+        ],
+        "renderOption": {
+            "color": "rgb(226,202,133)"
+        }
+    },
+    {
+        "@id": "#right_sternocleidomastoideus_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_62_right_sternocleidomastoideus_muscle.vtk"
+    },
+    {
+        "@id": "#right_masseter_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_masseter_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(191,202,79)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 56,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_masseter_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical3",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cervical3"
+        },
+        "renderOption": {
+            "color": "rgb(255,175,135)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 13,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cervical3_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical6",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cervical6"
+        },
+        "renderOption": {
+            "color": "rgb(105,94,214)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 16,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cervical6_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical7",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cervical7"
+        },
+        "renderOption": {
+            "color": "rgb(35,100,75)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 17,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cervical7_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical4",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cervical4"
+        },
+        "renderOption": {
+            "color": "rgb(195,49,65)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 14,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cervical4_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cervical5"
+        },
+        "renderOption": {
+            "color": "rgb(225,89,110)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 15,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cervical5_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_scalenius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_scalenius_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(98,33,230)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 60,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_scalenius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical7_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_17_cervical7.vtk"
+    },
+    {
+        "@id": "#left_common_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_102_left_common_carotid.vtk"
+    },
+    {
+        "@id": "#right_levator_scapulae_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_58_right_levator_scapulae_muscle.vtk"
+    },
+    {
+        "@id": "#superior_vena_cava",
+        "@type": "Structure",
+        "annotation": {
+            "name": "superior_vena_cava"
+        },
+        "renderOption": {
+            "color": "rgb(119,149,230)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 117,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#superior_vena_cava_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#__header__",
+        "@type": "Header",
+        "backgroundImage": [
+            "#_bgImageSrc0"
+        ],
+        "root": [
+            "#Head_and_Neck_Atlas"
+        ],
+        "name": "Head and Neck Atlas",
+	"contact": "http://www.spl.harvard.edu/publications/item/view/2271"
+    },
+    {
+        "@id": "#thoracic3_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_23_thoracic3.vtk"
+    },
+    {
+        "@id": "#thoracic1_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_21_thoracic1.vtk"
+    },
+    {
+        "@id": "#right_vertebral_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_105_right_vertebral_artery.vtk"
+    },
+    {
+        "@id": "#thyroid_cartilage_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_119_thyroid_cartilage.vtk"
+    },
+    {
+        "@id": "#right_masseter_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_56_right_masseter_muscle.vtk"
+    },
+    {
+        "@id": "#cervical3_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_13_cervical3.vtk"
+    },
+    {
+        "@id": "#left_levator_scapulae_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_57_left_levator_scapulae_muscle.vtk"
+    },
+    {
+        "@id": "#axis_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_12_axis.vtk"
+    },
+    {
+        "@id": "#right_subclavian_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_subclavian_artery"
+        },
+        "renderOption": {
+            "color": "rgb(244,100,14)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 103,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_subclavian_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_temporalis_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_52_right_temporalis_muscle.vtk"
+    },
+    {
+        "@id": "#right_parotid_gland_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_50_right_parotid_gland.vtk"
+    },
+    {
+        "@id": "#hyoid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_9_hyoid.vtk"
+    },
+    {
+        "@id": "#left_subclavian_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_114_left_subclavian_vein.vtk"
+    },
+    {
+        "@id": "#_bgImageSrc0",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/x-nrrd",
+        "source": "grayscale/Osirix-Manix-255-res.nrrd"
+    },
+    {
+        "@id": "#left_zygomatic_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_63_left_zygomatic_muscle.vtk"
+    },
+    {
+        "@id": "#left_parotid_gland",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_parotid_gland"
+        },
+        "renderOption": {
+            "color": "rgb(244,49,214)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 49,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_parotid_gland_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_vertebral_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_106_left_vertebral_artery.vtk"
+    },
+    {
+        "@id": "#Veins",
+        "@type": "Group",
+        "annotation": {
+            "name": "Veins"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#superior_vena_cava",
+            "#right_internal_jugular_vein",
+            "#right_subclavian_vein",
+            "#left_internal_jugular_vein",
+            "#left_subclavian_vein"
+        ],
+        "renderOption": {
+            "color": "rgb(42,28,223)"
+        }
+    },
+    {
+        "@id": "#thoracic3",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thoracic3"
+        },
+        "renderOption": {
+            "color": "rgb(230,179,29)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 23,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thoracic3_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cricoid_cartilage_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_120_cricoid_cartilage.vtk"
+    },
+    {
+        "@id": "#right_internal_jugular_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_internal_jugular_vein"
+        },
+        "renderOption": {
+            "color": "rgb(14,244,244)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 109,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_internal_jugular_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_107_right_internal_carotid.vtk"
+    },
+    {
+        "@id": "#cricoid_cartilage",
+        "@type": "Structure",
+        "annotation": {
+            "name": "cricoid_cartilage"
+        },
+        "renderOption": {
+            "color": "rgb(225,225,225)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 120,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#cricoid_cartilage_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thyroid_gland_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_118_thyroid_gland.vtk"
+    },
+    {
+        "@id": "#superior_vena_cava_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_117_superior_vena_cava.vtk"
+    },
+    {
+        "@id": "#right_vertebral_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_vertebral_artery"
+        },
+        "renderOption": {
+            "color": "rgb(244,200,14)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 105,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_vertebral_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_subclavian_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_subclavian_vein"
+        },
+        "renderOption": {
+            "color": "rgb(179,130,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 114,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_subclavian_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_external_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_external_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(14,79,244)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 111,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_external_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_masseter_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_masseter_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(218,235,31)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 55,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_masseter_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_sternocleidomastoideus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_sternocleidomastoideus_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(54,140,43)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 62,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_sternocleidomastoideus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#sternum_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_28_sternum.vtk"
+    },
+    {
+        "@id": "#thyroid_gland",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thyroid_gland"
+        },
+        "renderOption": {
+            "color": "rgb(212,177,177)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 118,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thyroid_gland_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#_urlBase",
+        "@type": "BaseURL",
+        "url": ""
+    },
+    {
+        "@id": "#arch_of_aorta_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_115_arch_of_aorta.vtk"
+    },
+    {
+        "@id": "#left_sternocleidomastoideus_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_sternocleidomastoideus_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(135,225,87)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 61,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_sternocleidomastoideus_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#mandible_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_25_mandible.vtk"
+    },
+    {
+        "@id": "#left_levator_scapulae_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_levator_scapulae_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(117,140,165)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 57,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_levator_scapulae_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_zygomatic_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_zygomatic_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(170,56,165)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 64,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_zygomatic_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Arteries",
+        "@type": "Group",
+        "annotation": {
+            "name": "Arteries"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#right_external_carotid",
+            "#arch_of_aorta",
+            "#left_internal_carotid",
+            "#left_external_carotid",
+            "#brachiocephalic_trunk",
+            "#right_internal_carotid",
+            "#right_subclavian_artery",
+            "#right_vertebral_artery",
+            "#left_vertebral_artery",
+            "#right_common_carotid",
+            "#left_subclavian_artery",
+            "#left_common_carotid"
+        ],
+        "renderOption": {
+            "color": "rgb(228,7,84)"
+        }
+    },
+    {
+        "@id": "#right_temporalis_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_temporalis_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(165,84,93)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 52,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_temporalis_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rib5_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_35_rib5.vtk"
+    },
+    {
+        "@id": "#right_common_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_common_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(244,14,59)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 101,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_common_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_internal_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(170,244,14)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 107,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_internal_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#hyoid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "hyoid"
+        },
+        "renderOption": {
+            "color": "rgb(239,140,14)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 9,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#hyoid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rib3_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_33_rib3.vtk"
+    },
+    {
+        "@id": "#cervical4_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_14_cervical4.vtk"
+    },
+    {
+        "@id": "#right_trapezius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_54_right_trapezius_muscle.vtk"
+    },
+    {
+        "@id": "#brachiocephalic_trunk",
+        "@type": "Structure",
+        "annotation": {
+            "name": "brachiocephalic_trunk"
+        },
+        "renderOption": {
+            "color": "rgb(230,14,14)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 116,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#brachiocephalic_trunk_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_trapezius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_trapezius_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(237,163,4)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 53,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_trapezius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_internal_jugular_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_109_right_internal_jugular_vein.vtk"
+    },
+    {
+        "@id": "#right_scalenius_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_60_right_scalenius_muscle.vtk"
+    },
+    {
+        "@id": "#cervical5_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_15_cervical5.vtk"
+    },
+    {
+        "@id": "#sternum",
+        "@type": "Structure",
+        "annotation": {
+            "name": "sternum"
+        },
+        "renderOption": {
+            "color": "rgb(130,35,124)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 28,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#sternum_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#cervical6_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_16_cervical6.vtk"
+    },
+    {
+        "@id": "#thoracic4",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thoracic4"
+        },
+        "renderOption": {
+            "color": "rgb(230,100,29)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 24,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thoracic4_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thoracic5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thoracic5"
+        },
+        "renderOption": {
+            "color": "rgb(255,70,29)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 36,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thoracic5_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thoracic2",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thoracic2"
+        },
+        "renderOption": {
+            "color": "rgb(230,219,29)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 22,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thoracic2_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Muscles",
+        "@type": "Group",
+        "annotation": {
+            "name": "Muscles"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#right_trapezius_muscle",
+            "#left_scalenius_muscle",
+            "#right_sternocleidomastoideus_muscle",
+            "#left_temporalis_muscle",
+            "#right_levator_scapulae_muscle",
+            "#left_zygomatic_muscle",
+            "#left_sternocleidomastoideus_muscle",
+            "#right_masseter_muscle",
+            "#left_levator_scapulae_muscle",
+            "#right_zygomatic_muscle",
+            "#right_temporalis_muscle",
+            "#right_scalenius_muscle",
+            "#left_masseter_muscle",
+            "#left_trapezius_muscle"
+        ],
+        "renderOption": {
+            "color": "rgb(200,121,77)"
+        }
+    },
+    {
+        "@id": "#atlas",
+        "@type": "Structure",
+        "annotation": {
+            "name": "atlas"
+        },
+        "renderOption": {
+            "color": "rgb(200,200,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 11,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#atlas_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thoracic1",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thoracic1"
+        },
+        "renderOption": {
+            "color": "rgb(209,230,29)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 21,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thoracic1_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_trapezius_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_trapezius_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(212,186,131)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 54,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_trapezius_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Cartilage",
+        "@type": "Group",
+        "annotation": {
+            "name": "Cartilage"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#cricoid_cartilage",
+            "#thyroid_cartilage"
+        ],
+        "renderOption": {
+            "color": "rgb(237,237,237)"
+        }
+    },
+    {
+        "@id": "#brachiocephalic_trunk_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_116_brachiocephalic_trunk.vtk"
+    },
+    {
+        "@id": "#rib2",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rib2"
+        },
+        "renderOption": {
+            "color": "rgb(100,130,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 32,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rib2_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thyroid_cartilage",
+        "@type": "Structure",
+        "annotation": {
+            "name": "thyroid_cartilage"
+        },
+        "renderOption": {
+            "color": "rgb(177,177,177)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 119,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#thyroid_cartilage_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_levator_scapulae_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_levator_scapulae_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(33,123,230)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 58,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_levator_scapulae_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_subclavian_vein",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_subclavian_vein"
+        },
+        "renderOption": {
+            "color": "rgb(179,14,244)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 113,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_subclavian_vein_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#thoracic5_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_36_thoracic5.vtk"
+    },
+    {
+        "@id": "#rib2_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_32_rib2.vtk"
+    },
+    {
+        "@id": "#thoracic4_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_24_thoracic4.vtk"
+    },
+    {
+        "@id": "#right_parotid_gland",
+        "@type": "Structure",
+        "annotation": {
+            "name": "right_parotid_gland"
+        },
+        "renderOption": {
+            "color": "rgb(244,214,49)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 50,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#right_parotid_gland_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_external_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_111_right_external_carotid.vtk"
+    },
+    {
+        "@id": "#right_subclavian_vein_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_113_right_subclavian_vein.vtk"
+    },
+    {
+        "@id": "#arch_of_aorta",
+        "@type": "Structure",
+        "annotation": {
+            "name": "arch_of_aorta"
+        },
+        "renderOption": {
+            "color": "rgb(230,14,149)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 115,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#arch_of_aorta_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_temporalis_muscle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_temporalis_muscle"
+        },
+        "renderOption": {
+            "color": "rgb(188,65,28)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 51,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_temporalis_muscle_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_internal_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_internal_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(149,205,189)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 108,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_internal_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rib3",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rib3"
+        },
+        "renderOption": {
+            "color": "rgb(110,100,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 33,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rib3_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_external_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_external_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(135,135,200)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 112,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_external_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rib1",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rib1"
+        },
+        "renderOption": {
+            "color": "rgb(100,170,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 31,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rib1_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#Head_and_Neck_Atlas",
+        "@type": "Group",
+        "annotation": {
+            "name": "Head and Neck Atlas"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#Cartilage",
+            "#Vessels",
+            "#Muscles",
+            "#Bones",
+            "#Glands"
+        ],
+        "renderOption": {
+            "color": "rgb(211,211,211)"
+        }
+    },
+    {
+        "@id": "#rib5",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rib5"
+        },
+        "renderOption": {
+            "color": "rgb(160,100,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 35,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rib5_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#rib4",
+        "@type": "Structure",
+        "annotation": {
+            "name": "rib4"
+        },
+        "renderOption": {
+            "color": "rgb(135,100,179)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 34,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#rib4_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#right_zygomatic_muscle_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_64_right_zygomatic_muscle.vtk"
+    },
+    {
+        "@id": "#right_subclavian_artery_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_103_right_subclavian_artery.vtk"
+    },
+    {
+        "@id": "#rib4_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_34_rib4.vtk"
+    },
+    {
+        "@id": "#Vessels",
+        "@type": "Group",
+        "annotation": {
+            "name": "Vessels"
+        },
+        "labelFilename": "labels/HN-Atlas-labels.nrrd",
+        "member": [
+            "#Veins",
+            "#Arteries"
+        ],
+        "renderOption": {
+            "color": "rgb(147,33,73)"
+        }
+    },
+    {
+        "@id": "#left_vertebral_artery",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_vertebral_artery"
+        },
+        "renderOption": {
+            "color": "rgb(170,205,149)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 106,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_vertebral_artery_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_external_carotid_ModelDS",
+        "@type": "DataSource",
+        "baseURL": "#_urlBase",
+        "mimeType": "application/octet-stream",
+        "source": "models/Model_112_left_external_carotid.vtk"
+    },
+    {
+        "@id": "#left_common_carotid",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_common_carotid"
+        },
+        "renderOption": {
+            "color": "rgb(230,149,154)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 102,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_common_carotid_ModelDS"
+            }
+        ]
+    },
+    {
+        "@id": "#left_clavicle",
+        "@type": "Structure",
+        "annotation": {
+            "name": "left_clavicle"
+        },
+        "renderOption": {
+            "color": "rgb(140,65,49)"
+        },
+        "sourceSelector": [
+            {
+                "@type": [
+                    "Selector",
+                    "LabelMapSelector"
+                ],
+                "authoritative": true,
+                "dataKey": 27,
+                "dataSource": "#_LabelDS"
+            },
+            {
+                "@type": [
+                    "Selector",
+                    "GeometrySelector"
+                ],
+                "authoritative": false,
+                "dataSource": "#left_clavicle_ModelDS"
+            }
+        ]
+    }
+]

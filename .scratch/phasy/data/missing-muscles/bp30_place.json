@@ -1,0 +1,193 @@
+{
+ "landmarks_right_side_4.0": {
+  "12th rib, lowest point": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -84.2,
+    -59.0,
+    1011.3
+   ],
+   "distance_to_warped_3.0_mm": 24.1
+  },
+  "iliac crest, highest point": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -101.3,
+    -58.7,
+    957.9
+   ],
+   "distance_to_warped_3.0_mm": 40.6
+  },
+  "iliac crest, posterior top": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -73.7,
+    -38.2,
+    949.3
+   ],
+   "distance_to_warped_3.0_mm": 3.2
+  },
+  "L1 right transverse process tip": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -35.8,
+    -56.9,
+    1051.3
+   ],
+   "distance_to_warped_3.0_mm": 2.4
+  },
+  "L1 spinous process tip": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    -1.0,
+    -29.2,
+    1030.0
+   ],
+   "distance_to_warped_3.0_mm": 14.0
+  },
+  "L2 right transverse process tip": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -40.4,
+    -59.2,
+    1023.7
+   ],
+   "distance_to_warped_3.0_mm": 7.1
+  },
+  "L2 spinous process tip": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    0.7,
+    -34.3,
+    997.8
+   ],
+   "distance_to_warped_3.0_mm": 12.4
+  },
+  "L3 right transverse process tip": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -40.2,
+    -65.0,
+    994.9
+   ],
+   "distance_to_warped_3.0_mm": 5.9
+  },
+  "L3 spinous process tip": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    0.1,
+    -29.5,
+    974.3
+   ],
+   "distance_to_warped_3.0_mm": 16.4
+  },
+  "L4 right transverse process tip": {
+   "muscle": "QL",
+   "xyz_mm": [
+    -42.8,
+    -61.2,
+    970.9
+   ],
+   "distance_to_warped_3.0_mm": 10.2
+  },
+  "L4 spinous process tip": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    -1.2,
+    -26.2,
+    954.6
+   ],
+   "distance_to_warped_3.0_mm": 12.2
+  },
+  "L5 spinous process tip": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    -0.4,
+    -18.2,
+    928.7
+   ],
+   "distance_to_warped_3.0_mm": 15.2
+  },
+  "T7 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -0.7,
+    -0.7,
+    1187.1
+   ],
+   "distance_to_warped_3.0_mm": 0.9
+  },
+  "T8 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -0.3,
+    -0.9,
+    1162.8
+   ],
+   "distance_to_warped_3.0_mm": 1.6
+  },
+  "T9 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -0.2,
+    -6.2,
+    1134.7
+   ],
+   "distance_to_warped_3.0_mm": 0.8
+  },
+  "T10 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -3.9,
+    -7.8,
+    1105.5
+   ],
+   "distance_to_warped_3.0_mm": 2.1
+  },
+  "T11 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -1.4,
+    -13.0,
+    1084.0
+   ],
+   "distance_to_warped_3.0_mm": 0.8
+  },
+  "T12 spinous process tip": {
+   "muscle": "LD",
+   "xyz_mm": [
+    0.3,
+    -22.6,
+    1061.5
+   ],
+   "distance_to_warped_3.0_mm": 2.8
+  },
+  "sacrum, most dorsal point": {
+   "muscle": "multifidus",
+   "xyz_mm": [
+    -11.1,
+    7.3,
+    844.8
+   ],
+   "distance_to_warped_3.0_mm": 8.3
+  },
+  "scapula inferior angle": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -94.4,
+    -5.3,
+    1184.0
+   ],
+   "distance_to_warped_3.0_mm": 3.1
+  },
+  "humerus, front of upper shaft (near intertubercular groove)": {
+   "muscle": "LD",
+   "xyz_mm": [
+    -164.9,
+    -100.2,
+    1314.5
+   ],
+   "distance_to_warped_3.0_mm": 43.1
+  }
+ }
+}

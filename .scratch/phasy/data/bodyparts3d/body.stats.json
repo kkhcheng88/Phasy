@@ -1,0 +1,25 @@
+{
+ "clipped": {
+  "FJ1452": "111826 -> 49085 source triangles",
+  "FJ1452M": "111826 -> 48775 source triangles",
+  "FMA13892": "58408 -> 32987 source triangles",
+  "FMA13893": "57920 -> 34130 source triangles",
+  "FMA22344": "68682 -> 64461 source triangles",
+  "FMA22345": "68592 -> 64208 source triangles"
+ },
+ "muscles": {
+  "parts": 425,
+  "srcTriangles": 2867724,
+  "triangles": 532026,
+  "vertices": 269615,
+  "windingFlipped": 0
+ },
+ "bones": {
+  "parts": 81,
+  "srcTriangles": 439268,
+  "triangles": 54780,
+  "vertices": 27434,
+  "windingFlipped": 0
+ },
+ "bytes": 11382500
+}

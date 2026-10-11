@@ -1,0 +1,396 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  PROTOTYPE (throwaway) — roadmap ticket 09: does a BodyParts3D muscle body look good and run smoothly on a phone?
+  Written as a claude.ai artifact page: the host adds <html>/<head>/<body>, so none here.
+  Local run: python -m http.server 8000 --directory C:\projects\Phasy\prototypes\3d-muscle-view  then open http://<pc-ip>:8000/
+  body.wasm / body-low.wasm are GLB files built by .scratch/phasy/data/bodyparts3d/build/build.mjs (no meshopt: hosted CSP may block WASM).
+  The light model loads by default; #high loads the detailed one. Status data below is made up.
+-->
+<title>Phasy 肌肉圖</title>
+<style>
+  :root {
+    --bg1: #eef1f4; --bg2: #d9dee4; --ink: #1d232a; --muted: #5d6771; --card: rgba(255,255,255,.92);
+    --line: #d5dae0; --accent: #0e7490; --unchecked: #b8b2ac; --suspect: #7c3aed;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg2); color: var(--ink);
+    font: 15px/1.4 "Noto Sans HK", "PingFang HK", "Microsoft JhengHei", system-ui, sans-serif; -webkit-tap-highlight-color: transparent; }
+  #stage { position: fixed; inset: 0; background: radial-gradient(120% 80% at 50% 30%, var(--bg1), var(--bg2)); }
+  canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+  .top { position: fixed; top: max(10px, env(safe-area-inset-top)); left: 16px; right: 16px; display: flex; gap: 8px;
+    align-items: flex-start; justify-content: space-between; pointer-events: none; }
+  .top > * { pointer-events: auto; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+  .legend { padding: 8px 10px; font-size: 12px; }
+  .legend .row { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+  .sw { width: 16px; height: 12px; border-radius: 3px; flex: none; }
+  .sw.un { background: var(--unchecked); }
+  .sw.su { background: repeating-linear-gradient(135deg, var(--suspect) 0 3px, var(--unchecked) 3px 7px); }
+  .bar { width: 96px; height: 10px; border-radius: 3px; background: linear-gradient(90deg, #22c55e, #facc15, #dc2626); }
+  .scale { display: flex; justify-content: space-between; width: 96px; color: var(--muted); font-size: 10px; margin-left: 22px; }
+  .views { display: flex; gap: 6px; }
+  [hidden] { display: none !important; }
+  button { font: inherit; font-size: 14px; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 10px;
+    padding: 8px 6px; min-height: 40px; min-width: 52px; cursor: pointer; }
+  button:active { background: #eef2f5; }
+  button:disabled { color: #a3abb3; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .bottom { position: fixed; left: 16px; right: 16px; bottom: max(8px, env(safe-area-inset-bottom)); }
+  .info { padding: 12px 14px; }
+  .name { font-size: 18px; font-weight: 600; margin: 0; }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .status { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 14px; }
+  .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 10px; }
+  .depth { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 14px; }
+  .depth input { flex: 1; min-width: 0; min-height: 32px; accent-color: var(--accent); }
+  #depthVal { min-width: 6.5em; text-align: right; color: var(--muted); font-size: 13px; }
+  .meta, .credit { margin-top: 6px; font-size: 10px; color: var(--muted); text-align: center; }
+  .meta a, .credit a { color: inherit; }
+  .meta { font-size: 11px; font-variant-numeric: tabular-nums; }
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; color: var(--muted); pointer-events: none; }
+</style>
+<div id="stage"></div>
+<div id="loading">載入肌肉模型中… <span id="pct"></span></div>
+
+<div class="top">
+  <div class="card legend" aria-label="圖例">
+    <div class="row"><span class="sw un"></span>未檢查</div>
+    <div class="row"><span class="sw su"></span>懷疑（未按壓）</div>
+    <div class="row"><span class="sw bar" style="width:96px"></span></div>
+    <div class="scale"><span>壓痛分 0</span><span>5</span><span>10</span></div>
+  </div>
+  <div class="views">
+    <button id="front">正面</button>
+    <button id="back">背面</button>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="card info">
+    <p class="name" id="name">點一下肌肉</p>
+    <div class="sub" id="sub">查看名稱、左右側及肌肉狀態。單指轉動，雙指縮放及移動。</div>
+    <div class="status" id="status" hidden></div>
+    <div class="actions">
+      <button id="hide" disabled>隱藏這條肌肉</button>
+      <button id="showall" class="primary">顯示全部</button>
+    </div>
+    <label class="depth">剝層 <input type="range" id="depth" min="0" max="6" value="0" step="1"> <span id="depthVal">全部顯示</span></label>
+  </div>
+  <div class="meta">原型 · 示範數據 · <span id="stats">—</span> · <a id="lod" href="#high">轉用高清模式</a></div>
+  <div class="credit">3D 模型：BodyParts3D, © The Database Center for Life Science licensed under
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC Attribution 4.0 International</a></div>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+// Made-up Muscle status for one demo Member. Keys are BodyParts3D element file ids.
+// number = Tenderness score (0-10); 'S' = Suspected; anything not listed = Unchecked.
+const DEMO_STATUS = {
+  FJ1521: 7,   // descending (upper) trapezius, right
+  FJ1521M: 3,  // descending (upper) trapezius, left
+  FJ1532: 'S', // levator scapulae, right
+  FJ1536: 5,   // rhomboid major, right
+  FJ1500: 'S', // infraspinatus, right
+  FJ1573: 0,   // sternocleidomastoid, left
+  FJ1545: 'S', // splenius capitis, right
+  FJ1527: 8,   // iliocostalis lumborum, right
+  FJ1535M: 2,  // longissimus thoracis, left
+  FJ1419: 6,   // gluteus medius, right
+  FJ1428M: 'S',// piriformis, left
+  FJ1431: 4,   // psoas major, right
+  FMA22348: 7,   // quadratus lumborum, right (BodyParts3D 3.0 mesh, id = FMA id)
+  FMA13359: 'S', // latissimus dorsi, left
+  FMA22878: 4,   // multifidus, right
+};
+const SIDE = { L: '左側', R: '右側', M: '中線' };
+const UNCHECKED = new THREE.Color('#b8b2ac'), SELECTED = new THREE.Color('#06b6d4');
+let lowMode = location.hash !== '#high';
+
+function scoreColor(s) { // 0 green -> 5 yellow -> 10 red
+  const g = new THREE.Color('#22c55e'), y = new THREE.Color('#facc15'), r = new THREE.Color('#dc2626');
+  return s <= 5 ? g.lerp(y, s / 5) : y.lerp(r, (s - 5) / 5);
+}
+
+// --- renderer / scene ---
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+document.getElementById('stage').appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(30, 1, 0.05, 20);
+scene.add(camera);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8f96, 1.6));
+const key = new THREE.DirectionalLight(0xffffff, 1.6);
+key.position.set(0.6, 1, 1.2); camera.add(key); // light follows the view
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.minDistance = 0.3; controls.maxDistance = 6;
+
+// --- per-part state texture: RGB = colour, A = 255 normal / 128 suspected (hatched) / 0 hidden ---
+let parts = [], stateTex, stateData, muscles, bones, selected = -1;
+const hidden = new Set(), peeled = new Set(); // hidden: by the user one by one; peeled: by the layer slider
+const isHidden = (i) => hidden.has(i) || peeled.has(i);
+const uniforms = { partState: { value: null }, pxRatio: { value: renderer.getPixelRatio() } };
+
+function statusOf(i) { return DEMO_STATUS[parts[i].id]; }
+function paint(i) {
+  const st = statusOf(i);
+  const c = i === selected ? SELECTED : typeof st === 'number' ? scoreColor(st) : UNCHECKED;
+  const o = i * 4;
+  stateData[o] = c.r * 255; stateData[o + 1] = c.g * 255; stateData[o + 2] = c.b * 255;
+  stateData[o + 3] = isHidden(i) ? 0 : (st === 'S' && i !== selected) ? 128 : 255;
+}
+function repaint() { parts.forEach((_, i) => paint(i)); stateTex.needsUpdate = true; }
+
+function muscleMaterial() {
+  const m = new THREE.MeshStandardMaterial({ roughness: 0.62, metalness: 0, side: THREE.DoubleSide });
+  m.onBeforeCompile = (sh) => {
+    Object.assign(sh.uniforms, uniforms);
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nattribute float _part;\nuniform sampler2D partState;\nvarying vec4 vPart;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvPart = texelFetch(partState, ivec2(int(_part + 0.5), 0), 0);');
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nvarying vec4 vPart;\nuniform float pxRatio;')
+      .replace('#include <color_fragment>', `#include <color_fragment>
+        if (vPart.a < 0.05) discard;
+        diffuseColor.rgb = vPart.rgb;
+        if (vPart.a < 0.75) { // Suspected: diagonal violet hatching, fixed on screen
+          float s = mod(gl_FragCoord.x + gl_FragCoord.y, 9.0 * pxRatio);
+          if (s < 3.5 * pxRatio) diffuseColor.rgb = vec3(0.202, 0.042, 0.846); // #7c3aed in linear
+        }`);
+  };
+  return m;
+}
+
+// --- load ---
+const loader = new GLTFLoader(), loadingEl = document.getElementById('loading'), lodEl = document.getElementById('lod');
+let root = null;
+lodEl.onclick = (e) => { e.preventDefault(); lowMode = !lowMode; load(); };
+function load() {
+lodEl.textContent = lowMode ? '轉用高清模式' : '轉用較流暢模式';
+loadingEl.hidden = false;
+// GLB bytes under a .wasm name: the artifact host serves no .glb, and the loader reads the bytes, not the extension.
+loader.load(lowMode ? 'body-low.wasm' : 'body.wasm', (gltf) => {
+  if (root) {
+    scene.remove(root); hidden.clear(); peeled.clear(); selected = -1;
+    layers = null; depthEl.max = MAX_LAYERS; depthEl.value = 0; depthVal.textContent = '全部顯示';
+  }
+  root = gltf.scene;
+  muscles = gltf.scene.getObjectByName('muscles');
+  bones = gltf.scene.getObjectByName('bones');
+  parts = muscles.userData.parts;
+  stateData = new Uint8Array(parts.length * 4);
+  stateTex = new THREE.DataTexture(stateData, parts.length, 1, THREE.RGBAFormat);
+  uniforms.partState.value = stateTex;
+  repaint();
+  muscles.material = muscleMaterial();
+  bones.material = new THREE.MeshStandardMaterial({ color: 0xf1ece2, roughness: 0.8 });
+  scene.add(gltf.scene);
+  const box = new THREE.Box3().setFromObject(gltf.scene);
+  box.getCenter(controls.target);
+  bodyHeight = box.max.y - box.min.y;
+  setView('back');
+  select(-1);
+  loadingEl.hidden = true;
+  const tris = (muscles.geometry.index.count + bones.geometry.index.count) / 3;
+  window.__stats = { parts: parts.length, triangles: tris, muscleTriangles: muscles.geometry.index.count / 3, loadMsSinceNavigation: Math.round(performance.now()) };
+  requestAnimationFrame(() => requestAnimationFrame(() => { window.__stats.drawCalls = lastCalls; window.__ready = true; }));
+}, (e) => { if (e.total) document.getElementById('pct').textContent = Math.round(e.loaded / e.total * 100) + '%'; },
+(err) => { loadingEl.textContent = '載入失敗：' + err.message; });
+}
+load();
+
+let bodyHeight = 1.8, frac = 1;
+function frame() { // centre the body in the free band between the top bar and the bottom panel
+  const w = innerWidth, h = innerHeight, top = 16;
+  const bottom = document.querySelector('.bottom').getBoundingClientRect().top - 6;
+  const avail = Math.max(120, bottom - top);
+  frac = avail / h;
+  camera.aspect = w / h;
+  camera.setViewOffset(w, h, 0, h / 2 - (top + avail / 2), w, h);
+  camera.updateProjectionMatrix();
+}
+function setView(which) {
+  const t = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  const dist = Math.max(bodyHeight * 1.04 / 2 / t / frac, 0.5 / (t * camera.aspect));
+  const dir = which === 'front' ? new THREE.Vector3(0, 0.12, 1) : new THREE.Vector3(0, 0.12, -1);
+  camera.position.copy(controls.target).addScaledVector(dir.normalize(), dist);
+  controls.update();
+}
+document.getElementById('front').onclick = () => setView('front');
+document.getElementById('back').onclick = () => setView('back');
+
+// --- select ---
+const nameEl = document.getElementById('name'), subEl = document.getElementById('sub'), statusEl = document.getElementById('status');
+const hideBtn = document.getElementById('hide');
+function select(i) {
+  const prev = selected; selected = i;
+  if (prev >= 0) paint(prev);
+  if (i >= 0) paint(i);
+  stateTex.needsUpdate = true;
+  hideBtn.disabled = i < 0;
+  if (i < 0) { nameEl.textContent = '點一下肌肉'; subEl.textContent = '查看名稱、左右側及肌肉狀態。'; statusEl.hidden = true; return; }
+  const p = parts[i], st = statusOf(i);
+  nameEl.textContent = p.name.charAt(0).toUpperCase() + p.name.slice(1);
+  subEl.textContent = SIDE[p.side] + ' · ' + p.id;
+  statusEl.hidden = false;
+  statusEl.innerHTML = st === undefined ? '<span class="sw un"></span>肌肉狀態：未檢查'
+    : st === 'S' ? '<span class="sw su"></span>肌肉狀態：懷疑（未按壓）'
+    : `<span class="sw" style="background:#${scoreColor(st).getHexString()}"></span>肌肉狀態：壓痛分 <b>${st}</b> / 10`;
+}
+window.debugSelect = (id) => {
+  const i = typeof id === 'number' ? id : parts.findIndex((p) => p.id === id);
+  select(i);
+  return i >= 0 ? parts[i] : null;
+};
+
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+function pick(x, y) {
+  const r = renderer.domElement.getBoundingClientRect();
+  ndc.set(((x - r.left) / r.width) * 2 - 1, -((y - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(ndc, camera);
+  const t = performance.now();
+  const hits = ray.intersectObjects([muscles, bones], false);
+  window.__stats.lastPickMs = Math.round(performance.now() - t);
+  const part = muscles.geometry.getAttribute('_part');
+  for (const h of hits) {
+    if (h.object === bones) return -1; // a bone is in front
+    const i = part.getX(h.face.a);
+    if (!isHidden(i)) return i;
+  }
+  return -1;
+}
+let down = null;
+renderer.domElement.addEventListener('pointerdown', (e) => { if (e.isPrimary) down = { x: e.clientX, y: e.clientY, t: performance.now() }; });
+renderer.domElement.addEventListener('pointerup', (e) => {
+  if (!down || !muscles) return;
+  const moved = Math.hypot(e.clientX - down.x, e.clientY - down.y), dt = performance.now() - down.t;
+  down = null;
+  if (moved < 8 && dt < 500) select(pick(e.clientX, e.clientY));
+});
+
+// --- hide / show / peel ---
+hideBtn.onclick = () => { if (selected < 0) return; hidden.add(selected); select(-1); repaint(); };
+document.getElementById('showall').onclick = () => { hidden.clear(); depthEl.value = 0; setDepth(0); };
+
+// Peel slider: layers come from visibility, not anatomy. Layer 1 = every muscle that shows at least FRAC of itself
+// from one of 10 directions around the body (8 around, top, bottom); layer 2 = the same once layer 1 is gone; and
+// so on. Computed once, on the first slider move; the slider then hides layers 1..k and can go back.
+// ponytail: FRAC is hand-tuned on this model; use the Library's surface/deep tag per muscle when it exists.
+const MAX_LAYERS = 8, MIN_PX = 8, FRAC = 0.35, RT = 512;
+const depthEl = document.getElementById('depth'), depthVal = document.getElementById('depthVal');
+let layers = null, computing = false;
+const idMat = new THREE.ShaderMaterial({
+  uniforms, side: THREE.DoubleSide,
+  vertexShader: `attribute float _part; uniform sampler2D partState; varying float vId; varying float vA;
+    void main() { vec4 s = texelFetch(partState, ivec2(int(_part + 0.5), 0), 0); vId = _part + 1.0; vA = s.a;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+  fragmentShader: `varying float vId; varying float vA;
+    void main() { if (vA < 0.05) discard; gl_FragColor = vec4(mod(vId, 256.0) / 255.0, floor(vId / 256.0) / 255.0, 0.0, 1.0); }`,
+});
+const blackMat = new THREE.MeshBasicMaterial({ color: 0 });
+// Pixels each part would cover from each direction if nothing were in front: a closed surface's outline is
+// about half its |n·d|-weighted area.
+function expectedPx(dirs, pxArea) {
+  const g = muscles.geometry, pos = g.getAttribute('position'), idx = g.index, part = g.getAttribute('_part');
+  const mw = muscles.matrixWorld, exp = dirs.map(() => new Float32Array(parts.length));
+  const a = new THREE.Vector3(), b = new THREE.Vector3(), c = new THREE.Vector3();
+  for (let t = 0; t < idx.count; t += 3) {
+    a.fromBufferAttribute(pos, idx.getX(t)).applyMatrix4(mw);
+    b.fromBufferAttribute(pos, idx.getX(t + 1)).applyMatrix4(mw).sub(a);
+    c.fromBufferAttribute(pos, idx.getX(t + 2)).applyMatrix4(mw).sub(a);
+    b.cross(c); // length = 2 x triangle area
+    const p = part.getX(idx.getX(t));
+    for (let k = 0; k < dirs.length; k++) exp[k][p] += Math.abs(b.dot(dirs[k])) / 4 / pxArea;
+  }
+  return exp;
+}
+function computeLayers() {
+  const t0 = performance.now();
+  root.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(root), c = box.getCenter(new THREE.Vector3());
+  const R = Math.max(...box.getSize(new THREE.Vector3()).toArray()) / 2 * 1.05;
+  const cam = new THREE.OrthographicCamera(-R, R, R, -R, 0.01, 4 * R);
+  const dirs = [new THREE.Vector3(0, 1, 0), new THREE.Vector3(0, -1, 0)];
+  for (let k = 0; k < 8; k++) dirs.push(new THREE.Vector3(Math.sin(k * Math.PI / 4), 0, Math.cos(k * Math.PI / 4)));
+  const exp = expectedPx(dirs, (2 * R / RT) ** 2), seen = dirs.map(() => new Uint32Array(parts.length));
+  const rt = new THREE.WebGLRenderTarget(RT, RT), px = new Uint8Array(RT * RT * 4);
+  const userHidden = [...hidden], mm = muscles.material, bm = bones.material, all = parts.map((_, p) => p);
+  hidden.clear(); peeled.clear();
+  muscles.material = idMat; bones.material = blackMat;
+  renderer.setRenderTarget(rt); renderer.setClearColor(0x000000, 1);
+  layers = [];
+  while (layers.length < MAX_LAYERS) {
+    repaint();
+    dirs.forEach((d, k) => {
+      cam.position.copy(c).addScaledVector(d, 2 * R);
+      if (d.y) cam.up.set(0, 0, 1); else cam.up.set(0, 1, 0);
+      cam.lookAt(c);
+      renderer.clear(); renderer.render(scene, cam);
+      renderer.readRenderTargetPixels(rt, 0, 0, RT, RT, px);
+      seen[k].fill(0);
+      for (let q = 0; q < px.length; q += 4) {
+        const id = px[q] + px[q + 1] * 256 - 1;
+        if (id >= 0) seen[k][id]++;
+      }
+    });
+    let found = all.filter((p) => seen.some((s, k) => s[p] >= MIN_PX && s[p] >= FRAC * exp[k][p]));
+    if (!found.length) found = all.filter((p) => seen.some((s) => s[p] >= MIN_PX)); // never mostly in view: peel the rest together
+    if (!found.length) break;
+    layers.push(found);
+    found.forEach((i) => peeled.add(i));
+  }
+  renderer.setRenderTarget(null); renderer.setClearColor(0x000000, 0);
+  muscles.material = mm; bones.material = bm; rt.dispose();
+  peeled.clear(); userHidden.forEach((i) => hidden.add(i));
+  window.__stats.layers = layers.map((l) => l.length);
+  window.__stats.layerMs = Math.round(performance.now() - t0);
+}
+function setDepth(k) {
+  peeled.clear();
+  (layers || []).slice(0, k).forEach((l) => l.forEach((i) => peeled.add(i)));
+  if (selected >= 0 && peeled.has(selected)) select(-1);
+  depthVal.textContent = k ? `剝走 ${k} / ${layers.length} 層` : '全部顯示';
+  repaint();
+}
+depthEl.oninput = () => {
+  if (!muscles) return;
+  if (layers) return setDepth(+depthEl.value);
+  if (computing) return;
+  computing = true; depthVal.textContent = '計算中…';
+  setTimeout(() => { // let the label paint first
+    computeLayers(); computing = false;
+    depthEl.max = layers.length;
+    setDepth(+depthEl.value);
+  }, 50);
+};
+window.debugDepth = (k) => { depthEl.value = k; depthEl.oninput(); };
+window.debugLayers = () => layers && layers.map((l) => l.map((i) => parts[i]));
+
+// --- loop ---
+let lastCalls = 0, frames = 0, fpsT = performance.now();
+const statsEl = document.getElementById('stats');
+function resize() { renderer.setSize(innerWidth, innerHeight, false); frame(); }
+addEventListener('resize', resize); resize();
+renderer.setAnimationLoop(() => {
+  controls.update();
+  renderer.render(scene, camera);
+  lastCalls = renderer.info.render.calls;
+  frames++;
+  const now = performance.now();
+  if (now - fpsT > 1000 && window.__stats) {
+    const fps = Math.round(frames * 1000 / (now - fpsT)); frames = 0; fpsT = now;
+    window.__stats.fps = fps; window.__stats.drawCalls = lastCalls;
+    statsEl.textContent = `${Math.round(window.__stats.triangles / 1000)}k 三角形 · ${lastCalls} 次繪製 · ${fps} fps`;
+  }
+});
+</script>

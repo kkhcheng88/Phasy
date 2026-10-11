@@ -1,0 +1,163 @@
+{
+  "version": "stub-2026-09-24",
+  "sources": { "stub": "測試用資料（非真實內容）", "travell3": "Donnelly et al., Travell, Simons & Simons' Myofascial Pain and Dysfunction: The Trigger Point Manual, 3rd ed. (2019)" },
+  "pressureLevels": [
+    { "id": "light", "name": "輕", "force": "約 2 公斤", "howToLearn": "在廚房磅上用拇指按到 2 公斤，記住那種力度。" },
+    { "id": "standard", "name": "標準", "force": "約 4 公斤", "howToLearn": "在廚房磅上用拇指按到 4 公斤，記住那種力度。" },
+    { "id": "deep", "name": "深", "force": "約 6 公斤", "howToLearn": "在廚房磅上用拇指按到 6 公斤，記住那種力度。" }
+  ],
+  "zones": [
+    { "id": "z-temple", "name": "太陽穴", "region": "head", "sided": true },
+    { "id": "z-head-back", "name": "後腦", "region": "head", "sided": true },
+    { "id": "z-neck-back-upper", "name": "頸後上段", "region": "neck", "sided": true },
+    { "id": "z-neck-back-lower", "name": "頸後下段", "region": "neck", "sided": true },
+    { "id": "z-neck-midline", "name": "頸後中線", "region": "neck", "sided": false },
+    { "id": "z-neck-shoulder-angle", "name": "頸肩交界", "region": "neck", "sided": true },
+    { "id": "z-shoulder-top", "name": "肩頂", "region": "shoulder", "sided": true },
+    { "id": "z-blade-inner", "name": "肩胛骨內側", "region": "upper-back", "sided": true },
+    { "id": "z-between-blades", "name": "肩胛骨之間", "region": "upper-back", "sided": false },
+    { "id": "z-upper-arm-back", "name": "上臂後面", "region": "arm", "sided": true }
+  ],
+  "situations": [
+    { "id": "s-driving", "name": "長時間駕駛", "kind": "posture", "onTheSpot": false, "testMovement": false,
+      "loads": ["m-trap-upper"], "zones": ["z-shoulder-top"] },
+    { "id": "s-phone-head-down", "name": "低頭看手機", "kind": "posture", "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，慢慢低頭至下巴近胸口，停三秒，再回正。",
+      "loads": ["m-trap-upper", "m-levator-scapulae"], "zones": ["z-neck-back-lower", "z-shoulder-top"] },
+    { "id": "s-turn-head", "name": "轉頭望後面", "kind": "movement", "onTheSpot": true, "testMovement": true,
+      "testHowTo": "坐直，慢慢把頭轉向不適的一邊，轉到盡頭停三秒，再回正。",
+      "loads": ["m-levator-scapulae", "m-splenius-capitis"], "zones": ["z-neck-back-upper", "z-neck-back-lower"] },
+    { "id": "s-carry-bag", "name": "單肩揹袋", "kind": "posture", "onTheSpot": false, "testMovement": false,
+      "loads": ["m-trap-upper", "m-levator-scapulae"], "zones": ["z-shoulder-top"] }
+  ],
+  "muscles": [
+    {
+      "id": "m-trap-upper", "nameZh": "斜方肌上部", "nameEn": "descending (upper) trapezius",
+      "bp3d": { "L": null, "R": null },
+      "action": "把肩膀向上提，並幫助頭部側彎。", "attachments": "由後腦及頸後中線，到鎖骨外側及肩峰。",
+      "depth": "surface", "cuppingSuits": true,
+      "triggerPoints": [
+        { "id": "tp-trap-upper-1", "name": "上斜方肌 1 號點", "landmark": "肩頂最高處，頸與肩峰之間的中點，捏起肌肉時最硬的一條。", "at": "z-shoulder-top",
+          "referral": ["z-neck-back-upper", "z-temple", "z-head-back"], "source": { "ref": "stub", "page": "1" } }
+      ],
+      "checks": [
+        { "id": "c-trap-upper-pinch", "kind": "press", "target": "tp-trap-upper-1",
+          "receiverPosition": "坐直，雙手放大腿上，肩膀放鬆。",
+          "helperMethod": "站在受助者後面，用拇指與食指捏起肩頂的肌肉，慢慢加力。",
+          "pressure": "standard", "alone": true, "aloneMethod": "用另一隻手的四指勾住肩頂，慢慢壓向下。",
+          "source": { "ref": "travell3", "page": "257" } },
+        { "id": "c-trap-upper-sidebend", "kind": "movement", "target": "m-trap-upper",
+          "receiverPosition": "坐直，雙手放大腿上。",
+          "helperMethod": "請受助者慢慢把頭側向另一邊，停三秒。",
+          "pressure": "light", "alone": true, "aloneMethod": "慢慢把頭側向另一邊，停三秒。",
+          "source": { "ref": "stub", "page": "2" } }
+      ],
+      "stretches": [
+        { "id": "st-trap-upper-seated", "name": "坐姿側頭伸展", "targets": ["m-trap-upper"], "startPosition": "坐直，不適一邊的手抓住椅邊。",
+          "steps": ["頭慢慢側向另一邊。", "另一隻手輕放頭頂，加一點重量。"], "helper": false,
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10，拉緊但舒服。", "time": "每次 30 秒", "right": "肩頂被拉長、微酸。", "wrong": "手臂麻痺、觸電感、尖銳的痛。" },
+          "reps": "每邊 3 次", "source": { "ref": "stub", "page": "3" } },
+        { "id": "st-trap-upper-assisted", "name": "幫手按肩側頭伸展", "targets": ["m-trap-upper"], "startPosition": "坐直，幫手站在後面。",
+          "steps": ["幫手一手按住肩頂。", "另一手把頭慢慢推向另一邊。"], "helper": true,
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10。", "time": "每次 30 秒", "right": "肩頂被拉長。", "wrong": "手臂麻痺、頭暈。" },
+          "reps": "每邊 2 次", "source": { "ref": "stub", "page": "3" } }
+      ],
+      "manual": [
+        { "id": "mt-trap-upper-hold", "name": "肩頂持續捏壓", "kind": "持續按壓", "target": "tp-trap-upper-1", "steps": ["找到最痛的一點。", "慢慢加力，停在那裏。"],
+          "rightAmount": { "strength": "受助者感覺 5–7 / 10，痛得舒服。", "time": "每點 60–90 秒", "right": "痛慢慢減少。", "wrong": "痛越來越強、麻痺。" },
+          "source": { "ref": "stub", "page": "4" } }
+      ],
+      "cupping": [
+        { "id": "cp-trap-upper", "name": "肩頂定罐", "position": "肩頂最厚的肌肉上，避開鎖骨。", "cupSize": "中號（口徑約 5 厘米）", "method": "static",
+          "rightAmount": { "strength": "吸起約 1 厘米，受助者感覺 3–5 / 10。", "time": "5–10 分鐘", "right": "被拉起、微緊。", "wrong": "刺痛、起水泡。" },
+          "source": { "ref": "stub", "page": "5" } }
+      ]
+    },
+    {
+      "id": "m-levator-scapulae", "nameZh": "提肩胛肌", "nameEn": "levator scapulae",
+      "bp3d": { "L": null, "R": null },
+      "action": "把肩胛骨向上提，並幫助頸部轉動。", "attachments": "由上段頸椎側面，到肩胛骨上角。",
+      "depth": "deep", "cuppingSuits": false,
+      "triggerPoints": [
+        { "id": "tp-levator-1", "name": "提肩胛肌 1 號點", "landmark": "頸與肩交界的轉角，肩胛骨上角之上約兩指。", "at": "z-neck-shoulder-angle",
+          "referral": ["z-neck-back-lower", "z-blade-inner"], "source": { "ref": "stub", "page": "6" } }
+      ],
+      "checks": [
+        { "id": "c-levator-press", "kind": "press", "target": "tp-levator-1",
+          "receiverPosition": "俯臥，額頭墊毛巾。", "helperMethod": "用拇指在肩胛骨上角之上慢慢按下。",
+          "pressure": "light", "alone": false, "source": { "ref": "stub", "page": "7" } }
+      ],
+      "stretches": [
+        { "id": "st-levator-seated", "name": "坐姿望褲袋伸展", "targets": ["m-levator-scapulae"], "startPosition": "坐直，不適一邊的手放在背後。",
+          "steps": ["頭轉向另一邊約 45 度。", "慢慢低頭，望向另一邊的褲袋。"], "helper": false,
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10。", "time": "每次 30 秒", "right": "頸側後方被拉長。", "wrong": "手臂麻痺、觸電感。" },
+          "reps": "每邊 3 次", "source": { "ref": "stub", "page": "8" } }
+      ],
+      "manual": [
+        { "id": "mt-levator-hold", "name": "頸肩轉角持續按壓", "kind": "持續按壓", "target": "tp-levator-1", "steps": ["找到最痛的一點。", "慢慢加力，停在那裏。"],
+          "rightAmount": { "strength": "受助者感覺 5–7 / 10。", "time": "每點 60–90 秒", "right": "痛慢慢減少。", "wrong": "麻痺、刺痛。" },
+          "source": { "ref": "stub", "page": "9" } }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-splenius-capitis", "nameZh": "頭夾肌", "nameEn": "splenius capitis",
+      "bp3d": { "L": null, "R": null },
+      "action": "把頭向後仰及轉向同一邊。", "attachments": "由頸椎下段及胸椎上段，到後腦外側。",
+      "depth": "deep", "cuppingSuits": false,
+      "triggerPoints": [
+        { "id": "tp-splenius-capitis-1", "name": "頭夾肌 1 號點", "landmark": "耳後骨頭之下約三指，頸後肌肉的外側邊。", "at": "z-neck-back-upper", "noPress": true,
+          "referral": ["z-head-back", "z-neck-back-upper"], "source": { "ref": "stub", "page": "10" } }
+      ],
+      "checks": [
+        { "id": "c-splenius-press", "kind": "press", "target": "tp-splenius-capitis-1",
+          "receiverPosition": "坐直，頭微微低下。", "helperMethod": "用兩指在耳後骨頭下方慢慢按向頸椎。",
+          "pressure": "light", "alone": true, "aloneMethod": "用同一邊的兩指在耳後骨頭下方慢慢按。",
+          "source": { "ref": "stub", "page": "11" } }
+      ],
+      "stretches": [
+        { "id": "st-splenius-seated", "name": "坐姿低頭轉頭伸展", "targets": ["m-splenius-capitis"], "startPosition": "坐直。",
+          "steps": ["慢慢低頭。", "再把頭轉向另一邊少許。"], "helper": false,
+          "rightAmount": { "strength": "受助者感覺 3–5 / 10。", "time": "每次 30 秒", "right": "後腦下方被拉長。", "wrong": "頭暈、麻痺。" },
+          "reps": "3 次", "source": { "ref": "stub", "page": "12" } }
+      ],
+      "manual": [
+        { "id": "mt-splenius-glide", "name": "頸後外側慢推", "kind": "沿肌肉慢推", "target": "m-splenius-capitis", "steps": ["由後腦下方開始。", "沿頸後外側慢慢推到頸底。"],
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10。", "time": "每次約 1 分鐘", "right": "肌肉放鬆。", "wrong": "頭暈、刺痛。" },
+          "source": { "ref": "stub", "page": "13" } }
+      ],
+      "cupping": []
+    },
+    {
+      "id": "m-rhomboid", "nameZh": "菱形肌", "nameEn": "rhomboid",
+      "bp3d": { "L": null, "R": null },
+      "action": "把肩胛骨拉向脊骨。", "attachments": "由頸底及上段胸椎，到肩胛骨內側邊。",
+      "depth": "deep", "cuppingSuits": true,
+      "triggerPoints": [
+        { "id": "tp-rhomboid-1", "name": "菱形肌 1 號點", "landmark": "肩胛骨內側邊與脊骨之間的中點。", "at": "z-between-blades",
+          "referral": ["z-blade-inner", "z-between-blades"], "source": { "ref": "stub", "page": "14" } }
+      ],
+      "checks": [
+        { "id": "c-rhomboid-press", "kind": "press", "target": "tp-rhomboid-1",
+          "receiverPosition": "俯臥，雙手放在身旁。", "helperMethod": "用拇指在肩胛骨內側慢慢按下。",
+          "pressure": "deep", "alone": false, "source": { "ref": "stub", "page": "15" } }
+      ],
+      "stretches": [
+        { "id": "st-rhomboid-hug", "name": "抱肩拱背伸展", "targets": ["m-rhomboid"], "startPosition": "坐直，雙手交叉抱住對側肩膀。",
+          "steps": ["背部慢慢向後拱起。", "感覺肩胛骨之間被拉開。"], "helper": false,
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10。", "time": "每次 30 秒", "right": "肩胛骨之間被拉長。", "wrong": "胸口痛、麻痺。" },
+          "reps": "3 次", "source": { "ref": "stub", "page": "16" } }
+      ],
+      "manual": [
+        { "id": "mt-rhomboid-glide", "kind": "沿肌肉慢推", "target": "m-rhomboid", "steps": ["由肩胛骨上角開始。", "沿內側邊慢慢推到下角。"],
+          "rightAmount": { "strength": "受助者感覺 4–6 / 10。", "time": "每次約 1 分鐘", "right": "肌肉放鬆。", "wrong": "刺痛。" },
+          "source": { "ref": "stub", "page": "17" } }
+      ],
+      "cupping": [
+        { "id": "cp-rhomboid", "name": "肩胛之間走罐", "position": "肩胛骨與脊骨之間，先塗油。", "cupSize": "中號（口徑約 5 厘米）", "method": "sliding",
+          "rightAmount": { "strength": "受助者感覺 3–5 / 10。", "time": "3–5 分鐘", "right": "皮膚微紅、溫暖。", "wrong": "刺痛、瘀傷擴大。" },
+          "source": { "ref": "stub", "page": "18" } }
+      ]
+    }
+  ]
+}
