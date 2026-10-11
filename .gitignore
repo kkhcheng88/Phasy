@@ -8,3 +8,6 @@ __pycache__/
 .scratch/phasy/data/z-anatomy/Z-Anatomy/Startup.blend
 .scratch/phasy/data/bodyparts3d/isa_BP3D_4.0_obj_99.zip
 .scratch/phasy/data/bodyparts3d-3.0/BodyParts3D_3.0_obj_99.zip
+
+# Session-flow test screenshots (written by test/run.mjs)
+prototypes/session-flow/test/shots/

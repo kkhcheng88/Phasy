@@ -801,6 +801,7 @@ async function end() {
   S.endedAt = new Date().toISOString();
   const all = ai.load('phasy.sessions', []);
   ai.save('phasy.sessions', [...(Array.isArray(all) ? all : []).slice(-9), JSON.parse(logJson())]);
+  await ai.saveSessionLog(JSON.parse(logJson()));
   sendLog();
 }
 
