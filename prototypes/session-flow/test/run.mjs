@@ -8,13 +8,29 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const require = createRequire('C:/projects/Phasy/.scratch/phasy/data/bodyparts3d/build/');
-const puppeteer = require('puppeteer-core');
-
 const APP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+function loadPuppeteer() {
+  const candidates = [
+    'C:/projects/Phasy/.scratch/phasy/data/bodyparts3d/build/',
+    path.resolve(APP, '../../.scratch/phasy/data/bodyparts3d/build/package.json'),
+    path.join(APP, 'package.json'),
+    fileURLToPath(import.meta.url),
+  ];
+  let last;
+  for (const p of candidates) {
+    try { return createRequire(p)('puppeteer-core'); } catch (e) { last = e; }
+  }
+  throw last ?? new Error('puppeteer-core not found');
+}
+const puppeteer = loadPuppeteer();
 const LOG_DIR = path.resolve(APP, '../../.scratch/phasy/session-logs');
-const SHOTS = 'C:/Users/Kaho/AppData/Local/Temp/claude/C--projects-Phasy/203379e5-af3f-4aae-8c6a-ee18fcb02392/scratchpad/shots/session';
+const SHOTS = fs.existsSync('C:/Users/Kaho')
+  ? 'C:/Users/Kaho/AppData/Local/Temp/claude/C--projects-Phasy/203379e5-af3f-4aae-8c6a-ee18fcb02392/scratchpad/shots/session'
+  : path.join(APP, 'test/shots');
 const EDGE = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const BROWSER = [EDGE, process.env.CHROME, '/usr/local/bin/chrome', '/usr/local/bin/google-chrome', '/usr/bin/google-chrome']
+  .filter(Boolean).find(p => { try { return fs.existsSync(p); } catch { return false; } });
+if (!BROWSER) throw new Error('no Chrome/Edge found');
 const PORT = 8771, ORIGIN = `http://localhost:${PORT}`;
 const KEY = 'sk-test-DO-NOT-LOG-123';
 const STUB = 'test/library.stub.json';
@@ -40,7 +56,10 @@ await new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error('server did not start')), 10000);
 });
 const setFlags = flags => fetch(`${ORIGIN}/mock/flags?${new URLSearchParams(flags)}`).then(r => r.json());
-const browser = await puppeteer.launch({ executablePath: EDGE, headless: true, args: ['--no-first-run'] });
+const browser = await puppeteer.launch({
+  executablePath: BROWSER, headless: true,
+  args: ['--no-first-run', '--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+});
 const allLogPosts = [], allLogFiles = [], allChat = [];
 
 async function openPage(name, url) {
@@ -204,7 +223,20 @@ async function runFlow(d, page, p) {
   await page.waitForFunction(() => { const e = document.querySelector('#sent'); return e && !e.textContent.startsWith('正在'); }, { timeout: 10000 });
   out.sent = await d.text('#sent');
   out.endText = await d.text('#main');
+  out.endStep = await d.text('#steps');
   out.localSessions = await page.evaluate(() => localStorage.getItem('phasy.sessions') || '');
+  out.idbSessions = await page.evaluate(() => new Promise(resolve => {
+    const req = indexedDB.open('phasy');
+    req.onerror = () => resolve({ error: String(req.error) });
+    req.onsuccess = () => {
+      const db = req.result;
+      if (!db.objectStoreNames.contains('sessions')) return resolve([]);
+      const tx = db.transaction('sessions', 'readonly');
+      const g = tx.objectStore('sessions').getAll();
+      g.onsuccess = () => resolve(g.result);
+      g.onerror = () => resolve({ error: String(g.error) });
+    };
+  }));
   await d.shot();
   return out;
 }
@@ -276,6 +308,19 @@ try {
     console.log('   A extra:', JSON.stringify({ questions: out.questions, checks: out.checks.map(c => c.id), plan: out.plan, clock: out.clock, picked: out.picked, llmCalls: log.llm.length, file: net.logFiles[0], errors: net.errors }));
     check('A', out.candidatesText.includes('AI 加入'), 'AI-added muscle carries the 「AI 加入」 tag');
     check('A', net.errors.length === 0, `no page errors (${net.errors.join(' | ')})`);
+    const planKind = id => id.startsWith('cp-') ? 0 : id.startsWith('mt-') ? 1 : id.startsWith('st-') ? 2 : 9;
+    const kinds = out.plan.map(planKind);
+    check('steps8', out.end === 'end' && out.candidatesText.includes('可疑肌肉') && out.checks.length >= 2
+      && out.picked?.some(p => p.on) && out.plan.length && out.rounds.length
+      && Object.keys(out.recheck).length && (out.endStep || '').includes('第 8 / 8 步') && (out.endStep || '').includes('總結'),
+      `8 steps reached: candidates, ${out.checks.length} checks, pick ${JSON.stringify(out.picked)}, plan ${out.plan.join(',')}, rounds ${out.rounds.length}, recheck ${Object.keys(out.recheck).join(',')}, "${out.endStep}"`);
+    check('order', kinds.includes(0) && kinds.includes(1) && kinds.includes(2) && kinds.every((k, i) => i === 0 || k >= kinds[i - 1]),
+      `plan order cupping→manual→stretches: ${out.plan.join(' → ')}`);
+    const idb = Array.isArray(out.idbSessions) ? out.idbSessions : [];
+    const last = idb.at(-1);
+    check('idb', idb.length >= 1 && last?.app === 'phasy-session-flow' && last?.endedAt && Array.isArray(last?.llm)
+      && !JSON.stringify(last).includes(KEY),
+      `IndexedDB sessions=${idb.length}; app=${last?.app}; llm=${last?.llm?.length}; key leaked=${JSON.stringify(last ?? out.idbSessions).includes(KEY)}`);
     await ctx.close();
   }
 
@@ -342,6 +387,9 @@ try {
     check('cup', out.plan.includes('cp-trap-upper') && !out.plan.includes('mt-trap-upper-hold') && out.notes.some(n => n.includes('這條肌肉已經拔罐')) && log.planDrops?.some(x => x.id === 'mt-trap-upper-hold' && x.by === 'fallback'),
       `no AI (fallback plan): ${out.plan.join(', ')}; note shown; dropped ${JSON.stringify(log.planDrops)}`);
     check('D', net.errors.length === 0, `no page errors (${net.errors.join(' | ')})`);
+    check('idb', Array.isArray(out.idbSessions) && out.idbSessions.length >= 1 && out.idbSessions.at(-1)?.app === 'phasy-session-flow'
+      && (out.idbSessions.at(-1)?.llm?.length ?? -1) === 0,
+      `no-AI Session still saved to IndexedDB (${out.idbSessions?.length} records, llm calls ${out.idbSessions?.at(-1)?.llm?.length})`);
     await ctx.close();
   }
 

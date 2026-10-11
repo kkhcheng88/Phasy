@@ -285,3 +285,60 @@ export async function testConnection() {
   if (r.status) return `伺服器拒絕了請求（代碼 ${r.status}）。`;
   return r.error === 'timeout' ? '等了很久仍然沒有回覆，請稍後再試。' : '連不上：請檢查端點網址和網絡。';
 }
+
+// ---------- IndexedDB (Session logs on the phone; ticket 04 / ticket 10)
+// localStorage remains as a fallback copy. The API key is never written here (logJson already strips it).
+
+const IDB_NAME = 'phasy';
+const IDB_STORE = 'sessions';
+const IDB_KEEP = 10;
+
+function idbOpen() {
+  return new Promise((resolve, reject) => {
+    try {
+      const req = indexedDB.open(IDB_NAME, 1);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains(IDB_STORE))
+          db.createObjectStore(IDB_STORE, { keyPath: 'endedAt' });
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    } catch (e) { reject(e); }
+  });
+}
+
+export async function saveSessionLog(record) {
+  try {
+    const db = await idbOpen();
+    try {
+      await new Promise((resolve, reject) => {
+        const tx = db.transaction(IDB_STORE, 'readwrite');
+        const store = tx.objectStore(IDB_STORE);
+        store.put(record);
+        const req = store.getAll();
+        req.onsuccess = () => {
+          const rows = (req.result ?? []).sort((a, b) => String(a.endedAt).localeCompare(String(b.endedAt)));
+          while (rows.length > IDB_KEEP) store.delete(rows.shift().endedAt);
+        };
+        tx.oncomplete = () => resolve(true);
+        tx.onerror = () => reject(tx.error);
+      });
+      return true;
+    } finally { db.close(); }
+  } catch { return false; }
+}
+
+export async function loadSessionLogs() {
+  try {
+    const db = await idbOpen();
+    try {
+      return await new Promise((resolve, reject) => {
+        const tx = db.transaction(IDB_STORE, 'readonly');
+        const req = tx.objectStore(IDB_STORE).getAll();
+        req.onsuccess = () => resolve(req.result ?? []);
+        req.onerror = () => reject(req.error);
+      });
+    } finally { db.close(); }
+  } catch { return []; }
+}
