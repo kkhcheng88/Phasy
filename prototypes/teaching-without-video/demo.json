@@ -8,7 +8,7 @@
   "overlays": {
     "cp-trap-upper": { "pick": "lateral-high" },
     "cp-rhomboids": { "pick": "medial-mid", "arrow": "along-inferior" },
-    "mt-levator-hold": { "pick": "superior" },
+    "mt-levator-hold": { "pick": "inferior" },
     "st-trap-upper-helper": { "pick": "lateral-high", "arrow": "head-away" }
   }
 }

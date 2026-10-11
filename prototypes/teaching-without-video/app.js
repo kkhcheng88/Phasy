@@ -20,6 +20,7 @@ function show(name, html, handlers = {}, back = null) {
   main.dataset.screen = name;
   main.dataset.n = String(+main.dataset.n + 1);
   main.innerHTML = (back ? '<button class="back" data-act="back">‹ 上一步</button>' : '') + html;
+  document.querySelector('.bottom').scrollTop = 0;
 }
 main.addEventListener('click', e => {
   const b = e.target.closest('[data-act]');
@@ -99,6 +100,7 @@ function screenRound() {
   show('teach', `
     ${notesHtml()}
     <h1>第 ${roundI + 1} 輪：${T.KIND_ZH[round.kind]}</h1>
+    <p class="hint">${round.items.map(it => esc(it.item.name)).join('、')}</p>
     ${round.kind === 'cupping' ? `<p class="hint">${T.CUPPING_TOGETHER}</p>` : ''}
     ${round.items.map(itemBody).join('')}
     <div class="timer" data-timer="${esc(round.kind)}"><div class="clock" id="clock">計時</div>
@@ -164,11 +166,11 @@ scene.add(overlay);
 const uniforms = { partState: { value: null }, pxRatio: { value: renderer.getPixelRatio() } };
 let pendingHighlight = [];
 
-function paint(i, on) {
-  const c = on ? HIGHLIGHT : DIM;
+function paint(i, mode) {
+  const c = mode === 'on' ? HIGHLIGHT : DIM;
   const o = i * 4;
   stateData[o] = c.r * 255; stateData[o + 1] = c.g * 255; stateData[o + 2] = c.b * 255;
-  stateData[o + 3] = on ? 255 : 0;
+  stateData[o + 3] = mode === 'hide' ? 0 : 255;
 }
 function muscleMaterial() {
   const m = new THREE.MeshStandardMaterial({ roughness: 0.62, metalness: 0, side: THREE.DoubleSide });
@@ -190,7 +192,8 @@ function highlight(fjIds) {
   pendingHighlight = fjIds;
   if (!parts.length) return;
   const want = new Set(fjIds);
-  parts.forEach((p, i) => paint(i, want.has(p.id)));
+  const isolate = fjIds.length > 0;
+  parts.forEach((p, i) => paint(i, isolate ? (want.has(p.id) ? 'on' : 'hide') : 'dim'));
   stateTex.needsUpdate = true;
 }
 
@@ -210,13 +213,15 @@ function partPoints(i) {
 function pickPoint(pts, mode, side) {
   if (!pts.length) return new THREE.Vector3();
   const ys = pts.map(p => p.y);
-  const midY = (Math.min(...ys) + Math.max(...ys)) / 2;
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const midY = (minY + maxY) / 2;
   const lat = p => (side === 'R' ? p.x : -p.x);
   const scored = pts.map(p => {
     let s = 0;
-    if (mode === 'lateral-high') s = lat(p) + p.y;
+    if (mode === 'lateral-high') s = lat(p) * 2 - Math.abs(p.y - (minY + 0.55 * (maxY - minY)));
     else if (mode === 'medial-mid') s = -Math.abs(p.x) - Math.abs(p.y - midY);
     else if (mode === 'superior') s = p.y;
+    else if (mode === 'inferior') s = -p.y + lat(p) * 0.4;
     else s = -Math.abs(p.y - midY);
     return { p, s };
   });
@@ -253,18 +258,26 @@ function clearOverlay() {
   }
 }
 
-function addCircle(center, normal, radius = 0.03) {
-  const geo = new THREE.RingGeometry(radius * 0.7, radius, 48);
-  const mat = new THREE.MeshBasicMaterial({ color: 0x06b6d4, side: THREE.DoubleSide, transparent: true, opacity: 0.95, depthTest: false });
-  const mesh = new THREE.Mesh(geo, mat);
+function addCircle(center, normal, radius = 0.048) {
   const n = normal.clone().normalize();
-  mesh.position.copy(center).addScaledVector(n, 0.01);
-  mesh.lookAt(mesh.position.clone().add(n));
-  overlay.add(mesh);
+  const pos = center.clone().addScaledVector(n, 0.012);
+  const fill = new THREE.Mesh(
+    new THREE.CircleGeometry(radius * 0.72, 32),
+    new THREE.MeshBasicMaterial({ color: 0x06b6d4, side: THREE.DoubleSide, transparent: true, opacity: 0.28, depthTest: false }),
+  );
+  const ring = new THREE.Mesh(
+    new THREE.RingGeometry(radius * 0.72, radius, 48),
+    new THREE.MeshBasicMaterial({ color: 0x06b6d4, side: THREE.DoubleSide, transparent: true, opacity: 0.95, depthTest: false }),
+  );
+  for (const mesh of [fill, ring]) {
+    mesh.position.copy(pos);
+    mesh.lookAt(pos.clone().add(n));
+    overlay.add(mesh);
+  }
 }
 
-function addArrow(from, dir, length = 0.09) {
-  const helper = new THREE.ArrowHelper(dir.clone().normalize(), from, length, 0xf59e0b, 0.022, 0.014);
+function addArrow(from, dir, length = 0.12) {
+  const helper = new THREE.ArrowHelper(dir.clone().normalize(), from, length, 0xf59e0b, 0.028, 0.018);
   overlay.add(helper);
 }
 
@@ -307,12 +320,37 @@ function frame() {
   camera.setViewOffset(w, h, 0, h / 2 - (top + avail / 2), w, h);
   camera.updateProjectionMatrix();
 }
-function setView(which) {
+function viewDir(which) {
+  return which === 'front' ? new THREE.Vector3(0, 0.08, 1) : new THREE.Vector3(0, 0.08, -1);
+}
+function frameTargets(fjIds, which = 'back') {
+  const box = new THREE.Box3();
+  let any = false;
+  for (const id of fjIds) {
+    const i = partIndex(id);
+    if (i < 0) continue;
+    for (const p of partPoints(i)) { box.expandByPoint(p); any = true; }
+  }
+  if (!any) return frameBody(which);
+  const c = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3());
+  const r = Math.max(size.x, size.y, size.z, 0.08) * 0.85;
+  controls.target.copy(c);
+  const t = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  const dist = Math.max(r / t / Math.max(frac, 0.25), 0.22);
+  camera.position.copy(c).addScaledVector(viewDir(which).normalize(), dist);
+  controls.update();
+}
+function frameBody(which = 'back') {
+  if (root) new THREE.Box3().setFromObject(root).getCenter(controls.target);
   const t = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
   const dist = Math.max(bodyHeight * 1.04 / 2 / t / frac, 0.5 / (t * camera.aspect));
-  const dir = which === 'front' ? new THREE.Vector3(0, 0.12, 1) : new THREE.Vector3(0, 0.12, -1);
-  camera.position.copy(controls.target).addScaledVector(dir.normalize(), dist);
+  camera.position.copy(controls.target).addScaledVector(viewDir(which).normalize(), dist);
   controls.update();
+}
+function setView(which) {
+  if (pendingHighlight.length) frameTargets(pendingHighlight, which);
+  else frameBody(which);
 }
 $('#front').onclick = () => setView('front');
 $('#back').onclick = () => setView('back');

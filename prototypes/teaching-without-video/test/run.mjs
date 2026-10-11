@@ -129,6 +129,8 @@ try {
     }));
     check('cup', cup.ids.includes('cp-trap-upper') && cup.ids.includes('cp-rhomboids') && cup.ids.length === 2,
       `cupping cards ${cup.ids.join(', ')}`);
+    check('cup', cup.text.startsWith('‹ 上一步\n第 1 輪') || cup.text.includes('第 1 輪：抽真空拔罐'),
+      `cupping panel starts at the round heading`);
     check('cup', cup.timers === 1 && cup.five && cup.ten && cup.text.includes('所有杯一起放好'),
       `one 5–10 min timer (5=${cup.five} 10=${cup.ten}); together line ${cup.text.includes('所有杯一起放好')}`);
     check('cup', cup.text.includes('肩頂固定拔罐') && cup.text.includes('脊骨旁滑動拔罐') && cup.text.includes('合適程度'),
