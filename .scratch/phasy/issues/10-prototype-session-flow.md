@@ -71,3 +71,36 @@ A Session with a Helper must be able to walk through every step, in this order:
 - A Session with no API key still saves the log.
 
 Mock-LLM coverage: `node test/run.mjs` (Sessions A–D, F–H on the stub Library). `node test/run.mjs --real` adds Session E on `library.json` after `check-library.mjs` passes.
+
+## Verification
+
+2026-10-11, mock LLM only (not a real Session). Status stays **open**.
+
+Commands:
+
+```
+node prototypes/session-flow/check-library.mjs
+# OK zones=20 situations=16 muscles=12 triggerPoints=20 checks=17 stretches=14 manual=12 cupping=4
+
+cd prototypes/session-flow && node test/run.mjs --real
+# ALL PASS (Sessions A–D, F–H on the stub; Session E on library.json)
+```
+
+Gap found and fixed in this pass: the Session log was only in `localStorage` + `POST /log`. It is now also written to IndexedDB (`phasy` / `sessions`). Tests assert that store.
+
+| Checklist item | Result | Evidence |
+|---|---|---|
+| 1. All 8 Session steps reachable | **pass (mock)** | Session A: start → 不適 → candidates → 2 Checks → pick → plan (cupping then manual then stretches) → re-check → 「第 8 / 8 步・總結」. Session E (real Library) also reached end. |
+| 2. Only Library ids; unknown ids refused | **pass (mock)** | Session B: `m-not-in-library`, `c-not-in-library`, `st-not-in-library` refused, note shown, never on the page; fallback Checks used. |
+| 3. 15 s LLM fallback | **pass (mock)** | Session H: counter; 「不等了，用預設次序」 at 15.0 s; fallback Check at 15.1 s; log `aborted`. |
+| 4. Familiar pain removes muscle × side | **pass (mock)** | Session G: right 斜方肌上部 Familiar pain → `c-trap-upper-sidebend\|R` refused; left-side trapezius Checks stay allowed. |
+| 5. noPress / press-lightly | **pass (mock)** | Session C: noPress 頭夾肌 「只用手指輕輕認位」 / 「不適分數」. Session A: standard 「找最痛的一點」; light 「輕輕按，找最敏感的一點」. |
+| 6. Session log saved to IndexedDB | **pass (mock)** | Session A: 1 record, `app=phasy-session-flow`, 11 LLM calls, key not stored. Session D (no key): still saved, 0 LLM calls. `POST /log` still works. |
+
+Left open (ticket question still unanswered):
+
+- One real Session with the owner's wife, using Karson's DeepSeek key.
+- Follow-up Sessions (out of scope for this prototype).
+- Glossary: whether 疲累 stays as a fourth kind.
+
+Plan of cupping then manual then stretches (Session A): `cp-trap-upper → mt-levator-hold → st-trap-upper-seated → st-trap-upper-assisted → st-levator-seated`. 斜方肌上部 was cupped so its Manual technique was dropped (note shown, `planDrops`, not a refusal).
