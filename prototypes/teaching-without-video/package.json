@@ -1,0 +1,13 @@
+{
+  "name": "phasy-teaching-without-video",
+  "private": true,
+  "type": "module",
+  "description": "Throwaway prototype for ticket 13",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/run.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.15.0"
+  }
+}

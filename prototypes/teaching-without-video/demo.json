@@ -1,0 +1,14 @@
+{
+  "side": "R",
+  "plan": [
+    { "kind": "cupping", "ids": ["cp-trap-upper", "cp-rhomboids"] },
+    { "kind": "manual", "ids": ["mt-levator-hold"] },
+    { "kind": "stretch", "ids": ["st-trap-upper-helper"] }
+  ],
+  "overlays": {
+    "cp-trap-upper": { "pick": "lateral-high" },
+    "cp-rhomboids": { "pick": "medial-mid", "arrow": "along-inferior" },
+    "mt-levator-hold": { "pick": "superior" },
+    "st-trap-upper-helper": { "pick": "lateral-high", "arrow": "head-away" }
+  }
+}

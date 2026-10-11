@@ -8,13 +8,25 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const require = createRequire('C:/projects/Phasy/.scratch/phasy/data/bodyparts3d/build/');
-const puppeteer = require('puppeteer-core');
-
 const APP = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+function loadPuppeteer() {
+  const dirs = [
+    'C:/projects/Phasy/.scratch/phasy/data/bodyparts3d/build/',
+    path.join(APP, '../../.scratch/phasy/data/bodyparts3d/build/'),
+    path.join(APP, '../teaching-without-video/'),
+  ];
+  for (const dir of dirs) {
+    try { return createRequire(path.join(dir, 'package.json'))('puppeteer-core'); } catch { /* next */ }
+  }
+  return createRequire('C:/projects/Phasy/.scratch/phasy/data/bodyparts3d/build/')('puppeteer-core');
+}
+const puppeteer = loadPuppeteer();
+
 const LOG_DIR = path.resolve(APP, '../../.scratch/phasy/session-logs');
-const SHOTS = 'C:/Users/Kaho/AppData/Local/Temp/claude/C--projects-Phasy/203379e5-af3f-4aae-8c6a-ee18fcb02392/scratchpad/shots/session';
-const EDGE = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const SHOTS_WIN = 'C:/Users/Kaho/AppData/Local/Temp/claude/C--projects-Phasy/203379e5-af3f-4aae-8c6a-ee18fcb02392/scratchpad/shots/session';
+const SHOTS = fs.existsSync(path.dirname(SHOTS_WIN)) ? SHOTS_WIN : path.join(APP, 'test/shots');
+const EDGE_WIN = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+const EDGE = [EDGE_WIN, '/opt/google/chrome/chrome', '/usr/bin/google-chrome'].find(p => fs.existsSync(p));
 const PORT = 8771, ORIGIN = `http://localhost:${PORT}`;
 const KEY = 'sk-test-DO-NOT-LOG-123';
 const STUB = 'test/library.stub.json';
@@ -40,7 +52,10 @@ await new Promise((resolve, reject) => {
   setTimeout(() => reject(new Error('server did not start')), 10000);
 });
 const setFlags = flags => fetch(`${ORIGIN}/mock/flags?${new URLSearchParams(flags)}`).then(r => r.json());
-const browser = await puppeteer.launch({ executablePath: EDGE, headless: true, args: ['--no-first-run'] });
+const browser = await puppeteer.launch({
+  executablePath: EDGE, headless: true,
+  args: ['--no-first-run', '--ignore-gpu-blocklist', '--use-gl=angle', '--use-angle=swiftshader'],
+});
 const allLogPosts = [], allLogFiles = [], allChat = [];
 
 async function openPage(name, url) {
